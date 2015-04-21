@@ -2,7 +2,6 @@ PODS:
   - CocoaSoundCloudAPI (1.0.2):
     - NXOAuth2Client (= 1.2.2)
   - CocoaSoundCloudUI (1.0.9):
-    - CocoaSoundCloudAPI (~> 1.0.2)
     - OHAttributedLabel
   - NXOAuth2Client (1.2.2)
   - OHAttributedLabel (3.5.5)
@@ -23,15 +22,15 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CocoaSoundCloudAPI:
-    :commit: d48062655b0efb77cd772b36b13d93fb726263dd
+    :commit: b9c65d78437ee8ce82c08994151c9d615f5a2e0a
     :git: https://github.com/HelOlhausen/CocoaSoundCloudAPI.git
   CocoaSoundCloudUI:
-    :commit: d3086ab90dd5345d0afe808c170565beabf9e77f
+    :commit: c1ec194d18523b3d68bca6014ed5c71c40ad3dd6
     :git: https://github.com/HelOlhausen/CocoaSoundCloudUI.git
 
 SPEC CHECKSUMS:
   CocoaSoundCloudAPI: 351b2335d882b69fdd3fdcde1c9e76353889985e
-  CocoaSoundCloudUI: a5d948aceeaf8373e5170ea0b2a6a464fde4b55a
+  CocoaSoundCloudUI: f98264ad4bc79ad93ef7ba49f9106506d95411fb
   NXOAuth2Client: 492f961d549c411b344cfae861de0dc63b176edc
   OHAttributedLabel: 9b2eb99323dee6b3a81ef3bc8e98b084117bca2d
 

@@ -34,7 +34,7 @@
     CFStringRef string = CFUUIDCreateString(NULL, theUUID);
 	CFRelease(theUUID);
 	
-    return (__bridge NSString *)string;
+    return [(NSString *)string autorelease];
 }
 
 #pragma mark NSTimeInterval
@@ -125,6 +125,8 @@
 
 - (NSString *)stringByUnescapingXMLEntities;
 {
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	
 	NSString *returnValue = [self stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@"&#39;" withString:@"'"];
@@ -139,11 +141,16 @@
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@"&szlig;" withString:@"ß"];
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "];	
 	
+	[returnValue retain];
+	[pool release];
+	[returnValue autorelease];
 	return returnValue;
 }
 
 - (NSString *)stringByEscapingXMLEntities;
 {
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	
 	NSString *returnValue = [self stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@"\"" withString:@"&quot;"];
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@"'" withString:@"&#39;"];
@@ -158,6 +165,9 @@
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@"ß" withString:@"&szlig;"];
 	returnValue = [returnValue stringByReplacingOccurrencesOfString:@" " withString:@"&nbsp;"];	
 	
+	[returnValue retain];
+	[pool release];
+	[returnValue autorelease];
 	return returnValue;
 }
 
@@ -168,7 +178,7 @@
 																	   NULL, //Characters to leave unescaped
 																	   (CFStringRef)@"!*'();:@&=+$,/?%#[]", //Legal Characters to be escaped
 																	   kCFStringEncodingUTF8); //Encoding
-	return (__bridge NSString *)returnValue;
+	return [(NSString *)returnValue autorelease];
 }
 
 - (NSString *)stringByRemovingURLEncoding;
@@ -176,7 +186,7 @@
 	CFStringRef returnValue = CFURLCreateStringByReplacingPercentEscapes(kCFAllocatorDefault, //Allocator
 																		 (CFStringRef)self,
 																		 nil);
-	return (__bridge NSString *)returnValue;
+	return [(NSString *)returnValue autorelease];
 }
 
 

@@ -23,7 +23,7 @@
   "frameworks": "Security",
   "dependencies": {
     "NXOAuth2Client": [
-      "1.2.2"
+      "1.2.8"
     ]
   },
   "license": "Apache License, Version 2.0"
