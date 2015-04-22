@@ -4,22 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-HelenOlhausen-CocoaSoundCloudAPI.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-HelenOlhausen-CocoaSoundCloudUI.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-HelenOlhausen-NXOAuth2Client.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-HelenOlhausen-OHAttributedLabel.xcscheme</key>
+		<key>Pods-HelenOlhausen-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1699FE14BA63434E3AFC7FAB</key>
+		<key>A2350C4E4C4AB9691A7E4644</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>637038E8FA9F36EFBEAE181B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>645086B8DAD595706FC48A9E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7258AD4B16D236C726B265F3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A4136F28ED657D73BA4AA6EF</key>
+		<key>FDD696A4970965BA2285E812</key>
 		<dict>
 			<key>primary</key>
 			<true/>

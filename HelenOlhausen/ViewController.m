@@ -8,10 +8,13 @@
 
 #import "ViewController.h"
 #import "TrackListTableViewController.h"
-#import "SCUI.h"
+#import <AVFoundation/AVFoundation.h>
+#import "Constants.h"
+
+#import "HelenHTTPSessionManager.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @end
 
 @implementation ViewController
@@ -21,64 +24,35 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (IBAction) login:(id) sender
-{
-    SCLoginViewControllerCompletionHandler handler = ^(NSError *error) {
-        if (SC_CANCELED(error)) {
-            NSLog(@"Canceled!");
-        } else if (error) {
-            NSLog(@"Error: %@", [error localizedDescription]);
-        } else {
-            NSLog(@"Done!");
-        }
-    };
-    
-    [SCSoundCloud requestAccessWithPreparedAuthorizationURLHandler:^(NSURL *preparedURL) {
-        SCLoginViewController *loginViewController;
-        
-        loginViewController = [SCLoginViewController
-                               loginViewControllerWithPreparedURL:preparedURL
-                               completionHandler:handler];
-        [self presentModalViewController:loginViewController animated:YES];
-    }];
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self playBackAudio];
+}
+
+-(void)playBackAudio {
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Fame" withExtension:@"mp3"];
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self.audioPlayer prepareToPlay];
+    [self.audioPlayer play];
 }
 
 - (IBAction) getTracks:(id) sender
 {
-    SCAccount *account = [SCSoundCloud account];
-    if (account == nil) {
-        UIAlertView *alert = [[UIAlertView alloc]
-                              initWithTitle:@"Not Logged In"
-                              message:@"You must login first"
-                              delegate:nil
-                              cancelButtonTitle:@"OK"
-                              otherButtonTitles:nil];
-        [alert show];
-        return;
-    }
-    
-    SCRequestResponseHandler handler;
-    handler = ^(NSURLResponse *response, NSData *data, NSError *error) {
-        NSError *jsonError = nil;
-        NSJSONSerialization *jsonResponse = [NSJSONSerialization
-                                             JSONObjectWithData:data
-                                             options:0
-                                             error:&jsonError];
-        if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
-            TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
-            trackListVC.tracks = (NSArray *)jsonResponse;
-            [self presentViewController:trackListVC
-                               animated:YES completion:nil];
-        }
-    };
-    
-    NSString *resourceURL = @"https://api.soundcloud.com/me/tracks.json";
-    [SCRequest performMethod:SCRequestMethodGET
-                  onResource:[NSURL URLWithString:resourceURL]
-             usingParameters:nil
-                 withAccount:account
-      sendingProgressHandler:nil
-             responseHandler:handler];
+    [[HelenHTTPSessionManager sharedClient] getTracksWithSuccess:^(NSURLSessionDataTask *operation, id responseObject) {
+                 TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
+                 trackListVC.tracks = (NSArray *)responseObject;
+                 [self presentViewController:trackListVC animated:YES completion:nil];
+             }
+             failure:^(NSURLSessionDataTask *operation, NSError *error) {
+                 [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error loading the tracks"
+                                             message:[error localizedDescription]
+                                            delegate:nil
+                                   cancelButtonTitle:@"Ok"
+                                   otherButtonTitles:nil] show];
+     }];
 }
 
 

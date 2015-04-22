@@ -7,11 +7,11 @@
 //
 
 #import "TrackListTableViewController.h"
-
-#import "SCUI.h"
+#import "HelenHTTPSessionManager.h"
+#import "Constants.h"
 
 @interface TrackListTableViewController ()
-
+@property (nonatomic) NSIndexPath * previousIndex;
 @end
 
 @implementation TrackListTableViewController
@@ -59,25 +59,31 @@
 }
 
 - (void)tableView:(UITableView *)tableView
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+    didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//    self.previousIndex = indexPath;
+    
     NSDictionary *track = [self.tracks objectAtIndex:indexPath.row];
-    NSString *streamURL = [track objectForKey:@"stream_url"];
+    NSString *stream = [track objectForKey:@"stream_url"];
+    NSString *streamURL = [NSString stringWithFormat:@"%@?%@", stream, CLIENT_ID_PARAM];
     
-    SCAccount *account = [SCSoundCloud account];
+    [[HelenHTTPSessionManager sharedClient] getStream:streamURL
+            success:^(NSURLSessionDataTask *operation, id responseObject) {
+                    NSError *playerError;
+                    self.player = [[AVAudioPlayer alloc] initWithData:(NSData *)responseObject error:&playerError];
+                    [self.player prepareToPlay];
+                    [self.player play];
+                }
+            failure:^(NSURLSessionDataTask *operation, NSError *error) {
+                    [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error playing the track"
+                                          message:[error localizedDescription]
+                                         delegate:nil
+                                cancelButtonTitle:@"Ok"
+                                otherButtonTitles:nil] show];
+    }];
     
-    [SCRequest performMethod:SCRequestMethodGET
-                  onResource:[NSURL URLWithString:streamURL]
-             usingParameters:nil
-                 withAccount:account
-      sendingProgressHandler:nil
-             responseHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-                 NSError *playerError;
-                 self.player = [[AVAudioPlayer alloc] initWithData:data error:&playerError];
-                 [self.player prepareToPlay];
-                 [self.player play];
-             }];
 }
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -1,37 +1,30 @@
 PODS:
-  - CocoaSoundCloudAPI (1.0.2):
-    - NXOAuth2Client (= 1.2.2)
-  - CocoaSoundCloudUI (1.0.9):
-    - OHAttributedLabel
-  - NXOAuth2Client (1.2.2)
-  - OHAttributedLabel (3.5.5)
+  - AFNetworking (2.5.3):
+    - AFNetworking/NSURLConnection (= 2.5.3)
+    - AFNetworking/NSURLSession (= 2.5.3)
+    - AFNetworking/Reachability (= 2.5.3)
+    - AFNetworking/Security (= 2.5.3)
+    - AFNetworking/Serialization (= 2.5.3)
+    - AFNetworking/UIKit (= 2.5.3)
+  - AFNetworking/NSURLConnection (2.5.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.3)
+  - AFNetworking/Security (2.5.3)
+  - AFNetworking/Serialization (2.5.3)
+  - AFNetworking/UIKit (2.5.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
 
 DEPENDENCIES:
-  - CocoaSoundCloudAPI (from `https://github.com/HelOlhausen/CocoaSoundCloudAPI.git`,
-    branch `master`)
-  - CocoaSoundCloudUI (from `https://github.com/HelOlhausen/CocoaSoundCloudUI.git`,
-    branch `master`)
-
-EXTERNAL SOURCES:
-  CocoaSoundCloudAPI:
-    :branch: master
-    :git: https://github.com/HelOlhausen/CocoaSoundCloudAPI.git
-  CocoaSoundCloudUI:
-    :branch: master
-    :git: https://github.com/HelOlhausen/CocoaSoundCloudUI.git
-
-CHECKOUT OPTIONS:
-  CocoaSoundCloudAPI:
-    :commit: b9c65d78437ee8ce82c08994151c9d615f5a2e0a
-    :git: https://github.com/HelOlhausen/CocoaSoundCloudAPI.git
-  CocoaSoundCloudUI:
-    :commit: c1ec194d18523b3d68bca6014ed5c71c40ad3dd6
-    :git: https://github.com/HelOlhausen/CocoaSoundCloudUI.git
+  - AFNetworking (= 2.5.3)
 
 SPEC CHECKSUMS:
-  CocoaSoundCloudAPI: 351b2335d882b69fdd3fdcde1c9e76353889985e
-  CocoaSoundCloudUI: f98264ad4bc79ad93ef7ba49f9106506d95411fb
-  NXOAuth2Client: 492f961d549c411b344cfae861de0dc63b176edc
-  OHAttributedLabel: 9b2eb99323dee6b3a81ef3bc8e98b084117bca2d
+  AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
 
 COCOAPODS: 0.36.4

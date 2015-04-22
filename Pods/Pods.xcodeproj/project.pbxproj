@@ -7,1262 +7,460 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008E693E2D3500930EA1F546 /* NXOAuth2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A44B253CEC146F21D52CC35 /* NXOAuth2Request.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		016A571B8B7001DE9FBDCA23 /* NXOAuth2AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2CE4636F77AC15C2CEFC6E /* NXOAuth2AccessToken.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		02AB7EA14F0C2D6C1E2BAF5A /* NXOAuth2FileStreamWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 13995AFE3FF42D17D909CBA4 /* NXOAuth2FileStreamWrapper.h */; };
-		035B83C330487612B4419B9C /* Pods-HelenOlhausen-CocoaSoundCloudAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD60609BEE59C87BD7D22700 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-dummy.m */; };
-		064F7454BF3AC51C8AB35961 /* SCTableCellBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = C07E71158F33167BF6818BF5 /* SCTableCellBackgroundView.h */; };
-		09D573D3B075723475AA58B9 /* SCAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A6055475F4E1C7BDA6B58A7 /* SCAPI.h */; };
-		0FA614AE72F5BBDD83C3A066 /* SCRecordingSaveViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3E1A4F12D376E882CE0887 /* SCRecordingSaveViewController.h */; };
-		10B82F12D36C360C49F78800 /* SCAddConnectionViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 103EB983CC3A286FCC7D7AB4 /* SCAddConnectionViewControllerDelegate.h */; };
-		13CCD12A7C996F4768F8853D /* SCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD97096C42BEDC13D0BB030 /* SCAlertView.h */; };
-		15D0DD7A3AE51CFFE25812FA /* OHASBasicHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3A2235DF3ED419E6BA98E8 /* OHASBasicHTMLParser.h */; };
-		1795565AF504AA9C43E5A932 /* QuartzCore+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AF70DD51908CDF73BCC1D7 /* QuartzCore+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		1D87AC847600810A3DEB4A4F /* NXOAuth2Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 620846D3C2E285133A53C08D /* NXOAuth2Request.h */; };
-		1DC24821D70DDEEB67EC5FB2 /* SCAccount+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ACE79A27E7DE197E80DD9 /* SCAccount+Private.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		1DE531F947AADCE3307EA694 /* SCConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5642C99DBB8A2CCFD5564401 /* SCConstants.h */; };
-		23B61E1F1FC73558C759081F /* SCSoundCloud+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2C6A22DD9CD6B3A689357 /* SCSoundCloud+Private.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		23D2E7BD5C4F1B5688E106AF /* NXOAuth2FileStreamWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE997F078DC80BF7DB2203 /* NXOAuth2FileStreamWrapper.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		28D5C27CA9F63C00EB3D1C3E /* NXOAuth2PostBodyStream.h in Headers */ = {isa = PBXBuildFile; fileRef = C379E1FA4468DAD85C8AE898 /* NXOAuth2PostBodyStream.h */; };
-		2E4C6FE42D3479BC1F14D061 /* SCSoundCloud+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E0FCDFCC0D05E60D26F909AA /* SCSoundCloud+Private.h */; };
-		303AEB04864FC5CA0FC6396B /* SCNameAndEmailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C02140D20B39460E77038B0D /* SCNameAndEmailCell.h */; };
-		382343444122FF18979F4DE5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFC143923FD95A06198B0A4 /* Security.framework */; };
-		3BEBF399E51ECF0BE8ED4A42 /* UIViewController+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5094CA88756F7E45C54D0A50 /* UIViewController+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		3DE6432C6015A496A2516C1E /* SCSwitchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BA3C5B72AAC7B4D68C52F4 /* SCSwitchLabel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		42820C8D9530E9DA488506F0 /* OHTouchesGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A608FD65E25EAF7A7317E18 /* OHTouchesGestureRecognizer.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		42D49853F357722CEEC9D3F7 /* NSTextCheckingResult+ExtendedURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8CEE9D1D44AF9AC15378D2 /* NSTextCheckingResult+ExtendedURL.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		43D52DB5D8F9E066F34EC1C9 /* SCHorizontalLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5940551018C3FC4568FCAC9C /* SCHorizontalLineView.h */; };
-		443EECC9CFAF3797CE626C1C /* NXOAuth2ClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE7626A1AD83F197B3D6E9C /* NXOAuth2ClientDelegate.h */; };
-		44A987F86A6B9A70BEE22BC0 /* NSString+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 915B673238E9DE8A73B42637 /* NSString+SoundCloudUI.h */; };
-		4629CC2266137AC7DECA9DAA /* SCUIErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5158989B4739CEEAEE3067 /* SCUIErrors.h */; };
-		47A2775F55E0DC71FFD0C3A7 /* SCRecordingUploadProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F4EA5D088C6F5BEFF8BB79 /* SCRecordingUploadProgressView.h */; };
-		480B9A0305CB34D6F34AF90A /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6749479FA6890DFD194BA8D /* SCLoginViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		49FE6B523B259BDE1953C893 /* SCTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = ED55999C6536CAF6CAB9A2F6 /* SCTextField.h */; };
-		4AB009C8BD17B5FB789615D2 /* SCShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90BC604700B236A41554FC6 /* SCShareViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		4AB804AD0976FE4F43DEB33A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8937986FC3E6AB21F465E3E /* Foundation.framework */; };
-		4AB82A3DB446CE1E99D7EA91 /* SCRecordingSaveViewControllerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 434596A0B67F87E7BD7AD1B4 /* SCRecordingSaveViewControllerHeaderView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		4C732EC6A6049E05F67BA08A /* SCSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C009A98CD3B3FCCD0757DB3 /* SCSwitch.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		4F3EFB0BDCAEACC46625FFDB /* NSData+NXOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = F34904814AC9DC4FE2CEC38D /* NSData+NXOAuth2.h */; };
-		4F87EC84F8BAADCA10F7AE4E /* NSURL+NXOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E217F04B47F5C70853AEEC8 /* NSURL+NXOAuth2.h */; };
-		504485A7BF55215DFACD1E6C /* Pods-HelenOlhausen-CocoaSoundCloudUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CDB1D664D04C128133D521 /* Pods-HelenOlhausen-CocoaSoundCloudUI-dummy.m */; };
-		529E0BF3637767C5707A5109 /* NSString+NXOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 7640E977535CA66EB1821999 /* NSString+NXOAuth2.h */; };
-		53AA672BEE3D4EEC5BD5AACF /* SCLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E8256EA0131AD8FDF016D8 /* SCLoginView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		5571548959B3E7E6E3A2E1A3 /* SCUnderlinedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE63420436CE43DF841BB7 /* SCUnderlinedButton.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		566E9758BB7A5CF0238809B7 /* NXOAuth2ConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B1405F8EC2B7CE7C8FE03C6A /* NXOAuth2ConnectionDelegate.h */; };
-		59B4C3F2D7BCA3A3595B97D0 /* OHASMarkupParserBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C128EA5AEC303BCDE770CF1C /* OHASMarkupParserBase.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5AE1663B0DDE5FDF02D7988A /* UIDevice+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EA45A967591EDE3399257C /* UIDevice+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		5BC17FD6C9DEF69D307D4ADE /* OHAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C991C07E3508C12268C3242 /* OHAttributedLabel.h */; };
-		5C5FAACA8FBE26AC13A8CBF8 /* Pods-HelenOlhausen-NXOAuth2Client-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1787573FAE2CBCCA30A13B /* Pods-HelenOlhausen-NXOAuth2Client-dummy.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		5E5151749EDB57BCAB92082A /* SCFoursquarePlacePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FEBE47ECC6C237418F0D751 /* SCFoursquarePlacePickerController.h */; };
-		5ECF8749D977A908241FEF20 /* UIImage+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F661BAA3182184E679EA03D /* UIImage+SoundCloudUI.h */; };
-		5F8862925B03C854AE49B914 /* SCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DCFD020E483C176842E43F /* SCBundle.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		5F911F48E804A0FED7129FB5 /* NXOAuth2AccountStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CB107A36235E494C37E8FC /* NXOAuth2AccountStore.h */; };
-		6213C7E9046FFB4306DA9EB1 /* OHASBasicMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF83B0F8EF085201E82803C /* OHASBasicMarkupParser.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		62DC3356D02BF1B0543BFB4E /* SCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B5F74290C48D8815782BB5 /* SCUI.h */; };
-		6571E8D4393AA0A7EEAED706 /* CoreTextUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 935A4C4AB307E46D1070195B /* CoreTextUtils.h */; };
-		65A65A517D543148314B579D /* NXOAuth2.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C49FB3C4444860FF02B015B /* NXOAuth2.h */; };
-		671B935252C7A28253473D17 /* NXOAuth2TrustDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9362CCBBCF0DEB140C6AA22A /* NXOAuth2TrustDelegate.h */; };
-		6A11DCF9C8FB7F281C58B525 /* SCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4764493D22DC2A12CB11B0D0 /* SCAlertView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		6A9DC8294073615B29AE661A /* SCFoursquarePlacePickerControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CB15C011A40E13103BC08F47 /* SCFoursquarePlacePickerControllerDelegate.h */; };
-		6D9F6958D1D65FBAE916B48E /* SCCoverImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7E13FA4D1E8BD0C496E14D /* SCCoverImageButton.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		70A95224C637C90735FA2300 /* NXOAuth2Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 77850E8E87580DEE95C36044 /* NXOAuth2Constants.h */; };
-		73AC903B013049293F8FAEBD /* SCGradientButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8102ACA338539B7BF534A334 /* SCGradientButton.h */; };
-		74B56DFAE3F770F8C86FDBBE /* SCHorizontalLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42363DAF1C5CFFF8F29D4F7D /* SCHorizontalLineView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		767CF5429BF981E2DD59FF76 /* NSTextCheckingResult+ExtendedURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C889FDA6C9F8122B2E940F9 /* NSTextCheckingResult+ExtendedURL.h */; };
-		777D2EB7923D4834415423C1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A48D9EA2B94A08B6CFF88 /* CoreLocation.framework */; };
-		79121D31110A3F501149DEF0 /* SCShareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EFDDF679D6C8218E039FBCDA /* SCShareViewController.h */; };
-		7946F0E726924C4810C8DC6F /* UIImage+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C503B9CD6697D8E3A8E49 /* UIImage+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		7D5958CFB3AFA42883E9099B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFC143923FD95A06198B0A4 /* Security.framework */; };
-		7E318341E11A048B94DE453C /* OHParagraphStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 521750BB32208974ED49FA9E /* OHParagraphStyle.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		80583DF6490D0724CCE8E9C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8937986FC3E6AB21F465E3E /* Foundation.framework */; };
-		83CB4139E459139C7E228302 /* OHTouchesGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DEC3273924D88F405F65BC0 /* OHTouchesGestureRecognizer.h */; };
-		85C8EFCD31680E6B6D957C8A /* SCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8945E9E525A226120C0B04D0 /* SCTextField.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		8659398E0A20D9520219853A /* SCFoursquarePlacePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97468D8515683AE1788CF521 /* SCFoursquarePlacePickerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		870B033C4EAE10F9209616E3 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E958480B24BF922B4524DB3A /* NSAttributedString+Attributes.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		895E45B28AD14ACC8601D723 /* NSString+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C544B92640043E0B76F11EF /* NSString+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		8B1830AE2853BE7102112ED7 /* NXOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = FEABF6A3721886452431B5D9 /* NXOAuth2Account.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		8D2D7D6EBE36223C8BD90BCE /* NSData+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 686F87238573165F3057FC94 /* NSData+SoundCloudUI.h */; };
-		8D90A3744059692D62613BAA /* OHASBasicHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F5A069F80618B01F5D9108 /* OHASBasicHTMLParser.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		8D951E5C21D5CAB14E79BAA0 /* SCConnectToSoundCloudTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E273A23D1360D6138EF0E38 /* SCConnectToSoundCloudTitleView.h */; };
-		8EE597FD0B48DA04BB3E14DF /* SCAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F38F1BB9285E600CEDB3CE8 /* SCAccount.h */; };
-		93B60E2757EDF70DDFCFF3C2 /* SCAddConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E9FE2ECCEC404BB2FCBE60 /* SCAddConnectionViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		94EC0AFE1055CE8F8D408A53 /* SCRecordingUploadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C50EC2847871D9E1363214F /* SCRecordingUploadProgressView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		95F4AF07B32FF24FCCCC6BEB /* UIColor+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DCA4938C5712414E98FEA5 /* UIColor+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		99BEFC11C1315B93555EFF0C /* NXOAuth2AccessToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ECDEECF98FF73BC0E4955D1 /* NXOAuth2AccessToken.h */; };
-		9A38842BA989826770A91BB8 /* NSData+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ADEC4533C0C5B73739B520 /* NSData+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		9B52ED9A8A327B39DA4CF816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8937986FC3E6AB21F465E3E /* Foundation.framework */; };
-		9D21C3C63AA5D1578ED132A9 /* OHAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB16C6FFCF2C7A2ACBC1977 /* OHAttributedLabel.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		A45CA550F68CFE92A3661B91 /* NXOAuth2PostBodyStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547CA2571BE4141F37D6CB6 /* NXOAuth2PostBodyStream.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		A81D10BF5C99E62559851488 /* SCCoverImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4B7AAD3514C21FC1BCBF59 /* SCCoverImageButton.h */; };
-		A9779200C0CA9642047CEC21 /* SCSwitchLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A33ECD0CA5D0BE83B7289852 /* SCSwitchLabel.h */; };
-		AAF4C56EFA46A89EF791946C /* UIViewController+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = E482C6C863C8C08750364F44 /* UIViewController+SoundCloudUI.h */; };
-		ABBA1BD600E2AA0D1B1F0060 /* SCNameAndEmailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8785D2EA264984EE1467866 /* SCNameAndEmailCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		ABC4661E563514AE7B3621D9 /* OHParagraphStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 17246C6858A9BD1B69D5D77B /* OHParagraphStyle.h */; };
-		ACE19C232754453ABE03DA34 /* SCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F013F17B683E2288FD44A25 /* SCAccount.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		AF816DF8D24019C47EF67590 /* SCTableCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB410D75CAB3DAAE20C17DD3 /* SCTableCellBackgroundView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		AFBAE976CDA8327E2FDB1268 /* CoreTextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D074B2F1640EFA65CDA610 /* CoreTextUtils.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		B2279656A11D22C836824D21 /* SCSharingMailPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884D800AFBC406DDB8F585FA /* SCSharingMailPickerController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		B2AD2C1A7B88B6F55950C047 /* UIView+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA4D1A3725498044715145F /* UIView+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		B2C1944804D1FC86341E5E8C /* SCSoundCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = E39853685E4F904ACC26FF6D /* SCSoundCloud.h */; };
-		B4892867655D4729970FA7F5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1D0EACC731F442E6859CEB /* CoreText.framework */; };
-		B4AE717CB1B0A2D384410036 /* SCLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41BFD2184B4D35096A816361 /* SCLoginViewController.h */; };
-		B895C06DE7F70B38A5EA4E0D /* NXOAuth2Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3272E59A1E072183954CE0BC /* NXOAuth2Connection.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		B9C3ABD493A1109FD03D9DD8 /* SCDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B655BECA6DFD1B2BE9AF2FE /* SCDrawing.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		BA9D979C5ED635BDF6EA38EA /* NXOAuth2Client.h in Headers */ = {isa = PBXBuildFile; fileRef = 357C22A236C911822E767FC9 /* NXOAuth2Client.h */; };
-		BB8A93C498100A2C61585C61 /* NXOAuth2Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FB70463C3884A899EC0C5B7B /* NXOAuth2Constants.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		BCE4A56AD637D60B3C05CB65 /* NSString+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A88FB8B655DA598C65F11 /* NSString+SoundCloudUI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		C1131D89B47BFB73EA3BD625 /* SCLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = 75347C4ED6D968A73D0824CD /* SCLoginView.h */; };
-		C1337D2891DA434B8F6CC9D1 /* SCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDF84972E3D340B28601F6C /* SCRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		C1DF2EE2B2E998B9AFEDB7D4 /* SCSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 264615859C40845254EEAD0B /* SCSoundCloud.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		C3BBEF4D647B0E144CC3182F /* SCSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B477EA882D56E5650B29B /* SCSwitch.h */; };
-		C634C3E2B0CE2509573E505F /* SCCredentialsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 54035EC3742251D1DA7BCC62 /* SCCredentialsView.h */; };
-		C7AE47DE5509948830D263C7 /* QuartzCore+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F219A36F4083A01919C3FDC4 /* QuartzCore+SoundCloudUI.h */; };
-		CA6DA4B4B2E37DE5E7730AF3 /* SCSharingMailPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BCD5DC14A6771C55A884C2 /* SCSharingMailPickerController.h */; };
-		CBE7D3B03623DBC1F8E32E1F /* SCRecordingSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F07111D3A7A430579DB6F33F /* SCRecordingSaveViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		CC8EF9454B3AB64E0EF8A862 /* UIColor+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F1DD98CE56F276EE3F70DE /* UIColor+SoundCloudUI.h */; };
-		CE844B1C669EF0942D51A810 /* SCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB60DDEA814D8A4E353AB12 /* SCConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		D223610BB337EBD3BB849642 /* SCCredentialsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1BBA4430BD4C1071CCFDCF /* SCCredentialsView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		D3E018B38C583A13C340BC8C /* SCConnectToSoundCloudTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4554FC25E4CD89F8F72B23 /* SCConnectToSoundCloudTitleView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		D472C35F05F9106E4D73D36C /* SCUIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = DD92B3901DC8EC22717C83DD /* SCUIErrors.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		D48DA1829A3E5EA843CC7B3C /* OHASBasicMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F9468C4512413A2F1A2942 /* OHASBasicMarkupParser.h */; };
-		D51E81C9580EBE144BA38503 /* SCSoundCloudAPI-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8BA95F7A53186D61FCD0DE /* SCSoundCloudAPI-Private.h */; };
-		D5CE2D413DDF0864AF1BAE21 /* SCDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = C98160E63B78967EA4F151D9 /* SCDrawing.h */; };
-		D61CE58FA269B9094A9539FA /* SCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F7139D6A0189209C00E828 /* SCRequest.h */; };
-		D6680566533A74CC537B5188 /* Pods-HelenOlhausen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6C8CBC7CC33135A2972CE /* Pods-HelenOlhausen-dummy.m */; };
-		D765B1EA65DE47A7BA4383B0 /* SCShareToSoundCloudTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 875ACE7B03C91E431BEC1CAD /* SCShareToSoundCloudTitleView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		D8BF969F14359C0AF0CDF784 /* SCAccount+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C49EC689FBBC38038DCB2A80 /* SCAccount+Private.h */; };
-		D8C009F7D2FF073710371476 /* Pods-HelenOlhausen-OHAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B04832E241512E487F6F1E /* Pods-HelenOlhausen-OHAttributedLabel-dummy.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		DB5D16928E174A853557C00E /* NSAttributedString+Attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = C000201CC658C0F573D31102 /* NSAttributedString+Attributes.h */; };
-		DB7B5A496F4F5AB0D659D12B /* NXOAuth2PostBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D583437F0F7279FB70B398 /* NXOAuth2PostBodyPart.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		DC9184F6A25455706B52258D /* NXOAuth2Account.h in Headers */ = {isa = PBXBuildFile; fileRef = D91471A769FE7BC441D83F2B /* NXOAuth2Account.h */; };
-		DD9B3D24DF4CEAEC0C58D3DA /* SCGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CA3658EAA55020EFC77AC1 /* SCGradientButton.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode -fno-objc-arc"; }; };
-		DFD892D8F078CAC0017FEC1B /* SCShareToSoundCloudTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF5492A06FE66C4F1D76BF2 /* SCShareToSoundCloudTitleView.h */; };
-		E39673E0F18A3EF9F9C83DFA /* SCUnderlinedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 776DC0F9B466CD2A05380343 /* SCUnderlinedButton.h */; };
-		E782AEF79C4C6A40345A885D /* UIDevice+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 227BF8B1211583A9A7D84E02 /* UIDevice+SoundCloudUI.h */; };
-		E9116341C37923F8C773A568 /* UIView+SoundCloudUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E49C4217B019671DEE06AA1 /* UIView+SoundCloudUI.h */; };
-		E93502975237F1B5025F62A5 /* SCRecordingSaveViewControllerHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = E045B7BBE61E48D3D4FCAAA9 /* SCRecordingSaveViewControllerHeaderView.h */; };
-		EBAD28029C70A45C0E5A13A6 /* NXOAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = FF89FE0FA83B340B05A9A91A /* NXOAuth2Client.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		EE42936E59E58272C940F6E5 /* NSData+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF37347BB1740FFC0AFA558 /* NSData+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		F01EDC65A0D4CC54BB45D97F /* OHASMarkupParserBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9380F3B4E42ECC29297A3BFF /* OHASMarkupParserBase.h */; };
-		F1C7C49EC71644A3C2B0F7EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8937986FC3E6AB21F465E3E /* Foundation.framework */; };
-		F4129ADE161D5692E8F8E5F9 /* NXOAuth2PostBodyPart.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1C30F2D59B6CA8A871CBE9 /* NXOAuth2PostBodyPart.h */; };
-		F48C969BC2642617BA3F9CDA /* NXOAuth2AccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB4B4045F8EDD9EA02F65DA /* NXOAuth2AccountStore.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		F4CF21CE097F977548A300B2 /* SCBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFFEE7FD0CADA828F47AA7B /* SCBundle.h */; };
-		F626727451F3973A5F478A90 /* NXOAuth2Connection.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F50BC241F19FCF60EEC70B /* NXOAuth2Connection.h */; };
-		F689F3BB56F6E0D8BED92862 /* NXOAuth2Account+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 872B800AA3DB51A8BAC87264 /* NXOAuth2Account+Private.h */; };
-		F78EE1F07DB9B879C6870815 /* SCAddConnectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A1956D86591B106F60E61D /* SCAddConnectionViewController.h */; };
-		F944199F99FC84C8215C8D9E /* NSURL+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5938120E5232D89432891C /* NSURL+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		F97D39131C41A4D201904159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8937986FC3E6AB21F465E3E /* Foundation.framework */; };
+		06AFF4D295497742434CEE44 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 84157283A2B2562988658799 /* UIRefreshControl+AFNetworking.h */; };
+		0C7789E221AA52D15FBE40D4 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D67A213B5DA780A8BE722D /* UIWebView+AFNetworking.h */; };
+		1DAEF0CA49EE0BBA02BA0D21 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FE794C31AFABBE210D7B35AF /* AFNetworking.h */; };
+		2084D5DB9B30BDB918864BE1 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 887D719A6A50B6012A8C4976 /* UIImageView+AFNetworking.m */; };
+		21BE189EF52CCB19C6F3A7EC /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E01B49DE6A8C6F3448E90F99 /* UIProgressView+AFNetworking.h */; };
+		25BC99C0201F9A2BE794F8F3 /* Pods-HelenOlhausen-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 510F8D1C98D63844B05F1FEF /* Pods-HelenOlhausen-AFNetworking-dummy.m */; };
+		28A2499E5F04A7E74D6CF455 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C42439426E8650101FB037F9 /* AFHTTPRequestOperationManager.m */; };
+		3855807731F91D4C48472052 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FC1DCD90D83B7C80164BB5 /* UIWebView+AFNetworking.m */; };
+		3C03B6664167C17EDED985A0 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2D6AEA6A943388F665298C /* AFURLConnectionOperation.h */; };
+		3E24152E7AA0F392FA685EBF /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = C174AACA5ED7E480F0931458 /* AFSecurityPolicy.h */; };
+		3FB1CDE104801DEBEFA29951 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DFB6039FA4B960796F9C55 /* AFHTTPRequestOperationManager.h */; };
+		41C4FD466CD077637C572817 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C5193B87E36235E4429B00D0 /* AFURLResponseSerialization.h */; };
+		4536CA8FD5264DCF04F8CD2F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03323EBF0EDF18EA9BD5B5B8 /* MobileCoreServices.framework */; };
+		48A8A91DE7644DC2D5635B02 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D230BFEC0C4B4BCF9E49993 /* AFNetworkReachabilityManager.m */; };
+		4B6E0ABDF383F81FBB7FD6A3 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D0EB5F62269296C608850 /* UIActivityIndicatorView+AFNetworking.m */; };
+		5F6E608284BAFD74943F7978 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBF3DC82DCCDEFED256CDD9 /* AFHTTPSessionManager.h */; };
+		656AE3D485933C07BB4C29E7 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D0153C5E0165FF46C12001 /* UIButton+AFNetworking.h */; };
+		6A0BD5AC5BD1C87EA389092B /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6187EE0EF3538FCEB968D8 /* UIButton+AFNetworking.m */; };
+		6A466AA133A2BCB650E3BE42 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 789069EDB829AF6705E62D14 /* AFURLRequestSerialization.m */; };
+		6EB5930BAC68D7B419A5D2AE /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B93BB2C284DA0CA0290C368A /* UIRefreshControl+AFNetworking.m */; };
+		6EE2C91D1DD2CDDEBB80C6AD /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 16BA664B4230106CB29031FF /* UIActivityIndicatorView+AFNetworking.h */; };
+		70E2AFB4D166D193C4348C7A /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A750968543BD0F98B85146 /* AFURLSessionManager.h */; };
+		80E32851940CF84F659F48A4 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 256E588846192BB3B0E6ACB2 /* UIKit+AFNetworking.h */; };
+		890B4A44C8DF472AD46E61B3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C822C5B5DC4C169886D0D4B /* AFSecurityPolicy.m */; };
+		8B20F3CBBECCF63FE0C444CF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A81A5EBBED0D26E76423AE2 /* AFURLConnectionOperation.m */; };
+		90BA72CF9A71A59BF553698E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F8F8019992510214471850 /* AFHTTPSessionManager.m */; };
+		91E4AF303AA85FBB3BD5F953 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 35754CB1018EAD60FFA18F3A /* UIAlertView+AFNetworking.h */; };
+		9469D0FE22EDCF8FAB751EC2 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD095942331E81A97D9B4EE6 /* AFURLSessionManager.m */; };
+		9BA293104B4189A2E7B17243 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AC5FCEBED727CD38E4E92F /* AFURLRequestSerialization.h */; };
+		9E76E9E7CE1DF793D4B71AC2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 682735848CC059BF81FDE35C /* AFHTTPRequestOperation.m */; };
+		A431E4B83C323838539D203E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF903D5CC10BCC38C197ED8 /* Security.framework */; };
+		AAE18C3F0DAFEE7F6715A733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD98B388CA338B3006C50E2 /* CoreGraphics.framework */; };
+		BB9B46592EF09B1C706644B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA1FF7B96AAD981FEC636C0 /* Foundation.framework */; };
+		C6EEE30801ED645AC996B164 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6B4BAD762779631968E717 /* AFNetworkReachabilityManager.h */; };
+		CD24114B53E8A72B048F33DD /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F4473C11C35B207DD956A3EE /* AFURLResponseSerialization.m */; };
+		D11FACA29DCCB96F20DDF29B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8ED22AA7F0D81576D34D45 /* AFNetworkActivityIndicatorManager.m */; };
+		D2027FDA2622A90425008247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA1FF7B96AAD981FEC636C0 /* Foundation.framework */; };
+		D2DDC3B54281B5A64FEB34F1 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBBF44017F75885074DCADA /* AFHTTPRequestOperation.h */; };
+		E0CCAF50C1C471ED19E90A81 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BA1EB6821A4E6DEFED3A65D /* UIImageView+AFNetworking.h */; };
+		E5DB02884222ED1B16F5907F /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 98269A931D4B327B59CBE69E /* UIProgressView+AFNetworking.m */; };
+		F02AB7632F1E169FFF0C5FCD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46561F70AA6044457A76794A /* SystemConfiguration.framework */; };
+		F952C443DA0F12E1927A3840 /* Pods-HelenOlhausen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B974CFE5AE8BF477CB8B8 /* Pods-HelenOlhausen-dummy.m */; };
+		FC4E0BCE0BA9867952CE33E4 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97792493B353CCC6816B8E /* UIAlertView+AFNetworking.m */; };
+		FF86C23F614F487C2F08E17B /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DA49B48261BF932DCA55DF9E /* AFNetworkActivityIndicatorManager.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14663290BAF53569AB6F2BFE /* PBXContainerItemProxy */ = {
+		7AD662F4994E90989C0F9685 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7172E05E1A555DB8AAF2ABAA /* Project object */;
+			containerPortal = 204BA3BD838DD272F17EA9A9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7258AD4B16D236C726B265F3;
-			remoteInfo = "Pods-HelenOlhausen-CocoaSoundCloudUI";
-		};
-		26DA319DE695D5ACAE3ED84B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7172E05E1A555DB8AAF2ABAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 637038E8FA9F36EFBEAE181B;
-			remoteInfo = "Pods-HelenOlhausen-NXOAuth2Client";
-		};
-		34B0606CEF8FCF9B74D8FE01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7172E05E1A555DB8AAF2ABAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 645086B8DAD595706FC48A9E;
-			remoteInfo = "Pods-HelenOlhausen-OHAttributedLabel";
-		};
-		AC007C7157FE68DA74DEF07B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7172E05E1A555DB8AAF2ABAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4136F28ED657D73BA4AA6EF;
-			remoteInfo = "Pods-HelenOlhausen-CocoaSoundCloudAPI";
-		};
-		E3DD96ED41D3878C152AFE8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7172E05E1A555DB8AAF2ABAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 645086B8DAD595706FC48A9E;
-			remoteInfo = "Pods-HelenOlhausen-OHAttributedLabel";
-		};
-		E48FE4389636473EA60F09E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7172E05E1A555DB8AAF2ABAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 637038E8FA9F36EFBEAE181B;
-			remoteInfo = "Pods-HelenOlhausen-NXOAuth2Client";
+			remoteGlobalIDString = A2350C4E4C4AB9691A7E4644;
+			remoteInfo = "Pods-HelenOlhausen-AFNetworking";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F1DD98CE56F276EE3F70DE /* UIColor+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SoundCloudUI.h"; path = "Sources/CocoaAdditions/UIColor+SoundCloudUI.h"; sourceTree = "<group>"; };
-		019868E8E1DD1696EBC1F5D6 /* Pods-HelenOlhausen-CocoaSoundCloudUI-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-CocoaSoundCloudUI-Private.xcconfig"; sourceTree = "<group>"; };
-		069327ACD5FF29FA4F1ED096 /* Pods-HelenOlhausen-CocoaSoundCloudAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-CocoaSoundCloudAPI.xcconfig"; sourceTree = "<group>"; };
-		07699EBD82275F5D922D634A /* libPods-HelenOlhausen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelenOlhausen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B1BBA4430BD4C1071CCFDCF /* SCCredentialsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCredentialsView.m; path = Sources/SoundCloudUI/SCCredentialsView.m; sourceTree = "<group>"; };
-		0BE6C8CBC7CC33135A2972CE /* Pods-HelenOlhausen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelenOlhausen-dummy.m"; sourceTree = "<group>"; };
-		0DEF3F4F0E8C4736F100F8FF /* Pods-HelenOlhausen-NXOAuth2Client-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-NXOAuth2Client-Private.xcconfig"; sourceTree = "<group>"; };
-		0E273A23D1360D6138EF0E38 /* SCConnectToSoundCloudTitleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCConnectToSoundCloudTitleView.h; path = Sources/SoundCloudUI/SCConnectToSoundCloudTitleView.h; sourceTree = "<group>"; };
-		0F4B7AAD3514C21FC1BCBF59 /* SCCoverImageButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCoverImageButton.h; path = Sources/SoundCloudUI/SCCoverImageButton.h; sourceTree = "<group>"; };
-		103EB983CC3A286FCC7D7AB4 /* SCAddConnectionViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAddConnectionViewControllerDelegate.h; path = Sources/SoundCloudUI/SCAddConnectionViewControllerDelegate.h; sourceTree = "<group>"; };
-		13995AFE3FF42D17D909CBA4 /* NXOAuth2FileStreamWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2FileStreamWrapper.h; path = Sources/OAuth2Client/NXOAuth2FileStreamWrapper.h; sourceTree = "<group>"; };
-		1547CA2571BE4141F37D6CB6 /* NXOAuth2PostBodyStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2PostBodyStream.m; path = Sources/OAuth2Client/NXOAuth2PostBodyStream.m; sourceTree = "<group>"; };
-		17246C6858A9BD1B69D5D77B /* OHParagraphStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHParagraphStyle.h; path = OHAttributedLabel/Source/OHParagraphStyle.h; sourceTree = "<group>"; };
-		17BCD5DC14A6771C55A884C2 /* SCSharingMailPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSharingMailPickerController.h; path = Sources/SoundCloudUI/SCSharingMailPickerController.h; sourceTree = "<group>"; };
-		18CB107A36235E494C37E8FC /* NXOAuth2AccountStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2AccountStore.h; path = Sources/OAuth2Client/NXOAuth2AccountStore.h; sourceTree = "<group>"; };
-		1A608FD65E25EAF7A7317E18 /* OHTouchesGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHTouchesGestureRecognizer.m; path = OHAttributedLabel/Source/OHTouchesGestureRecognizer.m; sourceTree = "<group>"; };
-		1B655BECA6DFD1B2BE9AF2FE /* SCDrawing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCDrawing.m; path = Sources/SoundCloudUI/SCDrawing.m; sourceTree = "<group>"; };
-		1C991C07E3508C12268C3242 /* OHAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHAttributedLabel.h; path = OHAttributedLabel/Source/OHAttributedLabel.h; sourceTree = "<group>"; };
-		1FEBE47ECC6C237418F0D751 /* SCFoursquarePlacePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFoursquarePlacePickerController.h; path = Sources/SoundCloudUI/SCFoursquarePlacePickerController.h; sourceTree = "<group>"; };
-		219C503B9CD6697D8E3A8E49 /* UIImage+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SoundCloudUI.m"; path = "Sources/CocoaAdditions/UIImage+SoundCloudUI.m"; sourceTree = "<group>"; };
-		227BF8B1211583A9A7D84E02 /* UIDevice+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+SoundCloudUI.h"; path = "Sources/CocoaAdditions/UIDevice+SoundCloudUI.h"; sourceTree = "<group>"; };
-		24EA45A967591EDE3399257C /* UIDevice+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+SoundCloudUI.m"; path = "Sources/CocoaAdditions/UIDevice+SoundCloudUI.m"; sourceTree = "<group>"; };
-		264615859C40845254EEAD0B /* SCSoundCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSoundCloud.m; path = Sources/SoundCloudAPI/SCSoundCloud.m; sourceTree = "<group>"; };
-		2AF36C6D8A0BA954DEF118B0 /* Pods-HelenOlhausen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen.debug.xcconfig"; sourceTree = "<group>"; };
-		2C1787573FAE2CBCCA30A13B /* Pods-HelenOlhausen-NXOAuth2Client-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelenOlhausen-NXOAuth2Client-dummy.m"; sourceTree = "<group>"; };
-		2D2CE4636F77AC15C2CEFC6E /* NXOAuth2AccessToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2AccessToken.m; path = Sources/OAuth2Client/NXOAuth2AccessToken.m; sourceTree = "<group>"; };
-		310B477EA882D56E5650B29B /* SCSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSwitch.h; path = Sources/SoundCloudUI/SCSwitch.h; sourceTree = "<group>"; };
-		3272E59A1E072183954CE0BC /* NXOAuth2Connection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2Connection.m; path = Sources/OAuth2Client/NXOAuth2Connection.m; sourceTree = "<group>"; };
-		34A5608423FF4039C8B418DA /* libPods-HelenOlhausen-NXOAuth2Client.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelenOlhausen-NXOAuth2Client.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3548FFC20BC4748BAD767841 /* Pods-HelenOlhausen-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelenOlhausen-environment.h"; sourceTree = "<group>"; };
-		357C22A236C911822E767FC9 /* NXOAuth2Client.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2Client.h; path = Sources/OAuth2Client/NXOAuth2Client.h; sourceTree = "<group>"; };
-		35CA3658EAA55020EFC77AC1 /* SCGradientButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCGradientButton.m; path = Sources/SoundCloudUI/SCGradientButton.m; sourceTree = "<group>"; };
-		35E474FC2C2E4BD9F43AF15F /* Pods-HelenOlhausen-NXOAuth2Client.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-NXOAuth2Client.xcconfig"; sourceTree = "<group>"; };
-		368877C6497EE476D0720251 /* Pods-HelenOlhausen-CocoaSoundCloudUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelenOlhausen-CocoaSoundCloudUI-prefix.pch"; sourceTree = "<group>"; };
-		37A1956D86591B106F60E61D /* SCAddConnectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAddConnectionViewController.h; path = Sources/SoundCloudUI/SCAddConnectionViewController.h; sourceTree = "<group>"; };
-		39BA3C5B72AAC7B4D68C52F4 /* SCSwitchLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSwitchLabel.m; path = Sources/SoundCloudUI/SCSwitchLabel.m; sourceTree = "<group>"; };
-		3B82F7703E738C0EB3CD3669 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3CC62C35CFEE2558349E0C64 /* Pods-HelenOlhausen-CocoaSoundCloudUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-CocoaSoundCloudUI.xcconfig"; sourceTree = "<group>"; };
-		3D8A88FB8B655DA598C65F11 /* NSString+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SoundCloudUI.m"; path = "Sources/CocoaAdditions/NSString+SoundCloudUI.m"; sourceTree = "<group>"; };
-		3DEC3273924D88F405F65BC0 /* OHTouchesGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHTouchesGestureRecognizer.h; path = OHAttributedLabel/Source/OHTouchesGestureRecognizer.h; sourceTree = "<group>"; };
-		3E7E13FA4D1E8BD0C496E14D /* SCCoverImageButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCoverImageButton.m; path = Sources/SoundCloudUI/SCCoverImageButton.m; sourceTree = "<group>"; };
-		41BFD2184B4D35096A816361 /* SCLoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLoginViewController.h; path = Sources/SoundCloudUI/SCLoginViewController.h; sourceTree = "<group>"; };
-		42363DAF1C5CFFF8F29D4F7D /* SCHorizontalLineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCHorizontalLineView.m; path = Sources/SoundCloudUI/SCHorizontalLineView.m; sourceTree = "<group>"; };
-		434596A0B67F87E7BD7AD1B4 /* SCRecordingSaveViewControllerHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordingSaveViewControllerHeaderView.m; path = Sources/SoundCloudUI/SCRecordingSaveViewControllerHeaderView.m; sourceTree = "<group>"; };
-		43ADEC4533C0C5B73739B520 /* NSData+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SoundCloudUI.m"; path = "Sources/CocoaAdditions/NSData+SoundCloudUI.m"; sourceTree = "<group>"; };
-		43AF70DD51908CDF73BCC1D7 /* QuartzCore+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QuartzCore+SoundCloudUI.m"; path = "Sources/CocoaAdditions/QuartzCore+SoundCloudUI.m"; sourceTree = "<group>"; };
-		45332211A9ADEAD6D0AC9935 /* Pods-HelenOlhausen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen.release.xcconfig"; sourceTree = "<group>"; };
-		46D074B2F1640EFA65CDA610 /* CoreTextUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoreTextUtils.m; path = OHAttributedLabel/PrivateUtils/CoreTextUtils.m; sourceTree = "<group>"; };
-		4764493D22DC2A12CB11B0D0 /* SCAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAlertView.m; path = Sources/SoundCloudUI/SCAlertView.m; sourceTree = "<group>"; };
-		4C1D0EACC731F442E6859CEB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		4DFC143923FD95A06198B0A4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		4ECDEECF98FF73BC0E4955D1 /* NXOAuth2AccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2AccessToken.h; path = Sources/OAuth2Client/NXOAuth2AccessToken.h; sourceTree = "<group>"; };
-		5094CA88756F7E45C54D0A50 /* UIViewController+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SoundCloudUI.m"; path = "Sources/CocoaAdditions/UIViewController+SoundCloudUI.m"; sourceTree = "<group>"; };
-		50B5F74290C48D8815782BB5 /* SCUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCUI.h; path = Sources/SoundCloudUI/SCUI.h; sourceTree = "<group>"; };
-		521750BB32208974ED49FA9E /* OHParagraphStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHParagraphStyle.m; path = OHAttributedLabel/Source/OHParagraphStyle.m; sourceTree = "<group>"; };
-		54035EC3742251D1DA7BCC62 /* SCCredentialsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCredentialsView.h; path = Sources/SoundCloudUI/SCCredentialsView.h; sourceTree = "<group>"; };
-		5642C99DBB8A2CCFD5564401 /* SCConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCConstants.h; path = Sources/SoundCloudAPI/SCConstants.h; sourceTree = "<group>"; };
-		56E7ABC2979E146633FDCE2F /* libPods-HelenOlhausen-CocoaSoundCloudUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelenOlhausen-CocoaSoundCloudUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		58F4EA5D088C6F5BEFF8BB79 /* SCRecordingUploadProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordingUploadProgressView.h; path = Sources/SoundCloudUI/SCRecordingUploadProgressView.h; sourceTree = "<group>"; };
-		5940551018C3FC4568FCAC9C /* SCHorizontalLineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCHorizontalLineView.h; path = Sources/SoundCloudUI/SCHorizontalLineView.h; sourceTree = "<group>"; };
-		59DCFD020E483C176842E43F /* SCBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCBundle.m; path = Sources/SoundCloudUI/SCBundle.m; sourceTree = "<group>"; };
-		5BCD8B6F2D74587D2937A444 /* Pods-HelenOlhausen-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HelenOlhausen-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C544B92640043E0B76F11EF /* NSString+NXOAuth2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+NXOAuth2.m"; path = "Sources/NSString+NXOAuth2.m"; sourceTree = "<group>"; };
-		5C889FDA6C9F8122B2E940F9 /* NSTextCheckingResult+ExtendedURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTextCheckingResult+ExtendedURL.h"; path = "OHAttributedLabel/Source/NSTextCheckingResult+ExtendedURL.h"; sourceTree = "<group>"; };
-		5CF2C6A22DD9CD6B3A689357 /* SCSoundCloud+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCSoundCloud+Private.m"; path = "Sources/SoundCloudAPI/SCSoundCloud+Private.m"; sourceTree = "<group>"; };
-		5D5158989B4739CEEAEE3067 /* SCUIErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCUIErrors.h; path = Sources/SoundCloudUI/SCUIErrors.h; sourceTree = "<group>"; };
-		5EA4D1A3725498044715145F /* UIView+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SoundCloudUI.m"; path = "Sources/CocoaAdditions/UIView+SoundCloudUI.m"; sourceTree = "<group>"; };
-		5F013F17B683E2288FD44A25 /* SCAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAccount.m; path = Sources/SoundCloudAPI/SCAccount.m; sourceTree = "<group>"; };
-		5FF83B0F8EF085201E82803C /* OHASBasicMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHASBasicMarkupParser.m; path = OHAttributedLabel/TagParsers/OHASBasicMarkupParser.m; sourceTree = "<group>"; };
-		620846D3C2E285133A53C08D /* NXOAuth2Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2Request.h; path = Sources/OAuth2Client/NXOAuth2Request.h; sourceTree = "<group>"; };
-		65BE63420436CE43DF841BB7 /* SCUnderlinedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCUnderlinedButton.m; path = Sources/SoundCloudUI/SCUnderlinedButton.m; sourceTree = "<group>"; };
-		686F87238573165F3057FC94 /* NSData+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SoundCloudUI.h"; path = "Sources/CocoaAdditions/NSData+SoundCloudUI.h"; sourceTree = "<group>"; };
-		6A6055475F4E1C7BDA6B58A7 /* SCAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAPI.h; path = Sources/SoundCloudAPI/SCAPI.h; sourceTree = "<group>"; };
-		6A8CEE9D1D44AF9AC15378D2 /* NSTextCheckingResult+ExtendedURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTextCheckingResult+ExtendedURL.m"; path = "OHAttributedLabel/Source/NSTextCheckingResult+ExtendedURL.m"; sourceTree = "<group>"; };
-		6C009A98CD3B3FCCD0757DB3 /* SCSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSwitch.m; path = Sources/SoundCloudUI/SCSwitch.m; sourceTree = "<group>"; };
-		6CFE997F078DC80BF7DB2203 /* NXOAuth2FileStreamWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2FileStreamWrapper.m; path = Sources/OAuth2Client/NXOAuth2FileStreamWrapper.m; sourceTree = "<group>"; };
-		71B04832E241512E487F6F1E /* Pods-HelenOlhausen-OHAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelenOlhausen-OHAttributedLabel-dummy.m"; sourceTree = "<group>"; };
-		73DCA4938C5712414E98FEA5 /* UIColor+SoundCloudUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SoundCloudUI.m"; path = "Sources/CocoaAdditions/UIColor+SoundCloudUI.m"; sourceTree = "<group>"; };
-		744ACE79A27E7DE197E80DD9 /* SCAccount+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCAccount+Private.m"; path = "Sources/SoundCloudAPI/SCAccount+Private.m"; sourceTree = "<group>"; };
-		75347C4ED6D968A73D0824CD /* SCLoginView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCLoginView.h; path = Sources/SoundCloudUI/SCLoginView.h; sourceTree = "<group>"; };
-		7640E977535CA66EB1821999 /* NSString+NXOAuth2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+NXOAuth2.h"; path = "Sources/NSString+NXOAuth2.h"; sourceTree = "<group>"; };
-		776DC0F9B466CD2A05380343 /* SCUnderlinedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCUnderlinedButton.h; path = Sources/SoundCloudUI/SCUnderlinedButton.h; sourceTree = "<group>"; };
-		77850E8E87580DEE95C36044 /* NXOAuth2Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2Constants.h; path = Sources/OAuth2Client/NXOAuth2Constants.h; sourceTree = "<group>"; };
-		780B399BD02EA44406EBBB95 /* SoundCloud.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
-		795870929E61ACC1617E9FE2 /* Pods-HelenOlhausen-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelenOlhausen-resources.sh"; sourceTree = "<group>"; };
-		79F9468C4512413A2F1A2942 /* OHASBasicMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHASBasicMarkupParser.h; path = OHAttributedLabel/TagParsers/OHASBasicMarkupParser.h; sourceTree = "<group>"; };
-		7BF5492A06FE66C4F1D76BF2 /* SCShareToSoundCloudTitleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCShareToSoundCloudTitleView.h; path = Sources/SoundCloudUI/SCShareToSoundCloudTitleView.h; sourceTree = "<group>"; };
-		7C50EC2847871D9E1363214F /* SCRecordingUploadProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordingUploadProgressView.m; path = Sources/SoundCloudUI/SCRecordingUploadProgressView.m; sourceTree = "<group>"; };
-		7E49C4217B019671DEE06AA1 /* UIView+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SoundCloudUI.h"; path = "Sources/CocoaAdditions/UIView+SoundCloudUI.h"; sourceTree = "<group>"; };
-		7EB60DDEA814D8A4E353AB12 /* SCConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCConstants.m; path = Sources/SoundCloudAPI/SCConstants.m; sourceTree = "<group>"; };
-		7EE7626A1AD83F197B3D6E9C /* NXOAuth2ClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2ClientDelegate.h; path = Sources/OAuth2Client/NXOAuth2ClientDelegate.h; sourceTree = "<group>"; };
-		8102ACA338539B7BF534A334 /* SCGradientButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCGradientButton.h; path = Sources/SoundCloudUI/SCGradientButton.h; sourceTree = "<group>"; };
-		85F7139D6A0189209C00E828 /* SCRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRequest.h; path = Sources/SoundCloudAPI/SCRequest.h; sourceTree = "<group>"; };
-		872B800AA3DB51A8BAC87264 /* NXOAuth2Account+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NXOAuth2Account+Private.h"; sourceTree = "<group>"; };
-		875ACE7B03C91E431BEC1CAD /* SCShareToSoundCloudTitleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCShareToSoundCloudTitleView.m; path = Sources/SoundCloudUI/SCShareToSoundCloudTitleView.m; sourceTree = "<group>"; };
-		882A48D9EA2B94A08B6CFF88 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		884D800AFBC406DDB8F585FA /* SCSharingMailPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCSharingMailPickerController.m; path = Sources/SoundCloudUI/SCSharingMailPickerController.m; sourceTree = "<group>"; };
-		8945E9E525A226120C0B04D0 /* SCTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCTextField.m; path = Sources/SoundCloudUI/SCTextField.m; sourceTree = "<group>"; };
-		8BCF2A007C7BF341E5EDF265 /* Pods-HelenOlhausen-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelenOlhausen-acknowledgements.plist"; sourceTree = "<group>"; };
-		8C49FB3C4444860FF02B015B /* NXOAuth2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2.h; path = Sources/OAuth2Client/NXOAuth2.h; sourceTree = "<group>"; };
-		8CB16C6FFCF2C7A2ACBC1977 /* OHAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHAttributedLabel.m; path = OHAttributedLabel/Source/OHAttributedLabel.m; sourceTree = "<group>"; };
-		8E3A2235DF3ED419E6BA98E8 /* OHASBasicHTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHASBasicHTMLParser.h; path = OHAttributedLabel/TagParsers/OHASBasicHTMLParser.h; sourceTree = "<group>"; };
-		915B673238E9DE8A73B42637 /* NSString+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SoundCloudUI.h"; path = "Sources/CocoaAdditions/NSString+SoundCloudUI.h"; sourceTree = "<group>"; };
-		935A4C4AB307E46D1070195B /* CoreTextUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreTextUtils.h; path = OHAttributedLabel/PrivateUtils/CoreTextUtils.h; sourceTree = "<group>"; };
-		9362CCBBCF0DEB140C6AA22A /* NXOAuth2TrustDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2TrustDelegate.h; path = Sources/OAuth2Client/NXOAuth2TrustDelegate.h; sourceTree = "<group>"; };
-		9380F3B4E42ECC29297A3BFF /* OHASMarkupParserBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHASMarkupParserBase.h; path = OHAttributedLabel/TagParsers/OHASMarkupParserBase.h; sourceTree = "<group>"; };
-		97468D8515683AE1788CF521 /* SCFoursquarePlacePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCFoursquarePlacePickerController.m; path = Sources/SoundCloudUI/SCFoursquarePlacePickerController.m; sourceTree = "<group>"; };
-		9A44B253CEC146F21D52CC35 /* NXOAuth2Request.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2Request.m; path = Sources/OAuth2Client/NXOAuth2Request.m; sourceTree = "<group>"; };
-		9E217F04B47F5C70853AEEC8 /* NSURL+NXOAuth2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+NXOAuth2.h"; path = "Sources/NSURL+NXOAuth2.h"; sourceTree = "<group>"; };
-		9F38F1BB9285E600CEDB3CE8 /* SCAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAccount.h; path = Sources/SoundCloudAPI/SCAccount.h; sourceTree = "<group>"; };
-		9F661BAA3182184E679EA03D /* UIImage+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SoundCloudUI.h"; path = "Sources/CocoaAdditions/UIImage+SoundCloudUI.h"; sourceTree = "<group>"; };
-		A33ECD0CA5D0BE83B7289852 /* SCSwitchLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSwitchLabel.h; path = Sources/SoundCloudUI/SCSwitchLabel.h; sourceTree = "<group>"; };
-		A6749479FA6890DFD194BA8D /* SCLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLoginViewController.m; path = Sources/SoundCloudUI/SCLoginViewController.m; sourceTree = "<group>"; };
-		AC6B150299D850518222C1D9 /* Pods-HelenOlhausen-OHAttributedLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-OHAttributedLabel-Private.xcconfig"; sourceTree = "<group>"; };
-		ADB4B4045F8EDD9EA02F65DA /* NXOAuth2AccountStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2AccountStore.m; path = Sources/OAuth2Client/NXOAuth2AccountStore.m; sourceTree = "<group>"; };
-		B1405F8EC2B7CE7C8FE03C6A /* NXOAuth2ConnectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2ConnectionDelegate.h; path = Sources/OAuth2Client/NXOAuth2ConnectionDelegate.h; sourceTree = "<group>"; };
-		B90BC604700B236A41554FC6 /* SCShareViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCShareViewController.m; path = Sources/SoundCloudUI/SCShareViewController.m; sourceTree = "<group>"; };
-		B9BF83E4AFBE9686819C1130 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-CocoaSoundCloudAPI-Private.xcconfig"; sourceTree = "<group>"; };
-		BA2D7761DF18BAC9274C5062 /* libPods-HelenOlhausen-OHAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelenOlhausen-OHAttributedLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD97096C42BEDC13D0BB030 /* SCAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCAlertView.h; path = Sources/SoundCloudUI/SCAlertView.h; sourceTree = "<group>"; };
-		BB1C30F2D59B6CA8A871CBE9 /* NXOAuth2PostBodyPart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2PostBodyPart.h; path = Sources/OAuth2Client/NXOAuth2PostBodyPart.h; sourceTree = "<group>"; };
-		C000201CC658C0F573D31102 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Attributes.h"; path = "OHAttributedLabel/Source/NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
-		C02140D20B39460E77038B0D /* SCNameAndEmailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCNameAndEmailCell.h; path = Sources/SoundCloudUI/SCNameAndEmailCell.h; sourceTree = "<group>"; };
-		C07E71158F33167BF6818BF5 /* SCTableCellBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCTableCellBackgroundView.h; path = Sources/SoundCloudUI/SCTableCellBackgroundView.h; sourceTree = "<group>"; };
-		C128EA5AEC303BCDE770CF1C /* OHASMarkupParserBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHASMarkupParserBase.m; path = OHAttributedLabel/TagParsers/OHASMarkupParserBase.m; sourceTree = "<group>"; };
-		C379E1FA4468DAD85C8AE898 /* NXOAuth2PostBodyStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2PostBodyStream.h; path = Sources/OAuth2Client/NXOAuth2PostBodyStream.h; sourceTree = "<group>"; };
-		C49EC689FBBC38038DCB2A80 /* SCAccount+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCAccount+Private.h"; path = "Sources/SoundCloudAPI/SCAccount+Private.h"; sourceTree = "<group>"; };
-		C7D30AB1D3B60317F9700206 /* libPods-HelenOlhausen-CocoaSoundCloudAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelenOlhausen-CocoaSoundCloudAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98160E63B78967EA4F151D9 /* SCDrawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCDrawing.h; path = Sources/SoundCloudUI/SCDrawing.h; sourceTree = "<group>"; };
-		CAF37347BB1740FFC0AFA558 /* NSData+NXOAuth2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NXOAuth2.m"; path = "Sources/NSData+NXOAuth2.m"; sourceTree = "<group>"; };
-		CB15C011A40E13103BC08F47 /* SCFoursquarePlacePickerControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCFoursquarePlacePickerControllerDelegate.h; path = Sources/SoundCloudUI/SCFoursquarePlacePickerControllerDelegate.h; sourceTree = "<group>"; };
-		CB4ABAAF479A23ABE417D018 /* Pods-HelenOlhausen-OHAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-OHAttributedLabel.xcconfig"; sourceTree = "<group>"; };
-		CB8BA95F7A53186D61FCD0DE /* SCSoundCloudAPI-Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCSoundCloudAPI-Private.h"; path = "Sources/SoundCloudAPI/SCSoundCloudAPI-Private.h"; sourceTree = "<group>"; };
-		D0F5A069F80618B01F5D9108 /* OHASBasicHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHASBasicHTMLParser.m; path = OHAttributedLabel/TagParsers/OHASBasicHTMLParser.m; sourceTree = "<group>"; };
-		D8785D2EA264984EE1467866 /* SCNameAndEmailCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCNameAndEmailCell.m; path = Sources/SoundCloudUI/SCNameAndEmailCell.m; sourceTree = "<group>"; };
-		D91471A769FE7BC441D83F2B /* NXOAuth2Account.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2Account.h; path = Sources/OAuth2Client/NXOAuth2Account.h; sourceTree = "<group>"; };
-		D9CDB1D664D04C128133D521 /* Pods-HelenOlhausen-CocoaSoundCloudUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelenOlhausen-CocoaSoundCloudUI-dummy.m"; sourceTree = "<group>"; };
-		DB410D75CAB3DAAE20C17DD3 /* SCTableCellBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCTableCellBackgroundView.m; path = Sources/SoundCloudUI/SCTableCellBackgroundView.m; sourceTree = "<group>"; };
-		DD60609BEE59C87BD7D22700 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelenOlhausen-CocoaSoundCloudAPI-dummy.m"; sourceTree = "<group>"; };
-		DD92B3901DC8EC22717C83DD /* SCUIErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCUIErrors.m; path = Sources/SoundCloudUI/SCUIErrors.m; sourceTree = "<group>"; };
-		DF4554FC25E4CD89F8F72B23 /* SCConnectToSoundCloudTitleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCConnectToSoundCloudTitleView.m; path = Sources/SoundCloudUI/SCConnectToSoundCloudTitleView.m; sourceTree = "<group>"; };
-		E045B7BBE61E48D3D4FCAAA9 /* SCRecordingSaveViewControllerHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordingSaveViewControllerHeaderView.h; path = Sources/SoundCloudUI/SCRecordingSaveViewControllerHeaderView.h; sourceTree = "<group>"; };
-		E0FCDFCC0D05E60D26F909AA /* SCSoundCloud+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCSoundCloud+Private.h"; path = "Sources/SoundCloudAPI/SCSoundCloud+Private.h"; sourceTree = "<group>"; };
-		E224D3FBECFF457E4EFF281F /* Pods-HelenOlhausen-NXOAuth2Client-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelenOlhausen-NXOAuth2Client-prefix.pch"; sourceTree = "<group>"; };
-		E39853685E4F904ACC26FF6D /* SCSoundCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCSoundCloud.h; path = Sources/SoundCloudAPI/SCSoundCloud.h; sourceTree = "<group>"; };
-		E3D583437F0F7279FB70B398 /* NXOAuth2PostBodyPart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2PostBodyPart.m; path = Sources/OAuth2Client/NXOAuth2PostBodyPart.m; sourceTree = "<group>"; };
-		E482C6C863C8C08750364F44 /* UIViewController+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SoundCloudUI.h"; path = "Sources/CocoaAdditions/UIViewController+SoundCloudUI.h"; sourceTree = "<group>"; };
-		E5F50BC241F19FCF60EEC70B /* NXOAuth2Connection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NXOAuth2Connection.h; path = Sources/OAuth2Client/NXOAuth2Connection.h; sourceTree = "<group>"; };
-		E8937986FC3E6AB21F465E3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E8E8256EA0131AD8FDF016D8 /* SCLoginView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLoginView.m; path = Sources/SoundCloudUI/SCLoginView.m; sourceTree = "<group>"; };
-		E958480B24BF922B4524DB3A /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Attributes.m"; path = "OHAttributedLabel/Source/NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
-		EA28C7577318EE99807F19AF /* Pods-HelenOlhausen-OHAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelenOlhausen-OHAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
-		ED55999C6536CAF6CAB9A2F6 /* SCTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCTextField.h; path = Sources/SoundCloudUI/SCTextField.h; sourceTree = "<group>"; };
-		EDDF84972E3D340B28601F6C /* SCRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRequest.m; path = Sources/SoundCloudAPI/SCRequest.m; sourceTree = "<group>"; };
-		EE3E1A4F12D376E882CE0887 /* SCRecordingSaveViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCRecordingSaveViewController.h; path = Sources/SoundCloudUI/SCRecordingSaveViewController.h; sourceTree = "<group>"; };
-		EF5938120E5232D89432891C /* NSURL+NXOAuth2.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+NXOAuth2.m"; path = "Sources/NSURL+NXOAuth2.m"; sourceTree = "<group>"; };
-		EFDDF679D6C8218E039FBCDA /* SCShareViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCShareViewController.h; path = Sources/SoundCloudUI/SCShareViewController.h; sourceTree = "<group>"; };
-		F07111D3A7A430579DB6F33F /* SCRecordingSaveViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCRecordingSaveViewController.m; path = Sources/SoundCloudUI/SCRecordingSaveViewController.m; sourceTree = "<group>"; };
-		F1E9FE2ECCEC404BB2FCBE60 /* SCAddConnectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCAddConnectionViewController.m; path = Sources/SoundCloudUI/SCAddConnectionViewController.m; sourceTree = "<group>"; };
-		F219A36F4083A01919C3FDC4 /* QuartzCore+SoundCloudUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QuartzCore+SoundCloudUI.h"; path = "Sources/CocoaAdditions/QuartzCore+SoundCloudUI.h"; sourceTree = "<group>"; };
-		F34904814AC9DC4FE2CEC38D /* NSData+NXOAuth2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NXOAuth2.h"; path = "Sources/NSData+NXOAuth2.h"; sourceTree = "<group>"; };
-		FAFFEE7FD0CADA828F47AA7B /* SCBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCBundle.h; path = Sources/SoundCloudUI/SCBundle.h; sourceTree = "<group>"; };
-		FB70463C3884A899EC0C5B7B /* NXOAuth2Constants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2Constants.m; path = Sources/OAuth2Client/NXOAuth2Constants.m; sourceTree = "<group>"; };
-		FC3231524B1B502F77EDB1E0 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelenOlhausen-CocoaSoundCloudAPI-prefix.pch"; sourceTree = "<group>"; };
-		FEABF6A3721886452431B5D9 /* NXOAuth2Account.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2Account.m; path = Sources/OAuth2Client/NXOAuth2Account.m; sourceTree = "<group>"; };
-		FF89FE0FA83B340B05A9A91A /* NXOAuth2Client.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NXOAuth2Client.m; path = Sources/OAuth2Client/NXOAuth2Client.m; sourceTree = "<group>"; };
+		03323EBF0EDF18EA9BD5B5B8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		05149D5E341C7EAE6BCC6CB3 /* Pods-HelenOlhausen-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelenOlhausen-environment.h"; sourceTree = "<group>"; };
+		07EF1D9B9A69E7BC9E80AE9E /* Pods-HelenOlhausen-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		0D97792493B353CCC6816B8E /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		1495F771A4451C35C0197694 /* libPods-HelenOlhausen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelenOlhausen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		160B2DB92DD525470B02A456 /* Pods-HelenOlhausen-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HelenOlhausen-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16BA664B4230106CB29031FF /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		19DFB6039FA4B960796F9C55 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		1B7BC6D56E9E1B4A3C92BC99 /* Pods-HelenOlhausen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen.release.xcconfig"; sourceTree = "<group>"; };
+		1FBF3DC82DCCDEFED256CDD9 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		21C6344C98E728D032647281 /* Pods-HelenOlhausen-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelenOlhausen-acknowledgements.plist"; sourceTree = "<group>"; };
+		256E588846192BB3B0E6ACB2 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		282338164E2577EFCA95F2E6 /* Pods-HelenOlhausen-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		2A81A5EBBED0D26E76423AE2 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		2B6B4BAD762779631968E717 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		2BF903D5CC10BCC38C197ED8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		35754CB1018EAD60FFA18F3A /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		395D91415F4880DE92801433 /* Pods-HelenOlhausen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelenOlhausen.debug.xcconfig"; sourceTree = "<group>"; };
+		3BA1FF7B96AAD981FEC636C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3C822C5B5DC4C169886D0D4B /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		3D230BFEC0C4B4BCF9E49993 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		45D67A213B5DA780A8BE722D /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		46561F70AA6044457A76794A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		510F8D1C98D63844B05F1FEF /* Pods-HelenOlhausen-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelenOlhausen-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		61F8F8019992510214471850 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		682735848CC059BF81FDE35C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		6A1A8507DA31354F403B17C0 /* Pods-HelenOlhausen-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelenOlhausen-resources.sh"; sourceTree = "<group>"; };
+		6BA1EB6821A4E6DEFED3A65D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		6D0D0EB5F62269296C608850 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		6D8ED22AA7F0D81576D34D45 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		73AC5FCEBED727CD38E4E92F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		7538972A596760C5D89C104B /* libPods-HelenOlhausen-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelenOlhausen-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		789069EDB829AF6705E62D14 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		82E6C6BFC1691736AB99AB20 /* Pods-HelenOlhausen-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelenOlhausen-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		84157283A2B2562988658799 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		887D719A6A50B6012A8C4976 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		8B1B974CFE5AE8BF477CB8B8 /* Pods-HelenOlhausen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelenOlhausen-dummy.m"; sourceTree = "<group>"; };
+		8FBBF44017F75885074DCADA /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		91D0153C5E0165FF46C12001 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		98269A931D4B327B59CBE69E /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		AD095942331E81A97D9B4EE6 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		B93BB2C284DA0CA0290C368A /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		C174AACA5ED7E480F0931458 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		C42439426E8650101FB037F9 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		C5193B87E36235E4429B00D0 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		CE6187EE0EF3538FCEB968D8 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		D7A750968543BD0F98B85146 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		D9FC1DCD90D83B7C80164BB5 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		DA49B48261BF932DCA55DF9E /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		DB2D6AEA6A943388F665298C /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		E01B49DE6A8C6F3448E90F99 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		EAD98B388CA338B3006C50E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F35155B61C35A14077566357 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F4473C11C35B207DD956A3EE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		FE794C31AFABBE210D7B35AF /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0DF4169788A247429B07518E /* Frameworks */ = {
+		20AB986FC37AB65E67457BCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB804AD0976FE4F43DEB33A /* Foundation.framework in Frameworks */,
+				BB9B46592EF09B1C706644B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		270E9AB7BABF4ABD0E1FBCA4 /* Frameworks */ = {
+		89128D408EE18A51CC73DA8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4892867655D4729970FA7F5 /* CoreText.framework in Frameworks */,
-				80583DF6490D0724CCE8E9C5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DE086832310D0CE66A6C1BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				777D2EB7923D4834415423C1 /* CoreLocation.framework in Frameworks */,
-				F1C7C49EC71644A3C2B0F7EB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		653EE63EDB6679326F0F80FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F97D39131C41A4D201904159 /* Foundation.framework in Frameworks */,
-				7D5958CFB3AFA42883E9099B /* Security.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B32CDEEE25AEF7666E1E7EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B52ED9A8A327B39DA4CF816 /* Foundation.framework in Frameworks */,
-				382343444122FF18979F4DE5 /* Security.framework in Frameworks */,
+				AAE18C3F0DAFEE7F6715A733 /* CoreGraphics.framework in Frameworks */,
+				D2027FDA2622A90425008247 /* Foundation.framework in Frameworks */,
+				4536CA8FD5264DCF04F8CD2F /* MobileCoreServices.framework in Frameworks */,
+				A431E4B83C323838539D203E /* Security.framework in Frameworks */,
+				F02AB7632F1E169FFF0C5FCD /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0918FFB015990E8B2A66B9EF /* Support Files */ = {
+		0B2360107A4FF7E137AB14BB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				069327ACD5FF29FA4F1ED096 /* Pods-HelenOlhausen-CocoaSoundCloudAPI.xcconfig */,
-				B9BF83E4AFBE9686819C1130 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-Private.xcconfig */,
-				DD60609BEE59C87BD7D22700 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-dummy.m */,
-				FC3231524B1B502F77EDB1E0 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-prefix.pch */,
+				07EF1D9B9A69E7BC9E80AE9E /* Pods-HelenOlhausen-AFNetworking.xcconfig */,
+				282338164E2577EFCA95F2E6 /* Pods-HelenOlhausen-AFNetworking-Private.xcconfig */,
+				510F8D1C98D63844B05F1FEF /* Pods-HelenOlhausen-AFNetworking-dummy.m */,
+				82E6C6BFC1691736AB99AB20 /* Pods-HelenOlhausen-AFNetworking-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-HelenOlhausen-CocoaSoundCloudAPI";
+			path = "../Target Support Files/Pods-HelenOlhausen-AFNetworking";
 			sourceTree = "<group>";
 		};
-		322DB4FA69FE294229E248D5 /* CocoaSoundCloudAPI */ = {
+		0D295F4434B4275CDEFB0F9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A6055475F4E1C7BDA6B58A7 /* SCAPI.h */,
-				9F38F1BB9285E600CEDB3CE8 /* SCAccount.h */,
-				5F013F17B683E2288FD44A25 /* SCAccount.m */,
-				C49EC689FBBC38038DCB2A80 /* SCAccount+Private.h */,
-				744ACE79A27E7DE197E80DD9 /* SCAccount+Private.m */,
-				5642C99DBB8A2CCFD5564401 /* SCConstants.h */,
-				7EB60DDEA814D8A4E353AB12 /* SCConstants.m */,
-				85F7139D6A0189209C00E828 /* SCRequest.h */,
-				EDDF84972E3D340B28601F6C /* SCRequest.m */,
-				E39853685E4F904ACC26FF6D /* SCSoundCloud.h */,
-				264615859C40845254EEAD0B /* SCSoundCloud.m */,
-				E0FCDFCC0D05E60D26F909AA /* SCSoundCloud+Private.h */,
-				5CF2C6A22DD9CD6B3A689357 /* SCSoundCloud+Private.m */,
-				CB8BA95F7A53186D61FCD0DE /* SCSoundCloudAPI-Private.h */,
-				0918FFB015990E8B2A66B9EF /* Support Files */,
-			);
-			path = CocoaSoundCloudAPI;
-			sourceTree = "<group>";
-		};
-		3396E084E3FDE235CFC30114 /* OHAttributedLabel */ = {
-			isa = PBXGroup;
-			children = (
-				935A4C4AB307E46D1070195B /* CoreTextUtils.h */,
-				46D074B2F1640EFA65CDA610 /* CoreTextUtils.m */,
-				C000201CC658C0F573D31102 /* NSAttributedString+Attributes.h */,
-				E958480B24BF922B4524DB3A /* NSAttributedString+Attributes.m */,
-				5C889FDA6C9F8122B2E940F9 /* NSTextCheckingResult+ExtendedURL.h */,
-				6A8CEE9D1D44AF9AC15378D2 /* NSTextCheckingResult+ExtendedURL.m */,
-				8E3A2235DF3ED419E6BA98E8 /* OHASBasicHTMLParser.h */,
-				D0F5A069F80618B01F5D9108 /* OHASBasicHTMLParser.m */,
-				79F9468C4512413A2F1A2942 /* OHASBasicMarkupParser.h */,
-				5FF83B0F8EF085201E82803C /* OHASBasicMarkupParser.m */,
-				9380F3B4E42ECC29297A3BFF /* OHASMarkupParserBase.h */,
-				C128EA5AEC303BCDE770CF1C /* OHASMarkupParserBase.m */,
-				1C991C07E3508C12268C3242 /* OHAttributedLabel.h */,
-				8CB16C6FFCF2C7A2ACBC1977 /* OHAttributedLabel.m */,
-				17246C6858A9BD1B69D5D77B /* OHParagraphStyle.h */,
-				521750BB32208974ED49FA9E /* OHParagraphStyle.m */,
-				3DEC3273924D88F405F65BC0 /* OHTouchesGestureRecognizer.h */,
-				1A608FD65E25EAF7A7317E18 /* OHTouchesGestureRecognizer.m */,
-				3DA56BEBFD01E8C311930E6C /* Support Files */,
-			);
-			path = OHAttributedLabel;
-			sourceTree = "<group>";
-		};
-		3DA56BEBFD01E8C311930E6C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CB4ABAAF479A23ABE417D018 /* Pods-HelenOlhausen-OHAttributedLabel.xcconfig */,
-				AC6B150299D850518222C1D9 /* Pods-HelenOlhausen-OHAttributedLabel-Private.xcconfig */,
-				71B04832E241512E487F6F1E /* Pods-HelenOlhausen-OHAttributedLabel-dummy.m */,
-				EA28C7577318EE99807F19AF /* Pods-HelenOlhausen-OHAttributedLabel-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-HelenOlhausen-OHAttributedLabel";
-			sourceTree = "<group>";
-		};
-		4D90ADCC57D95F8CA6D661EF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				07699EBD82275F5D922D634A /* libPods-HelenOlhausen.a */,
-				C7D30AB1D3B60317F9700206 /* libPods-HelenOlhausen-CocoaSoundCloudAPI.a */,
-				56E7ABC2979E146633FDCE2F /* libPods-HelenOlhausen-CocoaSoundCloudUI.a */,
-				34A5608423FF4039C8B418DA /* libPods-HelenOlhausen-NXOAuth2Client.a */,
-				BA2D7761DF18BAC9274C5062 /* libPods-HelenOlhausen-OHAttributedLabel.a */,
+				1495F771A4451C35C0197694 /* libPods-HelenOlhausen.a */,
+				7538972A596760C5D89C104B /* libPods-HelenOlhausen-AFNetworking.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5232D46A1BC6203990A1C175 /* Resources */ = {
+		351FB353F6732E442F071323 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				780B399BD02EA44406EBBB95 /* SoundCloud.bundle */,
+				1FBF3DC82DCCDEFED256CDD9 /* AFHTTPSessionManager.h */,
+				61F8F8019992510214471850 /* AFHTTPSessionManager.m */,
+				D7A750968543BD0F98B85146 /* AFURLSessionManager.h */,
+				AD095942331E81A97D9B4EE6 /* AFURLSessionManager.m */,
 			);
-			name = Resources;
+			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		5DCE6A9071BE261ED96FBC1A /* CocoaSoundCloudUI */ = {
+		3D4F36342520779917670CAF /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				686F87238573165F3057FC94 /* NSData+SoundCloudUI.h */,
-				43ADEC4533C0C5B73739B520 /* NSData+SoundCloudUI.m */,
-				915B673238E9DE8A73B42637 /* NSString+SoundCloudUI.h */,
-				3D8A88FB8B655DA598C65F11 /* NSString+SoundCloudUI.m */,
-				F219A36F4083A01919C3FDC4 /* QuartzCore+SoundCloudUI.h */,
-				43AF70DD51908CDF73BCC1D7 /* QuartzCore+SoundCloudUI.m */,
-				37A1956D86591B106F60E61D /* SCAddConnectionViewController.h */,
-				F1E9FE2ECCEC404BB2FCBE60 /* SCAddConnectionViewController.m */,
-				103EB983CC3A286FCC7D7AB4 /* SCAddConnectionViewControllerDelegate.h */,
-				BAD97096C42BEDC13D0BB030 /* SCAlertView.h */,
-				4764493D22DC2A12CB11B0D0 /* SCAlertView.m */,
-				FAFFEE7FD0CADA828F47AA7B /* SCBundle.h */,
-				59DCFD020E483C176842E43F /* SCBundle.m */,
-				0E273A23D1360D6138EF0E38 /* SCConnectToSoundCloudTitleView.h */,
-				DF4554FC25E4CD89F8F72B23 /* SCConnectToSoundCloudTitleView.m */,
-				0F4B7AAD3514C21FC1BCBF59 /* SCCoverImageButton.h */,
-				3E7E13FA4D1E8BD0C496E14D /* SCCoverImageButton.m */,
-				54035EC3742251D1DA7BCC62 /* SCCredentialsView.h */,
-				0B1BBA4430BD4C1071CCFDCF /* SCCredentialsView.m */,
-				C98160E63B78967EA4F151D9 /* SCDrawing.h */,
-				1B655BECA6DFD1B2BE9AF2FE /* SCDrawing.m */,
-				1FEBE47ECC6C237418F0D751 /* SCFoursquarePlacePickerController.h */,
-				97468D8515683AE1788CF521 /* SCFoursquarePlacePickerController.m */,
-				CB15C011A40E13103BC08F47 /* SCFoursquarePlacePickerControllerDelegate.h */,
-				8102ACA338539B7BF534A334 /* SCGradientButton.h */,
-				35CA3658EAA55020EFC77AC1 /* SCGradientButton.m */,
-				5940551018C3FC4568FCAC9C /* SCHorizontalLineView.h */,
-				42363DAF1C5CFFF8F29D4F7D /* SCHorizontalLineView.m */,
-				75347C4ED6D968A73D0824CD /* SCLoginView.h */,
-				E8E8256EA0131AD8FDF016D8 /* SCLoginView.m */,
-				41BFD2184B4D35096A816361 /* SCLoginViewController.h */,
-				A6749479FA6890DFD194BA8D /* SCLoginViewController.m */,
-				C02140D20B39460E77038B0D /* SCNameAndEmailCell.h */,
-				D8785D2EA264984EE1467866 /* SCNameAndEmailCell.m */,
-				EE3E1A4F12D376E882CE0887 /* SCRecordingSaveViewController.h */,
-				F07111D3A7A430579DB6F33F /* SCRecordingSaveViewController.m */,
-				E045B7BBE61E48D3D4FCAAA9 /* SCRecordingSaveViewControllerHeaderView.h */,
-				434596A0B67F87E7BD7AD1B4 /* SCRecordingSaveViewControllerHeaderView.m */,
-				58F4EA5D088C6F5BEFF8BB79 /* SCRecordingUploadProgressView.h */,
-				7C50EC2847871D9E1363214F /* SCRecordingUploadProgressView.m */,
-				7BF5492A06FE66C4F1D76BF2 /* SCShareToSoundCloudTitleView.h */,
-				875ACE7B03C91E431BEC1CAD /* SCShareToSoundCloudTitleView.m */,
-				EFDDF679D6C8218E039FBCDA /* SCShareViewController.h */,
-				B90BC604700B236A41554FC6 /* SCShareViewController.m */,
-				17BCD5DC14A6771C55A884C2 /* SCSharingMailPickerController.h */,
-				884D800AFBC406DDB8F585FA /* SCSharingMailPickerController.m */,
-				310B477EA882D56E5650B29B /* SCSwitch.h */,
-				6C009A98CD3B3FCCD0757DB3 /* SCSwitch.m */,
-				A33ECD0CA5D0BE83B7289852 /* SCSwitchLabel.h */,
-				39BA3C5B72AAC7B4D68C52F4 /* SCSwitchLabel.m */,
-				C07E71158F33167BF6818BF5 /* SCTableCellBackgroundView.h */,
-				DB410D75CAB3DAAE20C17DD3 /* SCTableCellBackgroundView.m */,
-				ED55999C6536CAF6CAB9A2F6 /* SCTextField.h */,
-				8945E9E525A226120C0B04D0 /* SCTextField.m */,
-				50B5F74290C48D8815782BB5 /* SCUI.h */,
-				5D5158989B4739CEEAEE3067 /* SCUIErrors.h */,
-				DD92B3901DC8EC22717C83DD /* SCUIErrors.m */,
-				776DC0F9B466CD2A05380343 /* SCUnderlinedButton.h */,
-				65BE63420436CE43DF841BB7 /* SCUnderlinedButton.m */,
-				00F1DD98CE56F276EE3F70DE /* UIColor+SoundCloudUI.h */,
-				73DCA4938C5712414E98FEA5 /* UIColor+SoundCloudUI.m */,
-				227BF8B1211583A9A7D84E02 /* UIDevice+SoundCloudUI.h */,
-				24EA45A967591EDE3399257C /* UIDevice+SoundCloudUI.m */,
-				9F661BAA3182184E679EA03D /* UIImage+SoundCloudUI.h */,
-				219C503B9CD6697D8E3A8E49 /* UIImage+SoundCloudUI.m */,
-				7E49C4217B019671DEE06AA1 /* UIView+SoundCloudUI.h */,
-				5EA4D1A3725498044715145F /* UIView+SoundCloudUI.m */,
-				E482C6C863C8C08750364F44 /* UIViewController+SoundCloudUI.h */,
-				5094CA88756F7E45C54D0A50 /* UIViewController+SoundCloudUI.m */,
-				5232D46A1BC6203990A1C175 /* Resources */,
-				D60B5DE4F108F6B98E054293 /* Support Files */,
+				C174AACA5ED7E480F0931458 /* AFSecurityPolicy.h */,
+				3C822C5B5DC4C169886D0D4B /* AFSecurityPolicy.m */,
 			);
-			path = CocoaSoundCloudUI;
+			name = Security;
 			sourceTree = "<group>";
 		};
-		65FA34B206752813CE4D73CC /* Pods-HelenOlhausen */ = {
+		48D96E97DF74C6468FF44823 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5BCD8B6F2D74587D2937A444 /* Pods-HelenOlhausen-acknowledgements.markdown */,
-				8BCF2A007C7BF341E5EDF265 /* Pods-HelenOlhausen-acknowledgements.plist */,
-				0BE6C8CBC7CC33135A2972CE /* Pods-HelenOlhausen-dummy.m */,
-				3548FFC20BC4748BAD767841 /* Pods-HelenOlhausen-environment.h */,
-				795870929E61ACC1617E9FE2 /* Pods-HelenOlhausen-resources.sh */,
-				2AF36C6D8A0BA954DEF118B0 /* Pods-HelenOlhausen.debug.xcconfig */,
-				45332211A9ADEAD6D0AC9935 /* Pods-HelenOlhausen.release.xcconfig */,
+				EAD98B388CA338B3006C50E2 /* CoreGraphics.framework */,
+				3BA1FF7B96AAD981FEC636C0 /* Foundation.framework */,
+				03323EBF0EDF18EA9BD5B5B8 /* MobileCoreServices.framework */,
+				2BF903D5CC10BCC38C197ED8 /* Security.framework */,
+				46561F70AA6044457A76794A /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		81745DAE77596885B15EBC6A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				FE794C31AFABBE210D7B35AF /* AFNetworking.h */,
+				AC155591BA887D26D6687E4F /* NSURLConnection */,
+				351FB353F6732E442F071323 /* NSURLSession */,
+				CDB312D5A6DF91CCF92BD476 /* Reachability */,
+				3D4F36342520779917670CAF /* Security */,
+				8D445B00066CF88011356BF8 /* Serialization */,
+				0B2360107A4FF7E137AB14BB /* Support Files */,
+				92C81DEEF6FBEA8E2860EC7C /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		8C778E807C7EB8AD3E02D98D /* Pods-HelenOlhausen */ = {
+			isa = PBXGroup;
+			children = (
+				160B2DB92DD525470B02A456 /* Pods-HelenOlhausen-acknowledgements.markdown */,
+				21C6344C98E728D032647281 /* Pods-HelenOlhausen-acknowledgements.plist */,
+				8B1B974CFE5AE8BF477CB8B8 /* Pods-HelenOlhausen-dummy.m */,
+				05149D5E341C7EAE6BCC6CB3 /* Pods-HelenOlhausen-environment.h */,
+				6A1A8507DA31354F403B17C0 /* Pods-HelenOlhausen-resources.sh */,
+				395D91415F4880DE92801433 /* Pods-HelenOlhausen.debug.xcconfig */,
+				1B7BC6D56E9E1B4A3C92BC99 /* Pods-HelenOlhausen.release.xcconfig */,
 			);
 			name = "Pods-HelenOlhausen";
 			path = "Target Support Files/Pods-HelenOlhausen";
 			sourceTree = "<group>";
 		};
-		6B4412B261227368FB82C6C7 /* Pods */ = {
+		8D445B00066CF88011356BF8 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				322DB4FA69FE294229E248D5 /* CocoaSoundCloudAPI */,
-				5DCE6A9071BE261ED96FBC1A /* CocoaSoundCloudUI */,
-				EE44FB63F076C9D5EBD0D426 /* NXOAuth2Client */,
-				3396E084E3FDE235CFC30114 /* OHAttributedLabel */,
+				73AC5FCEBED727CD38E4E92F /* AFURLRequestSerialization.h */,
+				789069EDB829AF6705E62D14 /* AFURLRequestSerialization.m */,
+				C5193B87E36235E4429B00D0 /* AFURLResponseSerialization.h */,
+				F4473C11C35B207DD956A3EE /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		92C81DEEF6FBEA8E2860EC7C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DA49B48261BF932DCA55DF9E /* AFNetworkActivityIndicatorManager.h */,
+				6D8ED22AA7F0D81576D34D45 /* AFNetworkActivityIndicatorManager.m */,
+				16BA664B4230106CB29031FF /* UIActivityIndicatorView+AFNetworking.h */,
+				6D0D0EB5F62269296C608850 /* UIActivityIndicatorView+AFNetworking.m */,
+				35754CB1018EAD60FFA18F3A /* UIAlertView+AFNetworking.h */,
+				0D97792493B353CCC6816B8E /* UIAlertView+AFNetworking.m */,
+				91D0153C5E0165FF46C12001 /* UIButton+AFNetworking.h */,
+				CE6187EE0EF3538FCEB968D8 /* UIButton+AFNetworking.m */,
+				6BA1EB6821A4E6DEFED3A65D /* UIImageView+AFNetworking.h */,
+				887D719A6A50B6012A8C4976 /* UIImageView+AFNetworking.m */,
+				256E588846192BB3B0E6ACB2 /* UIKit+AFNetworking.h */,
+				E01B49DE6A8C6F3448E90F99 /* UIProgressView+AFNetworking.h */,
+				98269A931D4B327B59CBE69E /* UIProgressView+AFNetworking.m */,
+				84157283A2B2562988658799 /* UIRefreshControl+AFNetworking.h */,
+				B93BB2C284DA0CA0290C368A /* UIRefreshControl+AFNetworking.m */,
+				45D67A213B5DA780A8BE722D /* UIWebView+AFNetworking.h */,
+				D9FC1DCD90D83B7C80164BB5 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		A3AAE52B78722288439DE77E = {
+			isa = PBXGroup;
+			children = (
+				F35155B61C35A14077566357 /* Podfile */,
+				F2D0618A880A7F4366755347 /* Frameworks */,
+				B0E4D50AD056B1B4ED521E2C /* Pods */,
+				0D295F4434B4275CDEFB0F9C /* Products */,
+				C824EA0A10C4229538F17CE5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AC155591BA887D26D6687E4F /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				8FBBF44017F75885074DCADA /* AFHTTPRequestOperation.h */,
+				682735848CC059BF81FDE35C /* AFHTTPRequestOperation.m */,
+				19DFB6039FA4B960796F9C55 /* AFHTTPRequestOperationManager.h */,
+				C42439426E8650101FB037F9 /* AFHTTPRequestOperationManager.m */,
+				DB2D6AEA6A943388F665298C /* AFURLConnectionOperation.h */,
+				2A81A5EBBED0D26E76423AE2 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		B0E4D50AD056B1B4ED521E2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81745DAE77596885B15EBC6A /* AFNetworking */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		7B452A862E36A96129DF4AEE /* Targets Support Files */ = {
+		C824EA0A10C4229538F17CE5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				65FA34B206752813CE4D73CC /* Pods-HelenOlhausen */,
+				8C778E807C7EB8AD3E02D98D /* Pods-HelenOlhausen */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7EAAF64915B1B99EA41EEA20 /* iOS */ = {
+		CDB312D5A6DF91CCF92BD476 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				882A48D9EA2B94A08B6CFF88 /* CoreLocation.framework */,
-				4C1D0EACC731F442E6859CEB /* CoreText.framework */,
-				E8937986FC3E6AB21F465E3E /* Foundation.framework */,
-				4DFC143923FD95A06198B0A4 /* Security.framework */,
+				2B6B4BAD762779631968E717 /* AFNetworkReachabilityManager.h */,
+				3D230BFEC0C4B4BCF9E49993 /* AFNetworkReachabilityManager.m */,
 			);
-			name = iOS;
+			name = Reachability;
 			sourceTree = "<group>";
 		};
-		7F81A92825850D42B604CF0D /* Frameworks */ = {
+		F2D0618A880A7F4366755347 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EAAF64915B1B99EA41EEA20 /* iOS */,
+				48D96E97DF74C6468FF44823 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B4D3F86E36FC7C6088F0A936 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				35E474FC2C2E4BD9F43AF15F /* Pods-HelenOlhausen-NXOAuth2Client.xcconfig */,
-				0DEF3F4F0E8C4736F100F8FF /* Pods-HelenOlhausen-NXOAuth2Client-Private.xcconfig */,
-				2C1787573FAE2CBCCA30A13B /* Pods-HelenOlhausen-NXOAuth2Client-dummy.m */,
-				E224D3FBECFF457E4EFF281F /* Pods-HelenOlhausen-NXOAuth2Client-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-HelenOlhausen-NXOAuth2Client";
-			sourceTree = "<group>";
-		};
-		B784BDA12DE12D35233E56BD = {
-			isa = PBXGroup;
-			children = (
-				3B82F7703E738C0EB3CD3669 /* Podfile */,
-				7F81A92825850D42B604CF0D /* Frameworks */,
-				6B4412B261227368FB82C6C7 /* Pods */,
-				4D90ADCC57D95F8CA6D661EF /* Products */,
-				7B452A862E36A96129DF4AEE /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		D60B5DE4F108F6B98E054293 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3CC62C35CFEE2558349E0C64 /* Pods-HelenOlhausen-CocoaSoundCloudUI.xcconfig */,
-				019868E8E1DD1696EBC1F5D6 /* Pods-HelenOlhausen-CocoaSoundCloudUI-Private.xcconfig */,
-				D9CDB1D664D04C128133D521 /* Pods-HelenOlhausen-CocoaSoundCloudUI-dummy.m */,
-				368877C6497EE476D0720251 /* Pods-HelenOlhausen-CocoaSoundCloudUI-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-HelenOlhausen-CocoaSoundCloudUI";
-			sourceTree = "<group>";
-		};
-		EE44FB63F076C9D5EBD0D426 /* NXOAuth2Client */ = {
-			isa = PBXGroup;
-			children = (
-				F34904814AC9DC4FE2CEC38D /* NSData+NXOAuth2.h */,
-				CAF37347BB1740FFC0AFA558 /* NSData+NXOAuth2.m */,
-				7640E977535CA66EB1821999 /* NSString+NXOAuth2.h */,
-				5C544B92640043E0B76F11EF /* NSString+NXOAuth2.m */,
-				9E217F04B47F5C70853AEEC8 /* NSURL+NXOAuth2.h */,
-				EF5938120E5232D89432891C /* NSURL+NXOAuth2.m */,
-				8C49FB3C4444860FF02B015B /* NXOAuth2.h */,
-				4ECDEECF98FF73BC0E4955D1 /* NXOAuth2AccessToken.h */,
-				2D2CE4636F77AC15C2CEFC6E /* NXOAuth2AccessToken.m */,
-				D91471A769FE7BC441D83F2B /* NXOAuth2Account.h */,
-				FEABF6A3721886452431B5D9 /* NXOAuth2Account.m */,
-				872B800AA3DB51A8BAC87264 /* NXOAuth2Account+Private.h */,
-				18CB107A36235E494C37E8FC /* NXOAuth2AccountStore.h */,
-				ADB4B4045F8EDD9EA02F65DA /* NXOAuth2AccountStore.m */,
-				357C22A236C911822E767FC9 /* NXOAuth2Client.h */,
-				FF89FE0FA83B340B05A9A91A /* NXOAuth2Client.m */,
-				7EE7626A1AD83F197B3D6E9C /* NXOAuth2ClientDelegate.h */,
-				E5F50BC241F19FCF60EEC70B /* NXOAuth2Connection.h */,
-				3272E59A1E072183954CE0BC /* NXOAuth2Connection.m */,
-				B1405F8EC2B7CE7C8FE03C6A /* NXOAuth2ConnectionDelegate.h */,
-				77850E8E87580DEE95C36044 /* NXOAuth2Constants.h */,
-				FB70463C3884A899EC0C5B7B /* NXOAuth2Constants.m */,
-				13995AFE3FF42D17D909CBA4 /* NXOAuth2FileStreamWrapper.h */,
-				6CFE997F078DC80BF7DB2203 /* NXOAuth2FileStreamWrapper.m */,
-				BB1C30F2D59B6CA8A871CBE9 /* NXOAuth2PostBodyPart.h */,
-				E3D583437F0F7279FB70B398 /* NXOAuth2PostBodyPart.m */,
-				C379E1FA4468DAD85C8AE898 /* NXOAuth2PostBodyStream.h */,
-				1547CA2571BE4141F37D6CB6 /* NXOAuth2PostBodyStream.m */,
-				620846D3C2E285133A53C08D /* NXOAuth2Request.h */,
-				9A44B253CEC146F21D52CC35 /* NXOAuth2Request.m */,
-				9362CCBBCF0DEB140C6AA22A /* NXOAuth2TrustDelegate.h */,
-				B4D3F86E36FC7C6088F0A936 /* Support Files */,
-			);
-			path = NXOAuth2Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		12F6DA2EB5AFD2568D83C06A /* Headers */ = {
+		A2C18886E76EFC4D2A7FFDFB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D2D7D6EBE36223C8BD90BCE /* NSData+SoundCloudUI.h in Headers */,
-				44A987F86A6B9A70BEE22BC0 /* NSString+SoundCloudUI.h in Headers */,
-				C7AE47DE5509948830D263C7 /* QuartzCore+SoundCloudUI.h in Headers */,
-				F78EE1F07DB9B879C6870815 /* SCAddConnectionViewController.h in Headers */,
-				10B82F12D36C360C49F78800 /* SCAddConnectionViewControllerDelegate.h in Headers */,
-				13CCD12A7C996F4768F8853D /* SCAlertView.h in Headers */,
-				F4CF21CE097F977548A300B2 /* SCBundle.h in Headers */,
-				8D951E5C21D5CAB14E79BAA0 /* SCConnectToSoundCloudTitleView.h in Headers */,
-				A81D10BF5C99E62559851488 /* SCCoverImageButton.h in Headers */,
-				C634C3E2B0CE2509573E505F /* SCCredentialsView.h in Headers */,
-				D5CE2D413DDF0864AF1BAE21 /* SCDrawing.h in Headers */,
-				5E5151749EDB57BCAB92082A /* SCFoursquarePlacePickerController.h in Headers */,
-				6A9DC8294073615B29AE661A /* SCFoursquarePlacePickerControllerDelegate.h in Headers */,
-				73AC903B013049293F8FAEBD /* SCGradientButton.h in Headers */,
-				43D52DB5D8F9E066F34EC1C9 /* SCHorizontalLineView.h in Headers */,
-				C1131D89B47BFB73EA3BD625 /* SCLoginView.h in Headers */,
-				B4AE717CB1B0A2D384410036 /* SCLoginViewController.h in Headers */,
-				303AEB04864FC5CA0FC6396B /* SCNameAndEmailCell.h in Headers */,
-				0FA614AE72F5BBDD83C3A066 /* SCRecordingSaveViewController.h in Headers */,
-				E93502975237F1B5025F62A5 /* SCRecordingSaveViewControllerHeaderView.h in Headers */,
-				47A2775F55E0DC71FFD0C3A7 /* SCRecordingUploadProgressView.h in Headers */,
-				DFD892D8F078CAC0017FEC1B /* SCShareToSoundCloudTitleView.h in Headers */,
-				79121D31110A3F501149DEF0 /* SCShareViewController.h in Headers */,
-				CA6DA4B4B2E37DE5E7730AF3 /* SCSharingMailPickerController.h in Headers */,
-				C3BBEF4D647B0E144CC3182F /* SCSwitch.h in Headers */,
-				A9779200C0CA9642047CEC21 /* SCSwitchLabel.h in Headers */,
-				064F7454BF3AC51C8AB35961 /* SCTableCellBackgroundView.h in Headers */,
-				49FE6B523B259BDE1953C893 /* SCTextField.h in Headers */,
-				62DC3356D02BF1B0543BFB4E /* SCUI.h in Headers */,
-				4629CC2266137AC7DECA9DAA /* SCUIErrors.h in Headers */,
-				E39673E0F18A3EF9F9C83DFA /* SCUnderlinedButton.h in Headers */,
-				CC8EF9454B3AB64E0EF8A862 /* UIColor+SoundCloudUI.h in Headers */,
-				E782AEF79C4C6A40345A885D /* UIDevice+SoundCloudUI.h in Headers */,
-				5ECF8749D977A908241FEF20 /* UIImage+SoundCloudUI.h in Headers */,
-				E9116341C37923F8C773A568 /* UIView+SoundCloudUI.h in Headers */,
-				AAF4C56EFA46A89EF791946C /* UIViewController+SoundCloudUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F2932CC7F3FF8B62570D8D0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F3EFB0BDCAEACC46625FFDB /* NSData+NXOAuth2.h in Headers */,
-				529E0BF3637767C5707A5109 /* NSString+NXOAuth2.h in Headers */,
-				4F87EC84F8BAADCA10F7AE4E /* NSURL+NXOAuth2.h in Headers */,
-				65A65A517D543148314B579D /* NXOAuth2.h in Headers */,
-				99BEFC11C1315B93555EFF0C /* NXOAuth2AccessToken.h in Headers */,
-				F689F3BB56F6E0D8BED92862 /* NXOAuth2Account+Private.h in Headers */,
-				DC9184F6A25455706B52258D /* NXOAuth2Account.h in Headers */,
-				5F911F48E804A0FED7129FB5 /* NXOAuth2AccountStore.h in Headers */,
-				BA9D979C5ED635BDF6EA38EA /* NXOAuth2Client.h in Headers */,
-				443EECC9CFAF3797CE626C1C /* NXOAuth2ClientDelegate.h in Headers */,
-				F626727451F3973A5F478A90 /* NXOAuth2Connection.h in Headers */,
-				566E9758BB7A5CF0238809B7 /* NXOAuth2ConnectionDelegate.h in Headers */,
-				70A95224C637C90735FA2300 /* NXOAuth2Constants.h in Headers */,
-				02AB7EA14F0C2D6C1E2BAF5A /* NXOAuth2FileStreamWrapper.h in Headers */,
-				F4129ADE161D5692E8F8E5F9 /* NXOAuth2PostBodyPart.h in Headers */,
-				28D5C27CA9F63C00EB3D1C3E /* NXOAuth2PostBodyStream.h in Headers */,
-				1D87AC847600810A3DEB4A4F /* NXOAuth2Request.h in Headers */,
-				671B935252C7A28253473D17 /* NXOAuth2TrustDelegate.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E1686D3CE4035530600F214 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6571E8D4393AA0A7EEAED706 /* CoreTextUtils.h in Headers */,
-				DB5D16928E174A853557C00E /* NSAttributedString+Attributes.h in Headers */,
-				767CF5429BF981E2DD59FF76 /* NSTextCheckingResult+ExtendedURL.h in Headers */,
-				15D0DD7A3AE51CFFE25812FA /* OHASBasicHTMLParser.h in Headers */,
-				D48DA1829A3E5EA843CC7B3C /* OHASBasicMarkupParser.h in Headers */,
-				F01EDC65A0D4CC54BB45D97F /* OHASMarkupParserBase.h in Headers */,
-				5BC17FD6C9DEF69D307D4ADE /* OHAttributedLabel.h in Headers */,
-				ABC4661E563514AE7B3621D9 /* OHParagraphStyle.h in Headers */,
-				83CB4139E459139C7E228302 /* OHTouchesGestureRecognizer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB29BFE6B9361493BBD7FEFC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09D573D3B075723475AA58B9 /* SCAPI.h in Headers */,
-				D8BF969F14359C0AF0CDF784 /* SCAccount+Private.h in Headers */,
-				8EE597FD0B48DA04BB3E14DF /* SCAccount.h in Headers */,
-				1DE531F947AADCE3307EA694 /* SCConstants.h in Headers */,
-				D61CE58FA269B9094A9539FA /* SCRequest.h in Headers */,
-				2E4C6FE42D3479BC1F14D061 /* SCSoundCloud+Private.h in Headers */,
-				B2C1944804D1FC86341E5E8C /* SCSoundCloud.h in Headers */,
-				D51E81C9580EBE144BA38503 /* SCSoundCloudAPI-Private.h in Headers */,
+				D2DDC3B54281B5A64FEB34F1 /* AFHTTPRequestOperation.h in Headers */,
+				3FB1CDE104801DEBEFA29951 /* AFHTTPRequestOperationManager.h in Headers */,
+				5F6E608284BAFD74943F7978 /* AFHTTPSessionManager.h in Headers */,
+				FF86C23F614F487C2F08E17B /* AFNetworkActivityIndicatorManager.h in Headers */,
+				C6EEE30801ED645AC996B164 /* AFNetworkReachabilityManager.h in Headers */,
+				1DAEF0CA49EE0BBA02BA0D21 /* AFNetworking.h in Headers */,
+				3E24152E7AA0F392FA685EBF /* AFSecurityPolicy.h in Headers */,
+				3C03B6664167C17EDED985A0 /* AFURLConnectionOperation.h in Headers */,
+				9BA293104B4189A2E7B17243 /* AFURLRequestSerialization.h in Headers */,
+				41C4FD466CD077637C572817 /* AFURLResponseSerialization.h in Headers */,
+				70E2AFB4D166D193C4348C7A /* AFURLSessionManager.h in Headers */,
+				6EE2C91D1DD2CDDEBB80C6AD /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				91E4AF303AA85FBB3BD5F953 /* UIAlertView+AFNetworking.h in Headers */,
+				656AE3D485933C07BB4C29E7 /* UIButton+AFNetworking.h in Headers */,
+				E0CCAF50C1C471ED19E90A81 /* UIImageView+AFNetworking.h in Headers */,
+				80E32851940CF84F659F48A4 /* UIKit+AFNetworking.h in Headers */,
+				21BE189EF52CCB19C6F3A7EC /* UIProgressView+AFNetworking.h in Headers */,
+				06AFF4D295497742434CEE44 /* UIRefreshControl+AFNetworking.h in Headers */,
+				0C7789E221AA52D15FBE40D4 /* UIWebView+AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1699FE14BA63434E3AFC7FAB /* Pods-HelenOlhausen */ = {
+		A2350C4E4C4AB9691A7E4644 /* Pods-HelenOlhausen-AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 672DE979B120ED0D9BC13B98 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen" */;
+			buildConfigurationList = 03051CD2159A1EE235EF1BF0 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-AFNetworking" */;
 			buildPhases = (
-				55194FA75F92A187867AF05A /* Sources */,
-				0DF4169788A247429B07518E /* Frameworks */,
+				FD106DA934B799F738B6F87A /* Sources */,
+				89128D408EE18A51CC73DA8D /* Frameworks */,
+				A2C18886E76EFC4D2A7FFDFB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6A43E5B39DD227D69A62906F /* PBXTargetDependency */,
-				17032F953029B40F49D50C6F /* PBXTargetDependency */,
-				97283930588C30CC413E22AF /* PBXTargetDependency */,
-				30DD0B62FE7EA7D5BBB58B05 /* PBXTargetDependency */,
+			);
+			name = "Pods-HelenOlhausen-AFNetworking";
+			productName = "Pods-HelenOlhausen-AFNetworking";
+			productReference = 7538972A596760C5D89C104B /* libPods-HelenOlhausen-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FDD696A4970965BA2285E812 /* Pods-HelenOlhausen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65AB888D6F4CA33F7CDDDEAD /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen" */;
+			buildPhases = (
+				92E30309D4148FA23FC9356C /* Sources */,
+				20AB986FC37AB65E67457BCE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7655255265ED4E42D0E4D1B9 /* PBXTargetDependency */,
 			);
 			name = "Pods-HelenOlhausen";
 			productName = "Pods-HelenOlhausen";
-			productReference = 07699EBD82275F5D922D634A /* libPods-HelenOlhausen.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		637038E8FA9F36EFBEAE181B /* Pods-HelenOlhausen-NXOAuth2Client */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DDDBCDA1F323DD47FD8AEE23 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-NXOAuth2Client" */;
-			buildPhases = (
-				F474A746CED69FE0DC580892 /* Sources */,
-				7B32CDEEE25AEF7666E1E7EA /* Frameworks */,
-				4F2932CC7F3FF8B62570D8D0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-HelenOlhausen-NXOAuth2Client";
-			productName = "Pods-HelenOlhausen-NXOAuth2Client";
-			productReference = 34A5608423FF4039C8B418DA /* libPods-HelenOlhausen-NXOAuth2Client.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		645086B8DAD595706FC48A9E /* Pods-HelenOlhausen-OHAttributedLabel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F99FE421EFF9AE0B55B8685D /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-OHAttributedLabel" */;
-			buildPhases = (
-				E70EA100B381C8FB11E6482E /* Sources */,
-				270E9AB7BABF4ABD0E1FBCA4 /* Frameworks */,
-				6E1686D3CE4035530600F214 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-HelenOlhausen-OHAttributedLabel";
-			productName = "Pods-HelenOlhausen-OHAttributedLabel";
-			productReference = BA2D7761DF18BAC9274C5062 /* libPods-HelenOlhausen-OHAttributedLabel.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7258AD4B16D236C726B265F3 /* Pods-HelenOlhausen-CocoaSoundCloudUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CA7F7237CAB10A909456D7E7 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-CocoaSoundCloudUI" */;
-			buildPhases = (
-				61F12DC18DAEC5FBFE537D1F /* Sources */,
-				4DE086832310D0CE66A6C1BC /* Frameworks */,
-				12F6DA2EB5AFD2568D83C06A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BF69B1D3E00D39858521700 /* PBXTargetDependency */,
-			);
-			name = "Pods-HelenOlhausen-CocoaSoundCloudUI";
-			productName = "Pods-HelenOlhausen-CocoaSoundCloudUI";
-			productReference = 56E7ABC2979E146633FDCE2F /* libPods-HelenOlhausen-CocoaSoundCloudUI.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A4136F28ED657D73BA4AA6EF /* Pods-HelenOlhausen-CocoaSoundCloudAPI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2ED2B395E120E4CD1FD06505 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-CocoaSoundCloudAPI" */;
-			buildPhases = (
-				3E4DF21D178CE24FE71060B0 /* Sources */,
-				653EE63EDB6679326F0F80FC /* Frameworks */,
-				CB29BFE6B9361493BBD7FEFC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5C4683AAE909BAE7930192F /* PBXTargetDependency */,
-			);
-			name = "Pods-HelenOlhausen-CocoaSoundCloudAPI";
-			productName = "Pods-HelenOlhausen-CocoaSoundCloudAPI";
-			productReference = C7D30AB1D3B60317F9700206 /* libPods-HelenOlhausen-CocoaSoundCloudAPI.a */;
+			productReference = 1495F771A4451C35C0197694 /* libPods-HelenOlhausen.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7172E05E1A555DB8AAF2ABAA /* Project object */ = {
+		204BA3BD838DD272F17EA9A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 7F66E3281D28E11C180A04D0 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = CE5FC40809ECA487E93955F8 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B784BDA12DE12D35233E56BD;
-			productRefGroup = 4D90ADCC57D95F8CA6D661EF /* Products */;
+			mainGroup = A3AAE52B78722288439DE77E;
+			productRefGroup = 0D295F4434B4275CDEFB0F9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1699FE14BA63434E3AFC7FAB /* Pods-HelenOlhausen */,
-				A4136F28ED657D73BA4AA6EF /* Pods-HelenOlhausen-CocoaSoundCloudAPI */,
-				7258AD4B16D236C726B265F3 /* Pods-HelenOlhausen-CocoaSoundCloudUI */,
-				637038E8FA9F36EFBEAE181B /* Pods-HelenOlhausen-NXOAuth2Client */,
-				645086B8DAD595706FC48A9E /* Pods-HelenOlhausen-OHAttributedLabel */,
+				FDD696A4970965BA2285E812 /* Pods-HelenOlhausen */,
+				A2350C4E4C4AB9691A7E4644 /* Pods-HelenOlhausen-AFNetworking */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3E4DF21D178CE24FE71060B0 /* Sources */ = {
+		92E30309D4148FA23FC9356C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				035B83C330487612B4419B9C /* Pods-HelenOlhausen-CocoaSoundCloudAPI-dummy.m in Sources */,
-				1DC24821D70DDEEB67EC5FB2 /* SCAccount+Private.m in Sources */,
-				ACE19C232754453ABE03DA34 /* SCAccount.m in Sources */,
-				CE844B1C669EF0942D51A810 /* SCConstants.m in Sources */,
-				C1337D2891DA434B8F6CC9D1 /* SCRequest.m in Sources */,
-				23B61E1F1FC73558C759081F /* SCSoundCloud+Private.m in Sources */,
-				C1DF2EE2B2E998B9AFEDB7D4 /* SCSoundCloud.m in Sources */,
+				F952C443DA0F12E1927A3840 /* Pods-HelenOlhausen-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55194FA75F92A187867AF05A /* Sources */ = {
+		FD106DA934B799F738B6F87A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6680566533A74CC537B5188 /* Pods-HelenOlhausen-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61F12DC18DAEC5FBFE537D1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A38842BA989826770A91BB8 /* NSData+SoundCloudUI.m in Sources */,
-				BCE4A56AD637D60B3C05CB65 /* NSString+SoundCloudUI.m in Sources */,
-				504485A7BF55215DFACD1E6C /* Pods-HelenOlhausen-CocoaSoundCloudUI-dummy.m in Sources */,
-				1795565AF504AA9C43E5A932 /* QuartzCore+SoundCloudUI.m in Sources */,
-				93B60E2757EDF70DDFCFF3C2 /* SCAddConnectionViewController.m in Sources */,
-				6A11DCF9C8FB7F281C58B525 /* SCAlertView.m in Sources */,
-				5F8862925B03C854AE49B914 /* SCBundle.m in Sources */,
-				D3E018B38C583A13C340BC8C /* SCConnectToSoundCloudTitleView.m in Sources */,
-				6D9F6958D1D65FBAE916B48E /* SCCoverImageButton.m in Sources */,
-				D223610BB337EBD3BB849642 /* SCCredentialsView.m in Sources */,
-				B9C3ABD493A1109FD03D9DD8 /* SCDrawing.m in Sources */,
-				8659398E0A20D9520219853A /* SCFoursquarePlacePickerController.m in Sources */,
-				DD9B3D24DF4CEAEC0C58D3DA /* SCGradientButton.m in Sources */,
-				74B56DFAE3F770F8C86FDBBE /* SCHorizontalLineView.m in Sources */,
-				53AA672BEE3D4EEC5BD5AACF /* SCLoginView.m in Sources */,
-				480B9A0305CB34D6F34AF90A /* SCLoginViewController.m in Sources */,
-				ABBA1BD600E2AA0D1B1F0060 /* SCNameAndEmailCell.m in Sources */,
-				CBE7D3B03623DBC1F8E32E1F /* SCRecordingSaveViewController.m in Sources */,
-				4AB82A3DB446CE1E99D7EA91 /* SCRecordingSaveViewControllerHeaderView.m in Sources */,
-				94EC0AFE1055CE8F8D408A53 /* SCRecordingUploadProgressView.m in Sources */,
-				D765B1EA65DE47A7BA4383B0 /* SCShareToSoundCloudTitleView.m in Sources */,
-				4AB009C8BD17B5FB789615D2 /* SCShareViewController.m in Sources */,
-				B2279656A11D22C836824D21 /* SCSharingMailPickerController.m in Sources */,
-				4C732EC6A6049E05F67BA08A /* SCSwitch.m in Sources */,
-				3DE6432C6015A496A2516C1E /* SCSwitchLabel.m in Sources */,
-				AF816DF8D24019C47EF67590 /* SCTableCellBackgroundView.m in Sources */,
-				85C8EFCD31680E6B6D957C8A /* SCTextField.m in Sources */,
-				D472C35F05F9106E4D73D36C /* SCUIErrors.m in Sources */,
-				5571548959B3E7E6E3A2E1A3 /* SCUnderlinedButton.m in Sources */,
-				95F4AF07B32FF24FCCCC6BEB /* UIColor+SoundCloudUI.m in Sources */,
-				5AE1663B0DDE5FDF02D7988A /* UIDevice+SoundCloudUI.m in Sources */,
-				7946F0E726924C4810C8DC6F /* UIImage+SoundCloudUI.m in Sources */,
-				B2AD2C1A7B88B6F55950C047 /* UIView+SoundCloudUI.m in Sources */,
-				3BEBF399E51ECF0BE8ED4A42 /* UIViewController+SoundCloudUI.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E70EA100B381C8FB11E6482E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFBAE976CDA8327E2FDB1268 /* CoreTextUtils.m in Sources */,
-				870B033C4EAE10F9209616E3 /* NSAttributedString+Attributes.m in Sources */,
-				42D49853F357722CEEC9D3F7 /* NSTextCheckingResult+ExtendedURL.m in Sources */,
-				8D90A3744059692D62613BAA /* OHASBasicHTMLParser.m in Sources */,
-				6213C7E9046FFB4306DA9EB1 /* OHASBasicMarkupParser.m in Sources */,
-				59B4C3F2D7BCA3A3595B97D0 /* OHASMarkupParserBase.m in Sources */,
-				9D21C3C63AA5D1578ED132A9 /* OHAttributedLabel.m in Sources */,
-				7E318341E11A048B94DE453C /* OHParagraphStyle.m in Sources */,
-				42820C8D9530E9DA488506F0 /* OHTouchesGestureRecognizer.m in Sources */,
-				D8C009F7D2FF073710371476 /* Pods-HelenOlhausen-OHAttributedLabel-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F474A746CED69FE0DC580892 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE42936E59E58272C940F6E5 /* NSData+NXOAuth2.m in Sources */,
-				895E45B28AD14ACC8601D723 /* NSString+NXOAuth2.m in Sources */,
-				F944199F99FC84C8215C8D9E /* NSURL+NXOAuth2.m in Sources */,
-				016A571B8B7001DE9FBDCA23 /* NXOAuth2AccessToken.m in Sources */,
-				8B1830AE2853BE7102112ED7 /* NXOAuth2Account.m in Sources */,
-				F48C969BC2642617BA3F9CDA /* NXOAuth2AccountStore.m in Sources */,
-				EBAD28029C70A45C0E5A13A6 /* NXOAuth2Client.m in Sources */,
-				B895C06DE7F70B38A5EA4E0D /* NXOAuth2Connection.m in Sources */,
-				BB8A93C498100A2C61585C61 /* NXOAuth2Constants.m in Sources */,
-				23D2E7BD5C4F1B5688E106AF /* NXOAuth2FileStreamWrapper.m in Sources */,
-				DB7B5A496F4F5AB0D659D12B /* NXOAuth2PostBodyPart.m in Sources */,
-				A45CA550F68CFE92A3661B91 /* NXOAuth2PostBodyStream.m in Sources */,
-				008E693E2D3500930EA1F546 /* NXOAuth2Request.m in Sources */,
-				5C5FAACA8FBE26AC13A8CBF8 /* Pods-HelenOlhausen-NXOAuth2Client-dummy.m in Sources */,
+				9E76E9E7CE1DF793D4B71AC2 /* AFHTTPRequestOperation.m in Sources */,
+				28A2499E5F04A7E74D6CF455 /* AFHTTPRequestOperationManager.m in Sources */,
+				90BA72CF9A71A59BF553698E /* AFHTTPSessionManager.m in Sources */,
+				D11FACA29DCCB96F20DDF29B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				48A8A91DE7644DC2D5635B02 /* AFNetworkReachabilityManager.m in Sources */,
+				890B4A44C8DF472AD46E61B3 /* AFSecurityPolicy.m in Sources */,
+				8B20F3CBBECCF63FE0C444CF /* AFURLConnectionOperation.m in Sources */,
+				6A466AA133A2BCB650E3BE42 /* AFURLRequestSerialization.m in Sources */,
+				CD24114B53E8A72B048F33DD /* AFURLResponseSerialization.m in Sources */,
+				9469D0FE22EDCF8FAB751EC2 /* AFURLSessionManager.m in Sources */,
+				25BC99C0201F9A2BE794F8F3 /* Pods-HelenOlhausen-AFNetworking-dummy.m in Sources */,
+				4B6E0ABDF383F81FBB7FD6A3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				FC4E0BCE0BA9867952CE33E4 /* UIAlertView+AFNetworking.m in Sources */,
+				6A0BD5AC5BD1C87EA389092B /* UIButton+AFNetworking.m in Sources */,
+				2084D5DB9B30BDB918864BE1 /* UIImageView+AFNetworking.m in Sources */,
+				E5DB02884222ED1B16F5907F /* UIProgressView+AFNetworking.m in Sources */,
+				6EB5930BAC68D7B419A5D2AE /* UIRefreshControl+AFNetworking.m in Sources */,
+				3855807731F91D4C48472052 /* UIWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		17032F953029B40F49D50C6F /* PBXTargetDependency */ = {
+		7655255265ED4E42D0E4D1B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-HelenOlhausen-CocoaSoundCloudUI";
-			target = 7258AD4B16D236C726B265F3 /* Pods-HelenOlhausen-CocoaSoundCloudUI */;
-			targetProxy = 14663290BAF53569AB6F2BFE /* PBXContainerItemProxy */;
-		};
-		30DD0B62FE7EA7D5BBB58B05 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HelenOlhausen-OHAttributedLabel";
-			target = 645086B8DAD595706FC48A9E /* Pods-HelenOlhausen-OHAttributedLabel */;
-			targetProxy = E3DD96ED41D3878C152AFE8A /* PBXContainerItemProxy */;
-		};
-		3BF69B1D3E00D39858521700 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HelenOlhausen-OHAttributedLabel";
-			target = 645086B8DAD595706FC48A9E /* Pods-HelenOlhausen-OHAttributedLabel */;
-			targetProxy = 34B0606CEF8FCF9B74D8FE01 /* PBXContainerItemProxy */;
-		};
-		6A43E5B39DD227D69A62906F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HelenOlhausen-CocoaSoundCloudAPI";
-			target = A4136F28ED657D73BA4AA6EF /* Pods-HelenOlhausen-CocoaSoundCloudAPI */;
-			targetProxy = AC007C7157FE68DA74DEF07B /* PBXContainerItemProxy */;
-		};
-		97283930588C30CC413E22AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HelenOlhausen-NXOAuth2Client";
-			target = 637038E8FA9F36EFBEAE181B /* Pods-HelenOlhausen-NXOAuth2Client */;
-			targetProxy = E48FE4389636473EA60F09E0 /* PBXContainerItemProxy */;
-		};
-		C5C4683AAE909BAE7930192F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HelenOlhausen-NXOAuth2Client";
-			target = 637038E8FA9F36EFBEAE181B /* Pods-HelenOlhausen-NXOAuth2Client */;
-			targetProxy = 26DA319DE695D5ACAE3ED84B /* PBXContainerItemProxy */;
+			name = "Pods-HelenOlhausen-AFNetworking";
+			target = A2350C4E4C4AB9691A7E4644 /* Pods-HelenOlhausen-AFNetworking */;
+			targetProxy = 7AD662F4994E90989C0F9685 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		127275B5D7A512792DF096A9 /* Debug */ = {
+		0A3A3BB1544962D201018315 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC6B150299D850518222C1D9 /* Pods-HelenOlhausen-OHAttributedLabel-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-OHAttributedLabel/Pods-HelenOlhausen-OHAttributedLabel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1483133FEB603E6FC290F137 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45332211A9ADEAD6D0AC9935 /* Pods-HelenOlhausen.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3C9B8ADFA6CC4B8454B4B9AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9BF83E4AFBE9686819C1130 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-CocoaSoundCloudAPI/Pods-HelenOlhausen-CocoaSoundCloudAPI-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		6092FB1423EC463759442CEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DEF3F4F0E8C4736F100F8FF /* Pods-HelenOlhausen-NXOAuth2Client-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-NXOAuth2Client/Pods-HelenOlhausen-NXOAuth2Client-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		675E33F627617EB7A55E3519 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9BF83E4AFBE9686819C1130 /* Pods-HelenOlhausen-CocoaSoundCloudAPI-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-CocoaSoundCloudAPI/Pods-HelenOlhausen-CocoaSoundCloudAPI-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		763F041FB00E20B726E46564 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 019868E8E1DD1696EBC1F5D6 /* Pods-HelenOlhausen-CocoaSoundCloudUI-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-CocoaSoundCloudUI/Pods-HelenOlhausen-CocoaSoundCloudUI-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7FE85DA1E0EDF98C32A9A4B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		92788C914C2708B7A22D87E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DEF3F4F0E8C4736F100F8FF /* Pods-HelenOlhausen-NXOAuth2Client-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-NXOAuth2Client/Pods-HelenOlhausen-NXOAuth2Client-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9EBEEEB937F592F85DB95950 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 019868E8E1DD1696EBC1F5D6 /* Pods-HelenOlhausen-CocoaSoundCloudUI-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-CocoaSoundCloudUI/Pods-HelenOlhausen-CocoaSoundCloudUI-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D24B083448B9E9AF33D213E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC6B150299D850518222C1D9 /* Pods-HelenOlhausen-OHAttributedLabel-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-OHAttributedLabel/Pods-HelenOlhausen-OHAttributedLabel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D94C3042EFF6D135045BA701 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AF36C6D8A0BA954DEF118B0 /* Pods-HelenOlhausen.debug.xcconfig */;
+			baseConfigurationReference = 395D91415F4880DE92801433 /* Pods-HelenOlhausen.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1276,7 +474,7 @@
 			};
 			name = Debug;
 		};
-		FD211E9DC1BC95A4FEB9ED59 /* Debug */ = {
+		4B60079C5C7B553794D58680 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1315,64 +513,119 @@
 			};
 			name = Debug;
 		};
+		5E783A4A4958D231894CE651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		781EE24A91B6805F832688EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282338164E2577EFCA95F2E6 /* Pods-HelenOlhausen-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-AFNetworking/Pods-HelenOlhausen-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8DFAB4EEB991715103F8EFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7BC6D56E9E1B4A3C92BC99 /* Pods-HelenOlhausen.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		92EB43DD82CE76B52F981D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282338164E2577EFCA95F2E6 /* Pods-HelenOlhausen-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-HelenOlhausen-AFNetworking/Pods-HelenOlhausen-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2ED2B395E120E4CD1FD06505 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-CocoaSoundCloudAPI" */ = {
+		03051CD2159A1EE235EF1BF0 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				675E33F627617EB7A55E3519 /* Debug */,
-				3C9B8ADFA6CC4B8454B4B9AA /* Release */,
+				92EB43DD82CE76B52F981D6F /* Debug */,
+				781EE24A91B6805F832688EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		672DE979B120ED0D9BC13B98 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen" */ = {
+		65AB888D6F4CA33F7CDDDEAD /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D94C3042EFF6D135045BA701 /* Debug */,
-				1483133FEB603E6FC290F137 /* Release */,
+				0A3A3BB1544962D201018315 /* Debug */,
+				8DFAB4EEB991715103F8EFEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F66E3281D28E11C180A04D0 /* Build configuration list for PBXProject "Pods" */ = {
+		CE5FC40809ECA487E93955F8 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD211E9DC1BC95A4FEB9ED59 /* Debug */,
-				7FE85DA1E0EDF98C32A9A4B3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CA7F7237CAB10A909456D7E7 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-CocoaSoundCloudUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				763F041FB00E20B726E46564 /* Debug */,
-				9EBEEEB937F592F85DB95950 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDDBCDA1F323DD47FD8AEE23 /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-NXOAuth2Client" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92788C914C2708B7A22D87E0 /* Debug */,
-				6092FB1423EC463759442CEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F99FE421EFF9AE0B55B8685D /* Build configuration list for PBXNativeTarget "Pods-HelenOlhausen-OHAttributedLabel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				127275B5D7A512792DF096A9 /* Debug */,
-				D24B083448B9E9AF33D213E4 /* Release */,
+				4B60079C5C7B553794D58680 /* Debug */,
+				5E783A4A4958D231894CE651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7172E05E1A555DB8AAF2ABAA /* Project object */;
+	rootObject = 204BA3BD838DD272F17EA9A9 /* Project object */;
 }
