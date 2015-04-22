@@ -10,6 +10,7 @@
 #import "TrackListTableViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "Constants.h"
+#import "AboutMePagerTabStripVC.h"
 
 #import "HelenHTTPSessionManager.h"
 
@@ -39,6 +40,8 @@
     [self.audioPlayer play];
 }
 
+
+
 - (IBAction) getTracks:(id) sender
 {
     [[HelenHTTPSessionManager sharedClient] getTracksWithSuccess:^(NSURLSessionDataTask *operation, id responseObject) {
@@ -55,5 +58,13 @@
      }];
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"AboutMeSegue"]) {
+        if ([segue.destinationViewController isKindOfClass:[AboutMePagerTabStripVC class]]) {
+            AboutMePagerTabStripVC *aboutME = (AboutMePagerTabStripVC *)segue.destinationViewController;
+        }
+    }
+}
 
 @end

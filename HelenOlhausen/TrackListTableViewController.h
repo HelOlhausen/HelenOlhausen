@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "XLPagerTabStripViewController.h"
 
-@interface TrackListTableViewController : UITableViewController
+@interface TrackListTableViewController : UITableViewController <XLPagerTabStripChildItem>
 
 @property (nonatomic, strong) NSArray *tracks;
 @property (nonatomic, strong) AVAudioPlayer *player;
