@@ -61,7 +61,12 @@
 - (void)tableView:(UITableView *)tableView
     didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    self.previousIndex = indexPath;
+
+    if (self.previousIndex == indexPath) {
+        [self.player stop];
+        return;
+    }
+    self.previousIndex = indexPath;
     
     NSDictionary *track = [self.tracks objectAtIndex:indexPath.row];
     NSString *stream = [track objectForKey:@"stream_url"];

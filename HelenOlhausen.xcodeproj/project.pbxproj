@@ -10,8 +10,8 @@
 		01C6BDAB4A0D2784ECA79F5C /* libPods-HelenOlhausen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7065D9BD4A03BB08CB955D /* libPods-HelenOlhausen.a */; };
 		791A71941AE5FFC00036B4C0 /* TrackListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791A71931AE5FFC00036B4C0 /* TrackListTableViewController.m */; };
 		791A71961AE608B50036B4C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791A71951AE608B50036B4C0 /* AVFoundation.framework */; };
-		79292A321AE75FD700C42733 /* Fame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79292A311AE75FD700C42733 /* Fame.mp3 */; };
 		79292A371AE83D7900C42733 /* HelenHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79292A361AE83D7900C42733 /* HelenHTTPSessionManager.m */; };
+		79292A3E1AE84BFF00C42733 /* TryHel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79292A3D1AE84BFF00C42733 /* TryHel.mp3 */; };
 		799DFAF41AE5F45E00A56021 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 799DFAF31AE5F45E00A56021 /* main.m */; };
 		799DFAF71AE5F45E00A56021 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 799DFAF61AE5F45E00A56021 /* AppDelegate.m */; };
 		799DFAFA1AE5F45E00A56021 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799DFAF91AE5F45E00A56021 /* ViewController.m */; };
@@ -36,10 +36,10 @@
 		791A71921AE5FFC00036B4C0 /* TrackListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackListTableViewController.h; sourceTree = "<group>"; };
 		791A71931AE5FFC00036B4C0 /* TrackListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackListTableViewController.m; sourceTree = "<group>"; };
 		791A71951AE608B50036B4C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		79292A311AE75FD700C42733 /* Fame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Fame.mp3; path = ../Fame.mp3; sourceTree = "<group>"; };
 		79292A351AE83D7900C42733 /* HelenHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelenHTTPSessionManager.h; sourceTree = "<group>"; };
 		79292A361AE83D7900C42733 /* HelenHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelenHTTPSessionManager.m; sourceTree = "<group>"; };
 		79292A3A1AE83F0A00C42733 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		79292A3D1AE84BFF00C42733 /* TryHel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = TryHel.mp3; path = ../TryHel.mp3; sourceTree = "<group>"; };
 		799DFAEE1AE5F45E00A56021 /* HelenOlhausen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelenOlhausen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799DFAF21AE5F45E00A56021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		799DFAF31AE5F45E00A56021 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		799DFAF11AE5F45E00A56021 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79292A311AE75FD700C42733 /* Fame.mp3 */,
+				79292A3D1AE84BFF00C42733 /* TryHel.mp3 */,
 				799DFAF21AE5F45E00A56021 /* Info.plist */,
 				799DFAF31AE5F45E00A56021 /* main.m */,
 			);
@@ -276,7 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79292A321AE75FD700C42733 /* Fame.mp3 in Resources */,
+				79292A3E1AE84BFF00C42733 /* TryHel.mp3 in Resources */,
 				799DFAFD1AE5F45E00A56021 /* Main.storyboard in Resources */,
 				799DFB021AE5F45E00A56021 /* LaunchScreen.xib in Resources */,
 				799DFAFF1AE5F45E00A56021 /* Images.xcassets in Resources */,
