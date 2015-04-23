@@ -10,6 +10,12 @@
 
 @implementation AboutMe
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    UIColor *colour = [[UIColor alloc]initWithRed:57.0/255.0 green:156.0/255.0 blue:52.0/255.0 alpha:1.0];
+    self.view.backgroundColor = colour;
+}
+
 - (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
     return @"About Me";
 }

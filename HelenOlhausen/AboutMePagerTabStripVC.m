@@ -23,6 +23,14 @@
     UICollectionViewLayoutAttributes *attributes = [self.buttonBarView layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:self.currentIndex inSection:0]];
     CGRect cellRect = attributes.frame;
     [self.buttonBarView.selectedBar setFrame:CGRectMake(cellRect.origin.x, self.buttonBarView.frame.size.height - 5, cellRect.size.width, 5)];
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -40,17 +48,7 @@
     TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
     AboutMe * aboutMe = [[AboutMe alloc] init];
     return @[trackListVC, aboutMe];
-    
-//    NSMutableArray * childViewControllers = [NSMutableArray arrayWithObjects:child_1, child_2, nil];
-//    NSUInteger count = [childViewControllers count];
-//    for (NSUInteger i = 0; i < count; ++i) {
-//        // Select a random element between i and end of array to swap with.
-//        NSUInteger nElements = count - i;
-//        NSUInteger n = (arc4random() % nElements) + i;
-//        [childViewControllers exchangeObjectAtIndex:i withObjectAtIndex:n];
-//    }
-//    NSUInteger nItems = 1 + (rand() % 8);
-//    return [childViewControllers subarrayWithRange:NSMakeRange(0, nItems)];
+
 }
 
 

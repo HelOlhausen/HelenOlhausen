@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K6v-cC-TU1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K6v-cC-TU1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,18 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYV-O9-yjq">
-                                <rect key="frame" x="256" y="272" width="88" height="30"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hel" translatesAutoresizingMaskIntoConstraints="NO" id="mnD-cv-9N6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYV-O9-yjq">
+                                <rect key="frame" x="461" y="371" width="88" height="30"/>
                                 <state key="normal" title="Get track list">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="getTracks:" destination="zo3-7u-GY4" eventType="touchUpInside" id="ti3-FN-t3E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-Om-7qA">
-                                <rect key="frame" x="271" y="134" width="140" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-Om-7qA">
+                                <rect key="frame" x="409" y="446" width="140" height="30"/>
                                 <state key="normal" title="want to know more?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -37,8 +42,25 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bUR-Tx-JHY" firstAttribute="top" secondItem="sYV-O9-yjq" secondAttribute="bottom" constant="199" id="ELv-TL-l0P"/>
+                            <constraint firstItem="bUR-Tx-JHY" firstAttribute="top" secondItem="mnD-cv-9N6" secondAttribute="bottom" id="K1e-tu-zQV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rqY-Om-7qA" secondAttribute="trailing" constant="35" id="LpD-k7-hQA"/>
+                            <constraint firstItem="mnD-cv-9N6" firstAttribute="top" secondItem="Vgz-tE-Vip" secondAttribute="top" id="RZG-l7-peE"/>
+                            <constraint firstItem="bUR-Tx-JHY" firstAttribute="top" secondItem="rqY-Om-7qA" secondAttribute="bottom" constant="124" id="RzQ-Td-GAG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sYV-O9-yjq" secondAttribute="trailing" constant="35" id="efp-b2-X0U"/>
+                            <constraint firstItem="sYV-O9-yjq" firstAttribute="leading" secondItem="Vgz-tE-Vip" secondAttribute="leadingMargin" constant="445" id="fSQ-vf-92B"/>
+                            <constraint firstAttribute="trailing" secondItem="mnD-cv-9N6" secondAttribute="trailing" id="lbK-Aw-1g5"/>
+                            <constraint firstItem="mnD-cv-9N6" firstAttribute="leading" secondItem="Vgz-tE-Vip" secondAttribute="leading" id="pmj-Ru-egS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fSQ-vf-92B"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="OkC-AZ-Ngm"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4l-iY-eOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,10 +97,10 @@
                                 <exclude reference="bkx-IL-BwY"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Bwv-NG-Maj"/>
                                 <exclude reference="DNj-w6-p3F"/>
                                 <exclude reference="nSv-Nd-ryc"/>
                                 <exclude reference="ria-7c-SVP"/>
-                                <exclude reference="Bwv-NG-Maj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -86,10 +108,10 @@
                                 <include reference="bkx-IL-BwY"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Bwv-NG-Maj"/>
                                 <include reference="DNj-w6-p3F"/>
                                 <include reference="nSv-Nd-ryc"/>
                                 <include reference="ria-7c-SVP"/>
-                                <include reference="Bwv-NG-Maj"/>
                             </mask>
                         </variation>
                     </view>
@@ -101,7 +123,6 @@
         <!--Navigation Controller-->
         <scene sceneID="2VR-ek-Mwr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3BC-Z1-MNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K6v-cC-TU1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MDl-j3-orB">
@@ -113,6 +134,7 @@
                         <segue destination="zo3-7u-GY4" kind="relationship" relationship="rootViewController" id="sA2-7F-yMO"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3BC-Z1-MNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-181" y="136"/>
         </scene>
@@ -125,11 +147,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Ye5-BV-SdG"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AzC-ff-E7t">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n8K-NM-5bm" customClass="XLButtonBarView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                 <color key="backgroundColor" red="0.027450980390000001" green="0.72549019609999998" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="pv1-HX-GoK"/>
@@ -168,7 +190,7 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMA-gL-KFC" customClass="UIScrollView">
-                                <rect key="frame" x="-5" y="43" width="610" height="444"/>
+                                <rect key="frame" x="-5" y="43" width="250" height="85"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="-5" y="43" width="410" height="444"/>
@@ -197,4 +219,7 @@
             <point key="canvasLocation" x="2835" y="-318"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hel" width="6000" height="4000"/>
+    </resources>
 </document>
