@@ -19,13 +19,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self fetchTracks];
 }
+
+-(void)setTracks:(NSArray *)tracks {
+    _tracks = tracks;
+    [self.tableView reloadData];
+}
+
+-(void)fetchTracks {
+    
+    [[HelenHTTPSessionManager sharedClient] getTracksWithSuccess:^(NSURLSessionDataTask *operation, id responseObject) {
+        self.tracks = (NSArray *)responseObject;
+    }
+                                                         failure:^(NSURLSessionDataTask *operation, NSError *error) {
+                                                             [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error loading the tracks"
+                                                                                         message:[error localizedDescription]
+                                                                                        delegate:nil
+                                                                               cancelButtonTitle:@"Ok"
+                                                                               otherButtonTitles:nil] show];
+                                                         }];
+}
+
 
 #pragma mark - Table view data source
 
@@ -62,23 +77,25 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        
         dispatch_async(dispatch_get_main_queue(), ^{
-            // Update the UI
             cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:imageData]];
         });
     });
     }
-    
-//    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage image:@"Hel.png"]];
-    
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 120.0f;
 }
 
 - (void)tableView:(UITableView *)tableView
     didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     if (self.previousIndex == indexPath) {
         [self.player stop];
         return;

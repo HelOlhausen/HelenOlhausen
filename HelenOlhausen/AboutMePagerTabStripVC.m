@@ -47,7 +47,7 @@
     // create child view controllers that will be managed by XLPagerTabStripViewController
     TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
     AboutMe * aboutMe = [[AboutMe alloc] init];
-    return @[trackListVC, aboutMe];
+    return @[aboutMe,trackListVC];
 
 }
 

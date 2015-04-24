@@ -51,29 +51,12 @@
     [self.audioPlayer play];
 }
 
-
-
-- (IBAction) getTracks:(id) sender
-{
-    [[HelenHTTPSessionManager sharedClient] getTracksWithSuccess:^(NSURLSessionDataTask *operation, id responseObject) {
-                 TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
-                 trackListVC.tracks = (NSArray *)responseObject;
-                 [self presentViewController:trackListVC animated:YES completion:nil];
-             }
-             failure:^(NSURLSessionDataTask *operation, NSError *error) {
-                 [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error loading the tracks"
-                                             message:[error localizedDescription]
-                                            delegate:nil
-                                   cancelButtonTitle:@"Ok"
-                                   otherButtonTitles:nil] show];
-     }];
-}
-
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"AboutMeSegue"]) {
         if ([segue.destinationViewController isKindOfClass:[AboutMePagerTabStripVC class]]) {
             AboutMePagerTabStripVC *aboutME = (AboutMePagerTabStripVC *)segue.destinationViewController;
+        } else if ([segue.destinationViewController isKindOfClass:[TrackListTableViewController class]]) {
+            TrackListTableViewController * trackList = (TrackListTableViewController*)segue.destinationViewController;
         }
     }
 }
