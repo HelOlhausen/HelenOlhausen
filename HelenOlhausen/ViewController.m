@@ -10,7 +10,7 @@
 #import "TrackListTableViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "Constants.h"
-#import "AboutMePagerTabStripVC.h"
+#import "MainTableViewController.h"
 
 #import "HelenHTTPSessionManager.h"
 
@@ -53,10 +53,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"AboutMeSegue"]) {
-        if ([segue.destinationViewController isKindOfClass:[AboutMePagerTabStripVC class]]) {
-            AboutMePagerTabStripVC *aboutME = (AboutMePagerTabStripVC *)segue.destinationViewController;
-        } else if ([segue.destinationViewController isKindOfClass:[TrackListTableViewController class]]) {
+        if ([segue.destinationViewController isKindOfClass:[TrackListTableViewController class]]) {
             TrackListTableViewController * trackList = (TrackListTableViewController*)segue.destinationViewController;
+        } else if ([segue.destinationViewController isKindOfClass:[MainTableViewController class]]) {
+            MainTableViewController * mainTVC = (MainTableViewController*)segue.destinationViewController;
         }
     }
 }

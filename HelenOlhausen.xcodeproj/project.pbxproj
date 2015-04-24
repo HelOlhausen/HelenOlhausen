@@ -12,8 +12,8 @@
 		791A71961AE608B50036B4C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791A71951AE608B50036B4C0 /* AVFoundation.framework */; };
 		79292A371AE83D7900C42733 /* HelenHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79292A361AE83D7900C42733 /* HelenHTTPSessionManager.m */; };
 		79292A3E1AE84BFF00C42733 /* TryHel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79292A3D1AE84BFF00C42733 /* TryHel.mp3 */; };
+		794603DB1AEA056A007969D5 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794603DA1AEA056A007969D5 /* MainTableViewController.m */; };
 		79520B941AE8B18A005AD996 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79520B931AE8B18A005AD996 /* NSObject+Additions.m */; };
-		796FD3A91AE857A500913EF6 /* AboutMePagerTabStripVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD3A81AE857A500913EF6 /* AboutMePagerTabStripVC.m */; };
 		796FD3AC1AE85F5200913EF6 /* AboutMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD3AB1AE85F5200913EF6 /* AboutMe.m */; };
 		799DFAF41AE5F45E00A56021 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 799DFAF31AE5F45E00A56021 /* main.m */; };
 		799DFAF71AE5F45E00A56021 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 799DFAF61AE5F45E00A56021 /* AppDelegate.m */; };
@@ -43,10 +43,10 @@
 		79292A361AE83D7900C42733 /* HelenHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelenHTTPSessionManager.m; sourceTree = "<group>"; };
 		79292A3A1AE83F0A00C42733 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		79292A3D1AE84BFF00C42733 /* TryHel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = TryHel.mp3; path = ../TryHel.mp3; sourceTree = "<group>"; };
+		794603D91AEA056A007969D5 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		794603DA1AEA056A007969D5 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		79520B921AE8B18A005AD996 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
 		79520B931AE8B18A005AD996 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
-		796FD3A71AE857A500913EF6 /* AboutMePagerTabStripVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMePagerTabStripVC.h; sourceTree = "<group>"; };
-		796FD3A81AE857A500913EF6 /* AboutMePagerTabStripVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMePagerTabStripVC.m; sourceTree = "<group>"; };
 		796FD3AA1AE85F5200913EF6 /* AboutMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMe.h; sourceTree = "<group>"; };
 		796FD3AB1AE85F5200913EF6 /* AboutMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMe.m; sourceTree = "<group>"; };
 		799DFAEE1AE5F45E00A56021 /* HelenOlhausen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelenOlhausen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,10 +121,10 @@
 				791A71931AE5FFC00036B4C0 /* TrackListTableViewController.m */,
 				799DFAF81AE5F45E00A56021 /* ViewController.h */,
 				799DFAF91AE5F45E00A56021 /* ViewController.m */,
-				796FD3A71AE857A500913EF6 /* AboutMePagerTabStripVC.h */,
-				796FD3A81AE857A500913EF6 /* AboutMePagerTabStripVC.m */,
 				796FD3AA1AE85F5200913EF6 /* AboutMe.h */,
 				796FD3AB1AE85F5200913EF6 /* AboutMe.m */,
+				794603D91AEA056A007969D5 /* MainTableViewController.h */,
+				794603DA1AEA056A007969D5 /* MainTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,9 +350,9 @@
 				796FD3AC1AE85F5200913EF6 /* AboutMe.m in Sources */,
 				79292A371AE83D7900C42733 /* HelenHTTPSessionManager.m in Sources */,
 				791A71941AE5FFC00036B4C0 /* TrackListTableViewController.m in Sources */,
-				796FD3A91AE857A500913EF6 /* AboutMePagerTabStripVC.m in Sources */,
 				799DFAF71AE5F45E00A56021 /* AppDelegate.m in Sources */,
 				799DFAF41AE5F45E00A56021 /* main.m in Sources */,
+				794603DB1AEA056A007969D5 /* MainTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
