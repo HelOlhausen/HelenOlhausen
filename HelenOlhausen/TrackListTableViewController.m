@@ -70,18 +70,18 @@
     
     NSDictionary *track = [self.tracks objectAtIndex:indexPath.row];
     cell.textLabel.text = [track objectForKey:@"title"];
-    NSString * trackArtWork = [[track objectForKey:@"artwork_url"] valueOrNil];
+//    NSString * trackArtWork = [[track objectForKey:@"artwork_url"] valueOrNil];
     
-    if (trackArtWork != nil) {
-    NSURL *imageURL = [NSURL URLWithString:trackArtWork];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:imageData]];
-        });
-    });
-    }
+//    if (trackArtWork != nil) {
+//    NSURL *imageURL = [NSURL URLWithString:trackArtWork];
+//    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+//        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:imageData]];
+//        });
+//    });
+//    }
     return cell;
 }
 
