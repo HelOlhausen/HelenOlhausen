@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "XLPagerTabStripViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AboutMe : UIViewController <XLPagerTabStripChildItem>
-
+@property (nonatomic, strong) AVAudioPlayer *player;
 @end

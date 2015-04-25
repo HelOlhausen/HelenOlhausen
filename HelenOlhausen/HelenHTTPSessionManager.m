@@ -36,5 +36,13 @@
     [self GET:streamURL parameters:nil success:success failure:failure];
 }
 
+- (void)getTrackWithURL:(NSString *)trackURL
+                success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
+
+    [self setResponseSerializer:[AFJSONResponseSerializer serializer]];
+    [self GET:trackURL parameters:nil success:success failure:failure];
+
+}
 
 @end

@@ -15,6 +15,10 @@
 - (void)getTracksWithSuccess:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                      failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
 
+- (void)getTrackWithURL:(NSString *)trackURL
+          success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+          failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+
 - (void)getStream:(NSString *)streamURL
           success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
           failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;

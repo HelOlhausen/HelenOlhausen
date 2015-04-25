@@ -17,7 +17,7 @@
     self.isProgressiveIndicator = YES;
     self.isElasticIndicatorLimit = YES;
     // Do any additional setup after loading the view.
-    [self.buttonBarView.selectedBar setBackgroundColor:[UIColor orangeColor]];
+    [self.buttonBarView.selectedBar setBackgroundColor:[UIColor grayColor]];
     self.navigationController.navigationBar.hidden = YES;
     
     UICollectionViewLayoutAttributes *attributes = [self.buttonBarView layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:self.currentIndex inSection:0]];
@@ -44,10 +44,14 @@
 
 -(NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
 {
-    // create child view controllers that will be managed by XLPagerTabStripViewController
 //    TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
-    AboutMe * aboutMe = [[AboutMe alloc] init];
-    return @[aboutMe, ];
+    AboutMe * aboutMe1 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AboutMe1"];
+    AboutMe * aboutMe2 = [[AboutMe alloc] init];
+    AboutMe * aboutMe3 = [[AboutMe alloc] init];
+    AboutMe * aboutMe4 = [[AboutMe alloc] init];
+    AboutMe * aboutMe5 = [[AboutMe alloc] init];
+    
+    return @[aboutMe1,aboutMe2,aboutMe3,aboutMe4,aboutMe5];
 
 }
 
