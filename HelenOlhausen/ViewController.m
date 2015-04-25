@@ -16,6 +16,7 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+
 @end
 
 @implementation ViewController
@@ -33,12 +34,11 @@
     self.navigationController.navigationBar.translucent = YES;
     self.navigationController.view.backgroundColor = [UIColor clearColor];
     self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self playBackAudio];
+//    [self playBackAudio];
 }
 
 -(void)playBackAudio {

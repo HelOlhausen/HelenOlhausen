@@ -18,7 +18,7 @@
     self.isElasticIndicatorLimit = YES;
     // Do any additional setup after loading the view.
     [self.buttonBarView.selectedBar setBackgroundColor:[UIColor orangeColor]];
-    
+    self.navigationController.navigationBar.hidden = YES;
     
     UICollectionViewLayoutAttributes *attributes = [self.buttonBarView layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:self.currentIndex inSection:0]];
     CGRect cellRect = attributes.frame;
@@ -45,9 +45,9 @@
 -(NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
 {
     // create child view controllers that will be managed by XLPagerTabStripViewController
-    TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
+//    TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
     AboutMe * aboutMe = [[AboutMe alloc] init];
-    return @[aboutMe,trackListVC];
+    return @[aboutMe, ];
 
 }
 
