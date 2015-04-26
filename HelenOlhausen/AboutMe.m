@@ -20,6 +20,9 @@
 @property (strong, nonatomic) NSDictionary * track;
 @property (strong, nonatomic) NSData * trackStream;
 @property (weak, nonatomic) IBOutlet UIView *playPauseView;
+
+@property (weak, nonatomic) IBOutlet UILabel *songNameLabel;
+
 @end
 
 @implementation AboutMe
@@ -28,13 +31,17 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-//    [self fetchTrack];
+    [self fetchTrack];
     [self fetchStream];
     [self fetchWaveform];
+    
+    // song view
     self.playPauseButton = [[RSPlayPauseButton alloc] init];
     self.playPauseButton.animationStyle = RSPlayPauseButtonAnimationStyleSplitAndRotate;
     self.playPauseButton.tintColor = [UIColor whiteColor];
+    
     self.playPauseButton.alpha = 0.5f;
+    
     self.playPauseButton.enabled = false;
     [self.playPauseButton addTarget:self action:@selector(playPauseButtonDidPress:) forControlEvents:UIControlEventTouchUpInside];
     [self.playPauseView addSubview:self.playPauseButton];
@@ -43,6 +50,22 @@
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.player stop];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    if ([self.titleForStory isEqualToString:@"DEVELOPMENT + ME"]) {
+        [UIView animateWithDuration:1
+                         animations:^{
+                             if (self.leadingSpaceTitle.constant != 150) {
+                                 self.leadingSpaceTitle.constant = 150;
+                             } else {
+                                 self.leadingSpaceTitle.constant = 16;
+                             }
+                             [self.view setNeedsLayout];
+                             [self.view layoutIfNeeded];
+                         }
+                         completion:nil];
+    }
 }
 
 - (void)viewDidLayoutSubviews
@@ -62,7 +85,7 @@
     [[HelenHTTPSessionManager sharedClient] getTrackWithURL:@"http://api.soundcloud.com/resolve.json?url=https://soundcloud.com/helen-olhausen/me-haces-bien-jorge-drexler-by-helen&client_id=18a54722bf90fb2d9723570ccefa02b3"
         success:^(NSURLSessionDataTask *operation, id responseObject) {
             self.track = (NSDictionary *)responseObject;
-            NSLog(@"%@",self.track);
+            self.songNameLabel.text = [self.track objectForKey:@"title"];
     }
          failure:^(NSURLSessionDataTask *operation, NSError *error) {
              [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error loading the track, make sure to connect to internet"
@@ -103,8 +126,11 @@
     [manager GET:streamURL parameters:nil
                                               success:^(NSURLSessionDataTask *operation, id responseObject) {
                                                   self.trackStream = (NSData *)responseObject;
+                                                  
+                                                  // setup song view once I have the stream
                                                   self.playPauseButton.alpha = 1.0f;
-                                                  self.playPauseButton.enabled = true;
+                                                  self.playPauseButton.enabled = YES;
+                                                  self.songNameLabel.hidden = NO;
                                                   
                                               }
                                               failure:^(NSURLSessionDataTask *operation, NSError *error) {

@@ -51,13 +51,19 @@
     
     AboutMe * currentChild = (AboutMe*)[self.pagerTabStripChildViewControllers objectAtIndex:self.currentIndex];
     
+    if (![currentChild.titleForStory isEqualToString:@"DEVELOPMENT + ME"]) {
     [UIView animateWithDuration:1
                      animations:^{
-                         currentChild.leadingSpaceTitle.constant = 150;
+                         if (currentChild.leadingSpaceTitle.constant != 150) {
+                             currentChild.leadingSpaceTitle.constant = 150;
+                         } else {
+                             currentChild.leadingSpaceTitle.constant = 16;
+                         }
                          [currentChild.view setNeedsLayout];
                          [currentChild.view layoutIfNeeded];
                      }
                      completion:nil];
+    }
 }
 
 
