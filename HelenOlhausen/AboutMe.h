@@ -11,6 +11,9 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface AboutMe : UIViewController <XLPagerTabStripChildItem>
-@property (nonatomic, strong) AVAudioPlayer *player;
-
+@property (nonatomic, strong) NSString * titleForStory;
+@property (nonatomic, strong) NSString * story;
+@property (nonatomic, strong) NSString * songURL;
+@property (nonatomic, strong) NSString * waveformURL;
+@property (nonatomic, strong) NSString * backColor; //hex
 @end

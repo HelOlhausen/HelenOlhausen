@@ -12,15 +12,19 @@
 #import "RSPlayPauseButton.h"
 
 @interface AboutMe()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @property (weak, nonatomic) IBOutlet UIImageView *waveFormImageView;
 @property (nonatomic,strong) RSPlayPauseButton *playPauseButton;
-
+@property (nonatomic, strong) AVAudioPlayer *player;
 @property (strong, nonatomic) NSDictionary * track;
 @property (strong, nonatomic) NSData * trackStream;
 @property (weak, nonatomic) IBOutlet UIView *playPauseView;
 @end
 
 @implementation AboutMe
+
+#pragma mark - Lifecycle
 
 -(void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +36,7 @@
     self.playPauseButton.alpha = 0.5f;
     self.playPauseButton.enabled = false;
     [self.playPauseButton addTarget:self action:@selector(playPauseButtonDidPress:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.playPauseButton];
+    [self.playPauseView addSubview:self.playPauseButton];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -43,7 +47,14 @@
 - (void)viewDidLayoutSubviews
 {
     [self.playPauseButton sizeToFit];
-    self.playPauseButton.center = self.view.center;
+    self.titleLabel.text = self.titleForStory;
+}
+
+#pragma mark - Setters
+
+-(void)setTitleForStory:(NSString *)titleForStory {
+    _titleForStory = titleForStory;
+    self.titleLabel.text = titleForStory;
 }
 
 -(void)fetchTrack {
@@ -116,7 +127,7 @@
 }
 
 - (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
-    return @"About me";
+    return self.titleForStory;
 }
 
 - (void)playPauseButtonDidPress:(RSPlayPauseButton *)playPauseButton {
