@@ -120,11 +120,6 @@
 }
 
 - (void)playPauseButtonDidPress:(RSPlayPauseButton *)playPauseButton {
-    
-//    
-//    if (!self.trackStream) {
-//        [self fetchStream];
-//    }
     NSError *playerError;
     self.player = [[AVAudioPlayer alloc] initWithData:self.trackStream error:&playerError];
     

@@ -12,4 +12,5 @@
 
 @interface AboutMe : UIViewController <XLPagerTabStripChildItem>
 @property (nonatomic, strong) AVAudioPlayer *player;
+
 @end

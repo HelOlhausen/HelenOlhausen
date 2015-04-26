@@ -46,14 +46,13 @@
 -(NSArray *)childViewControllersForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
 {
 //    TrackListTableViewController *trackListVC = [[TrackListTableViewController alloc] init];
-    ViewController * mainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"IntroView"];
     AboutMe * aboutMe1 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AboutMe1"];
     AboutMe * aboutMe2 = [[AboutMe alloc] init];
     AboutMe * aboutMe3 = [[AboutMe alloc] init];
     AboutMe * aboutMe4 = [[AboutMe alloc] init];
     AboutMe * aboutMe5 = [[AboutMe alloc] init];
     
-    return @[mainVC,aboutMe1,aboutMe2,aboutMe3,aboutMe4];
+    return @[aboutMe1,aboutMe2,aboutMe3,aboutMe4];
 
 }
 
