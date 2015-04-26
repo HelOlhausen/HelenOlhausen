@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="7bW-eo-hgC">
             <objects>
-                <viewController storyboardIdentifier="IntroView" id="zo3-7u-GY4" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroView" id="zo3-7u-GY4" customClass="WelcomeViewController" customModule="HelenOlhausen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u6N-00-KbZ"/>
                         <viewControllerLayoutGuide type="bottom" id="bUR-Tx-JHY"/>
@@ -33,7 +33,7 @@
                                             </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <state key="normal" title="Lets find out more!">
+                                        <state key="normal" title="Want to find out more?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
@@ -44,8 +44,8 @@
                                             <segue destination="ZYi-Q7-abP" kind="show" id="Cko-z6-7h6"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your sound is on, I want to share some more music with you :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWb-st-y2j">
-                                        <rect key="frame" x="16" y="48" width="488" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your sound is on and that you are connected to the internet, I want to share some more music with you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWb-st-y2j">
+                                        <rect key="frame" x="16" y="48" width="488" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAg-Zp-BYQ" userLabel="StoryView">
-                                <rect key="frame" x="40" y="96" width="474" height="352"/>
+                                <rect key="frame" x="40" y="96" width="474" height="329"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hi there, I’m Helen!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU5-vp-Utm" userLabel="Hi">
                                         <rect key="frame" x="8" y="8" width="458" height="94"/>
@@ -84,26 +84,24 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7G-GZ-2Uy" userLabel="Intro2">
-                                        <rect key="frame" x="8" y="216" width="450" height="128"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What you are listening to now, it's me :)" translatesAutoresizingMaskIntoConstraints="NO" id="E7G-GZ-2Uy" userLabel="Intro2">
+                                        <rect key="frame" x="8" y="281" width="450" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">I have many passions one of them besides coding is making music... What you are listening now its me :) So if you would like to join me I can share some more music and more about me</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzs-rP-IeT" userLabel="Intro1">
-                                        <rect key="frame" x="8" y="110" width="446" height="100"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="I'm a person of many passions, coding and making music are at the top of them. I code while I sing I sing while I code!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzs-rP-IeT" userLabel="Intro1">
+                                        <rect key="frame" x="8" y="110" width="436" height="77"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">So I'm a developer, an iOS developer though I developed in some other languages before. I have no special superpower, I don't consider myself a prodigy in programing but I do it with passion and dedication, and that probably adds a little something to what I do.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         </variation>
                                     </textView>
                                 </subviews>
@@ -111,10 +109,10 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="E7G-GZ-2Uy" secondAttribute="bottom" constant="8" id="05n-ER-fRi"/>
                                     <constraint firstAttribute="bottom" secondItem="Hzs-rP-IeT" secondAttribute="bottom" constant="142" id="3ab-rH-5PQ"/>
-                                    <constraint firstItem="E7G-GZ-2Uy" firstAttribute="top" secondItem="Hzs-rP-IeT" secondAttribute="bottom" constant="6" id="5tz-Lo-BMN"/>
+                                    <constraint firstItem="E7G-GZ-2Uy" firstAttribute="top" secondItem="Hzs-rP-IeT" secondAttribute="bottom" constant="94" id="5tz-Lo-BMN"/>
                                     <constraint firstItem="aU5-vp-Utm" firstAttribute="leading" secondItem="LAg-Zp-BYQ" secondAttribute="leading" constant="8" id="705-a0-m9f"/>
                                     <constraint firstAttribute="bottom" secondItem="Hzs-rP-IeT" secondAttribute="bottom" constant="86" id="7wG-gj-39t"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hzs-rP-IeT" secondAttribute="trailing" constant="20" id="AbF-AB-xYf">
+                                    <constraint firstAttribute="trailing" secondItem="Hzs-rP-IeT" secondAttribute="trailing" constant="30" id="AbF-AB-xYf">
                                         <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                                     </constraint>
                                     <constraint firstItem="aU5-vp-Utm" firstAttribute="top" secondItem="LAg-Zp-BYQ" secondAttribute="top" constant="8" id="Lb4-rm-JC9"/>
@@ -123,6 +121,7 @@
                                     </constraint>
                                     <constraint firstItem="E7G-GZ-2Uy" firstAttribute="leading" secondItem="LAg-Zp-BYQ" secondAttribute="leading" constant="8" id="eV5-rX-lDG"/>
                                     <constraint firstItem="Hzs-rP-IeT" firstAttribute="leading" secondItem="LAg-Zp-BYQ" secondAttribute="leading" constant="8" id="j93-OY-o90"/>
+                                    <constraint firstItem="E7G-GZ-2Uy" firstAttribute="top" secondItem="LAg-Zp-BYQ" secondAttribute="top" constant="281" id="leF-Sm-Keb"/>
                                     <constraint firstAttribute="trailing" secondItem="aU5-vp-Utm" secondAttribute="trailing" constant="8" id="mIz-P9-EJa"/>
                                     <constraint firstItem="Hzs-rP-IeT" firstAttribute="top" secondItem="aU5-vp-Utm" secondAttribute="bottom" constant="8" id="nzC-6q-MHz"/>
                                     <constraint firstItem="Hzs-rP-IeT" firstAttribute="top" secondItem="LAg-Zp-BYQ" secondAttribute="top" constant="86" id="yNm-L9-jJU"/>
@@ -132,6 +131,7 @@
                                     <mask key="constraints">
                                         <exclude reference="7wG-gj-39t"/>
                                         <exclude reference="yNm-L9-jJU"/>
+                                        <exclude reference="5tz-Lo-BMN"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -191,7 +191,7 @@
         <!--About Me-->
         <scene sceneID="xmV-Ps-tRU">
             <objects>
-                <viewController storyboardIdentifier="AboutMe1" id="U34-Fk-1UR" customClass="AboutMe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutMe" id="U34-Fk-1UR" customClass="AboutMe" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l7X-FF-mGO"/>
                         <viewControllerLayoutGuide type="bottom" id="KYg-6R-lg0"/>
@@ -264,10 +264,10 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiZ-7U-pw0" userLabel="StoryView">
-                                <rect key="frame" x="38" y="50" width="473" height="286"/>
+                                <rect key="frame" x="38" y="40" width="506" height="296"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Story text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-KW-qUO">
-                                        <rect key="frame" x="8" y="67" width="449" height="114"/>
+                                        <rect key="frame" x="8" y="40" width="482" height="248"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
@@ -277,7 +277,7 @@
                                         </variation>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPER + ME" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suj-65-LqO">
-                                        <rect key="frame" x="16" y="25" width="169" height="24"/>
+                                        <rect key="frame" x="16" y="8" width="169" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -288,13 +288,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="lwG-KW-qUO" firstAttribute="top" secondItem="aiZ-7U-pw0" secondAttribute="top" constant="67" id="8HW-NC-oXk"/>
+                                    <constraint firstItem="lwG-KW-qUO" firstAttribute="top" secondItem="aiZ-7U-pw0" secondAttribute="top" constant="40" id="8HW-NC-oXk"/>
                                     <constraint firstAttribute="trailing" secondItem="lwG-KW-qUO" secondAttribute="trailing" constant="16" id="KyS-9x-wDi"/>
                                     <constraint firstItem="lwG-KW-qUO" firstAttribute="leading" secondItem="aiZ-7U-pw0" secondAttribute="leading" constant="8" id="Tq5-sU-vLk"/>
-                                    <constraint firstAttribute="bottom" secondItem="lwG-KW-qUO" secondAttribute="bottom" constant="105" id="W6z-58-Ns1"/>
+                                    <constraint firstAttribute="bottom" secondItem="lwG-KW-qUO" secondAttribute="bottom" constant="8" id="W6z-58-Ns1"/>
                                     <constraint firstItem="lwG-KW-qUO" firstAttribute="leading" secondItem="suj-65-LqO" secondAttribute="leading" id="hCw-6V-1YM"/>
                                     <constraint firstItem="suj-65-LqO" firstAttribute="leading" secondItem="aiZ-7U-pw0" secondAttribute="leading" constant="16" id="uqe-pW-ehq"/>
-                                    <constraint firstItem="lwG-KW-qUO" firstAttribute="top" secondItem="suj-65-LqO" secondAttribute="bottom" constant="18" id="xhW-Se-fLK"/>
+                                    <constraint firstItem="lwG-KW-qUO" firstAttribute="top" secondItem="suj-65-LqO" secondAttribute="bottom" constant="8" id="xhW-Se-fLK"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -310,10 +310,10 @@
                             <constraint firstItem="YMo-3C-e7M" firstAttribute="top" secondItem="l7X-FF-mGO" secondAttribute="bottom" constant="511" id="HHI-O8-Aed"/>
                             <constraint firstItem="KYg-6R-lg0" firstAttribute="top" secondItem="YMo-3C-e7M" secondAttribute="bottom" constant="-60" id="IVH-qM-Mi1"/>
                             <constraint firstItem="DId-Ok-Ir4" firstAttribute="leading" secondItem="aNt-YI-ce6" secondAttribute="leading" id="Jit-Qr-UgL"/>
-                            <constraint firstItem="aiZ-7U-pw0" firstAttribute="top" secondItem="l7X-FF-mGO" secondAttribute="bottom" constant="30" id="Oy9-uN-x09"/>
+                            <constraint firstItem="aiZ-7U-pw0" firstAttribute="top" secondItem="l7X-FF-mGO" secondAttribute="bottom" constant="20" id="Oy9-uN-x09"/>
                             <constraint firstItem="2mC-rV-fNI" firstAttribute="leading" secondItem="aNt-YI-ce6" secondAttribute="leading" id="Pvf-Oi-Juf"/>
                             <constraint firstItem="KYg-6R-lg0" firstAttribute="top" secondItem="2mC-rV-fNI" secondAttribute="bottom" constant="109" id="QWx-hp-8cv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aiZ-7U-pw0" secondAttribute="trailing" constant="73" id="S1V-8X-Znf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aiZ-7U-pw0" secondAttribute="trailing" constant="40" id="S1V-8X-Znf"/>
                             <constraint firstItem="YMo-3C-e7M" firstAttribute="leading" secondItem="aNt-YI-ce6" secondAttribute="leading" id="TgZ-Rw-4aN"/>
                             <constraint firstItem="YMo-3C-e7M" firstAttribute="top" secondItem="DId-Ok-Ir4" secondAttribute="bottom" constant="-129" id="gyR-KC-4DO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YMo-3C-e7M" secondAttribute="trailing" constant="-16" id="hcO-hf-maS"/>

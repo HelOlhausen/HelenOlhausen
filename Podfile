@@ -7,7 +7,7 @@ target 'HelenOlhausen' do
     #pod 'CocoaSoundCloudUI', :git => 'https://github.com/HelOlhausen/CocoaSoundCloudUI.git', :branch => 'master', :inhibit_warnings => true
     pod 'AFNetworking' , '2.5.3'
     pod 'XLPagerTabStrip', '~> 1.0'
-    pod 'RSPlayPauseButton', '~> 1.0'
+    pod 'RSPlayPauseButton', :git => 'https://github.com/HelOlhausen/RSPlayPauseButton.git', :branch => 'master', :inhibit_warnings => true
 end
 
 target 'HelenOlhausenTests' do

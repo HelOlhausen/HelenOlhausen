@@ -25,8 +25,19 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.3)
-  - RSPlayPauseButton (~> 1.0)
+  - RSPlayPauseButton (from `https://github.com/HelOlhausen/RSPlayPauseButton.git`,
+    branch `master`)
   - XLPagerTabStrip (~> 1.0)
+
+EXTERNAL SOURCES:
+  RSPlayPauseButton:
+    :branch: master
+    :git: https://github.com/HelOlhausen/RSPlayPauseButton.git
+
+CHECKOUT OPTIONS:
+  RSPlayPauseButton:
+    :commit: 5da85a09dc0d20e9927ac48e9c2b731014ff62af
+    :git: https://github.com/HelOlhausen/RSPlayPauseButton.git
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
