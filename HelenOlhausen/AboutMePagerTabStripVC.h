@@ -7,7 +7,8 @@
 //
 
 #import "XLButtonBarPagerTabStripViewController.h"
+#import "XLTwitterPagerTabStripViewController.h"
 
-@interface AboutMePagerTabStripVC : XLButtonBarPagerTabStripViewController
+@interface AboutMePagerTabStripVC : XLTwitterPagerTabStripViewController
 
 @end

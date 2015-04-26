@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K6v-cC-TU1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZYi-Q7-abP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="7bW-eo-hgC">
             <objects>
-                <viewController id="zo3-7u-GY4" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroView" id="zo3-7u-GY4" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u6N-00-KbZ"/>
                         <viewControllerLayoutGuide type="bottom" id="bUR-Tx-JHY"/>
@@ -145,9 +145,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K6v-cC-TU1" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MDl-j3-orB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="MDl-j3-orB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23921568630000001" green="0.83137254900000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -340,12 +341,67 @@
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="buttonBarView" destination="n8K-NM-5bm" id="jy7-ZE-3Vz"/>
                         <outlet property="containerView" destination="HMA-gL-KFC" id="YJX-dy-8HW"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1309" y="136"/>
+        </scene>
+        <!--About Me Pager Tab StripVC-->
+        <scene sceneID="CsA-Zc-ChI">
+            <objects>
+                <viewController id="jxD-DU-F5Q" customClass="AboutMePagerTabStripVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nwR-bP-Kao"/>
+                        <viewControllerLayoutGuide type="bottom" id="OJK-Cy-0eX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uK5-hP-t1g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emx-cx-vVk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="emx-cx-vVk" firstAttribute="leading" secondItem="uK5-hP-t1g" secondAttribute="leading" id="EKW-rH-F0b"/>
+                            <constraint firstItem="OJK-Cy-0eX" firstAttribute="top" secondItem="emx-cx-vVk" secondAttribute="bottom" id="c57-H3-Wu4"/>
+                            <constraint firstAttribute="trailing" secondItem="emx-cx-vVk" secondAttribute="trailing" id="p8c-8J-DTU"/>
+                            <constraint firstItem="emx-cx-vVk" firstAttribute="top" secondItem="nwR-bP-Kao" secondAttribute="bottom" id="sqp-kW-wc4"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="KvR-l7-RfW">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="emx-cx-vVk" id="Ro4-9M-V5u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="skE-6I-jrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="-1490"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pWm-cl-k8E">
+            <objects>
+                <navigationController id="ZYi-Q7-abP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="Pe5-qS-WU7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23921568630000001" green="0.83137254900000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jxD-DU-F5Q" kind="relationship" relationship="rootViewController" id="fu4-5Y-H8p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lU-1d-eu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="-1490"/>
         </scene>
     </scenes>
     <resources>
