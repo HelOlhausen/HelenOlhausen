@@ -53,11 +53,13 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
+    float constant = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ? self.view.frame.size.width/3 : self.view.frame.size.width/5;
+    
     if ([self.titleForStory isEqualToString:@"DEVELOPMENT + ME"]) {
-        [UIView animateWithDuration:1
+        [UIView animateWithDuration:0.5
                          animations:^{
-                             if (self.leadingSpaceTitle.constant != 150) {
-                                 self.leadingSpaceTitle.constant = 150;
+                             if (self.leadingSpaceTitle.constant != constant) {
+                                 self.leadingSpaceTitle.constant = constant;
                              } else {
                                  self.leadingSpaceTitle.constant = 16;
                              }

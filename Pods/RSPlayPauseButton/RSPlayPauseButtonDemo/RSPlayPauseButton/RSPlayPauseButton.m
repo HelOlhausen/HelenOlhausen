@@ -10,7 +10,7 @@
 #include <tgmath.h> // type generic math, yo: http://en.wikipedia.org/wiki/Tgmath.h#tgmath.h
 
 
-static const CGFloat kScale = 1.5;
+static const CGFloat kScale = 2;
 static const CGFloat kBorderSize = 32.0 * kScale;
 static const CGFloat kBorderWidth = 3.0 * kScale;
 static const CGFloat kSize = kBorderSize + kBorderWidth; // The total size is the border size + 2x half the border width.

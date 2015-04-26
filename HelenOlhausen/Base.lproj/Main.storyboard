@@ -33,7 +33,7 @@
                                             </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <state key="normal" title="Start Journey">
+                                        <state key="normal" title="Lets find out more!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
@@ -44,8 +44,8 @@
                                             <segue destination="ZYi-Q7-abP" kind="show" id="Cko-z6-7h6"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure to have your sound on, I want to share some more music with you :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWb-st-y2j">
-                                        <rect key="frame" x="16" y="48" width="488" height="32"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure your sound is on, I want to share some more music with you :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWb-st-y2j">
+                                        <rect key="frame" x="16" y="48" width="488" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -181,6 +181,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="OkC-AZ-Ngm"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4l-iY-eOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,14 +204,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="1" green="0.36862745098039218" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMo-3C-e7M">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMo-3C-e7M" userLabel="Waveform">
                                 <rect key="frame" x="0.0" y="471" width="600" height="189"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-rV-fNI" userLabel="SongView">
                                 <rect key="frame" x="0.0" y="377" width="600" height="114"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWq-5Y-q7k" userLabel="PlayPauseView">
-                                        <rect key="frame" x="268" y="0.0" width="64" height="114"/>
+                                        <rect key="frame" x="50" y="0.0" width="64" height="114"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="114" id="Div-jo-5Rl"/>
                                             <constraint firstAttribute="width" secondItem="YWq-5Y-q7k" secondAttribute="height" multiplier="1:1" constant="1" id="nCd-Jz-FLh"/>
@@ -222,29 +223,42 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoC-RX-4Mz" userLabel="SongName">
-                                        <rect key="frame" x="350" y="11" width="210" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoC-RX-4Mz" userLabel="SongName">
+                                        <rect key="frame" x="132" y="11" width="421" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="aMN-Cg-iYV"/>
                                             <constraint firstAttribute="width" constant="210" id="oPe-jG-BS2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="oPe-jG-BS2"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="YWq-5Y-q7k" secondAttribute="centerX" id="4Zc-YI-ayb"/>
                                     <constraint firstItem="YWq-5Y-q7k" firstAttribute="centerY" secondItem="DoC-RX-4Mz" secondAttribute="centerY" constant="25" id="5Gv-wk-Hu6"/>
+                                    <constraint firstAttribute="trailing" secondItem="DoC-RX-4Mz" secondAttribute="trailing" constant="47" id="8jk-3M-bTH"/>
                                     <constraint firstItem="YWq-5Y-q7k" firstAttribute="leading" secondItem="2mC-rV-fNI" secondAttribute="leading" id="K9E-Wt-RJh"/>
                                     <constraint firstItem="YWq-5Y-q7k" firstAttribute="top" secondItem="2mC-rV-fNI" secondAttribute="top" id="TeY-t4-KeT"/>
                                     <constraint firstAttribute="bottom" secondItem="YWq-5Y-q7k" secondAttribute="bottom" id="XPl-6Y-XkS"/>
+                                    <constraint firstItem="YWq-5Y-q7k" firstAttribute="leading" secondItem="2mC-rV-fNI" secondAttribute="leading" constant="50" id="d7r-iE-l2s">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                     <constraint firstItem="DoC-RX-4Mz" firstAttribute="leading" secondItem="YWq-5Y-q7k" secondAttribute="trailing" constant="18" id="noU-Ot-8ho"/>
                                     <constraint firstAttribute="height" constant="114" id="wiF-hb-ZGY"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="4Zc-YI-ayb"/>
                                         <exclude reference="K9E-Wt-RJh"/>
                                     </mask>
                                 </variation>
@@ -257,15 +271,15 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         </variation>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPER + ME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suj-65-LqO">
-                                        <rect key="frame" x="16" y="19" width="211" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPER + ME" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suj-65-LqO">
+                                        <rect key="frame" x="16" y="25" width="169" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -358,6 +372,7 @@
                     <navigationItem key="navigationItem" id="KvR-l7-RfW">
                         <nil key="title"/>
                     </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="containerView" destination="emx-cx-vVk" id="Ro4-9M-V5u"/>
                     </connections>
@@ -371,6 +386,7 @@
             <objects>
                 <navigationController id="ZYi-Q7-abP" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="Pe5-qS-WU7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

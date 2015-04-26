@@ -51,11 +51,14 @@
     
     AboutMe * currentChild = (AboutMe*)[self.pagerTabStripChildViewControllers objectAtIndex:self.currentIndex];
     
+//    UIDevice.currentDevice().userInterfaceIdiom == .Phone ? 18 : 24
+     float constant = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ? self.view.frame.size.width/3 : self.view.frame.size.width/5;
+    
     if (![currentChild.titleForStory isEqualToString:@"DEVELOPMENT + ME"]) {
-    [UIView animateWithDuration:1
+    [UIView animateWithDuration:0.5
                      animations:^{
-                         if (currentChild.leadingSpaceTitle.constant != 150) {
-                             currentChild.leadingSpaceTitle.constant = 150;
+                         if (currentChild.leadingSpaceTitle.constant != constant) {
+                             currentChild.leadingSpaceTitle.constant = constant;
                          } else {
                              currentChild.leadingSpaceTitle.constant = 16;
                          }
