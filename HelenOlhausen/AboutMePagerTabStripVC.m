@@ -11,6 +11,10 @@
 #import "AboutMe.h"
 #import "ViewController.h"
 
+@interface AboutMePagerTabStripVC()
+
+@end
+
 @implementation AboutMePagerTabStripVC
 
 - (void)viewDidLoad {
@@ -49,8 +53,20 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [super scrollViewDidScroll:scrollView];
     
+    CGPoint destinationOffset = CGPointMake(scrollView.contentOffset.x, 0);
+    NSLog(@"actual %f",scrollView.contentOffset.x);
+    NSLog(@"detination %f",destinationOffset.x);
+    NSLog(@"scrollper %f", [self scrollPercentage]);
+    [((AboutMe *)[self.pagerTabStripChildViewControllers objectAtIndex:self.currentIndex]).storyScroll setContentOffset:destinationOffset animated:YES];
+//    [UIView animateWithDuration:1
+//                     animations:^{
+////                         ((AboutMe *)[self.childViewControllers objectAtIndex:0]).leadingSpaceTitle.constant = 200;
+////                         [((AboutMe *)[self.childViewControllers objectAtIndex:0]).view setNeedsLayout];
+////                         [((AboutMe *)[self.childViewControllers objectAtIndex:0]).view layoutIfNeeded];
+//                     }
+//                     completion:nil];
+    [super scrollViewDidScroll:scrollView];
 }
 
 

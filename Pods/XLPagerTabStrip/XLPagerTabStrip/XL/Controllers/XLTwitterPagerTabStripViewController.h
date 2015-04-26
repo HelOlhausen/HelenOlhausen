@@ -32,4 +32,9 @@
 @property (nonatomic) UIFont * landscapeTitleFont;
 @property (nonatomic) UIFont * portraitTitleFont;
 
+-(void)pagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
+          updateIndicatorFromIndex:(NSInteger)fromIndex
+                           toIndex:(NSInteger)toIndex
+            withProgressPercentage:(CGFloat)progressPercentage;
+
 @end

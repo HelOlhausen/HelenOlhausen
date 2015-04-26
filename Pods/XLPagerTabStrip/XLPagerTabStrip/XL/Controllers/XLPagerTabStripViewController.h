@@ -96,4 +96,6 @@ typedef NS_ENUM(NSUInteger, XLPagerTabStripDirection) {
 -(void)moveToViewController:(UIViewController *)viewController;
 -(void)reloadPagerTabStripView;
 
+-(CGFloat)scrollPercentage;
+
 @end

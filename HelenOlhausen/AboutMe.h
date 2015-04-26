@@ -16,4 +16,10 @@
 @property (nonatomic, strong) NSString * songURL;
 @property (nonatomic, strong) NSString * waveformURL;
 @property (nonatomic, strong) NSString * backColor; //hex
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadingSpaceTitle;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *storyScroll;
+
+
 @end

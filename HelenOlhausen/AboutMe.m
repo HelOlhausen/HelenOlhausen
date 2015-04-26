@@ -20,6 +20,10 @@
 @property (strong, nonatomic) NSDictionary * track;
 @property (strong, nonatomic) NSData * trackStream;
 @property (weak, nonatomic) IBOutlet UIView *playPauseView;
+
+
+
+
 @end
 
 @implementation AboutMe
