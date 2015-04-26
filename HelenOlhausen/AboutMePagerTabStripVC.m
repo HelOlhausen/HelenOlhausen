@@ -39,7 +39,7 @@
     aboutMe3.titleForStory = @"ME + WORK";
     
     AboutMe * aboutMe4 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AboutMe1"];
-    aboutMe3.titleForStory = @"ME + SOME SHIT";
+    aboutMe4.titleForStory = @"ME + ME";
     
 //    AboutMe * aboutMe5 = [[AboutMe alloc] init];
     
@@ -47,10 +47,17 @@
 
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    [super scrollViewDidScroll:scrollView];
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     
+    AboutMe * currentChild = (AboutMe*)[self.pagerTabStripChildViewControllers objectAtIndex:self.currentIndex];
+    
+    [UIView animateWithDuration:1
+                     animations:^{
+                         currentChild.leadingSpaceTitle.constant = 150;
+                         [currentChild.view setNeedsLayout];
+                         [currentChild.view layoutIfNeeded];
+                     }
+                     completion:nil];
 }
 
 

@@ -32,6 +32,7 @@
     [self fetchStream];
     [self fetchWaveform];
     self.playPauseButton = [[RSPlayPauseButton alloc] init];
+    self.playPauseButton.animationStyle = RSPlayPauseButtonAnimationStyleSplitAndRotate;
     self.playPauseButton.tintColor = [UIColor whiteColor];
     self.playPauseButton.alpha = 0.5f;
     self.playPauseButton.enabled = false;
@@ -127,7 +128,8 @@
 }
 
 - (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
-    return self.titleForStory;
+//    return self.titleForStory;
+    return @"";
 }
 
 - (void)playPauseButtonDidPress:(RSPlayPauseButton *)playPauseButton {
@@ -135,12 +137,12 @@
     self.player = [[AVAudioPlayer alloc] initWithData:self.trackStream error:&playerError];
     
     if (playPauseButton.isPaused) {
-        [playPauseButton setPaused:!playPauseButton.isPaused animated:YES];
         [self.player prepareToPlay];
         [self.player play];
     } else {
         [self.player stop];
     }
+    [playPauseButton setPaused:!playPauseButton.isPaused animated:YES];
 }
 
 @end
