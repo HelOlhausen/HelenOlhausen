@@ -223,7 +223,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoC-RX-4Mz" userLabel="SongName">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoC-RX-4Mz" userLabel="SongName">
                                         <rect key="frame" x="132" y="11" width="421" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="aMN-Cg-iYV"/>
@@ -266,15 +266,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiZ-7U-pw0" userLabel="StoryView">
                                 <rect key="frame" x="38" y="50" width="473" height="286"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-KW-qUO">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Story text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwG-KW-qUO">
                                         <rect key="frame" x="8" y="67" width="449" height="114"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                         </variation>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPER + ME" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suj-65-LqO">
@@ -335,6 +334,7 @@
                         <outlet property="leadingSpaceTitle" destination="uqe-pW-ehq" id="WDI-rh-xs0"/>
                         <outlet property="playPauseView" destination="YWq-5Y-q7k" id="lU8-fD-0sd"/>
                         <outlet property="songNameLabel" destination="DoC-RX-4Mz" id="vV8-f1-fyC"/>
+                        <outlet property="storyTextField" destination="lwG-KW-qUO" id="k4w-Ri-1bv"/>
                         <outlet property="titleLabel" destination="suj-65-LqO" id="TVn-wf-6Nf"/>
                         <outlet property="waveFormImageView" destination="YMo-3C-e7M" id="nsx-9r-SxY"/>
                     </connections>

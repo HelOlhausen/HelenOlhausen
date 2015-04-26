@@ -13,11 +13,9 @@
 @interface AboutMe : UIViewController <XLPagerTabStripChildItem>
 @property (nonatomic, strong) NSString * titleForStory;
 @property (nonatomic, strong) NSString * story;
-@property (nonatomic, strong) NSString * songURL;
-@property (nonatomic, strong) NSString * waveformURL;
-@property (nonatomic, strong) NSString * backColor; //hex
+@property (nonatomic, strong) NSString * streamURL;
+@property (nonatomic, strong) NSString * trackURL;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadingSpaceTitle;
-
 
 @end

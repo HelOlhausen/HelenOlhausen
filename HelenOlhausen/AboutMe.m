@@ -13,13 +13,17 @@
 
 @interface AboutMe()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UITextView *storyTextField;
 
 @property (weak, nonatomic) IBOutlet UIImageView *waveFormImageView;
 @property (nonatomic,strong) RSPlayPauseButton *playPauseButton;
+@property (weak, nonatomic) IBOutlet UIView *playPauseView;
+
 @property (nonatomic, strong) AVAudioPlayer *player;
+
 @property (strong, nonatomic) NSDictionary * track;
 @property (strong, nonatomic) NSData * trackStream;
-@property (weak, nonatomic) IBOutlet UIView *playPauseView;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *songNameLabel;
 
@@ -31,9 +35,11 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    [self fetchTrack];
     [self fetchStream];
+    [self fetchTrack];
     [self fetchWaveform];
+    
+    [self configureUI];
     
     // song view
     self.playPauseButton = [[RSPlayPauseButton alloc] init];
@@ -41,6 +47,7 @@
     self.playPauseButton.tintColor = [UIColor whiteColor];
     
     self.playPauseButton.alpha = 0.5f;
+    self.songNameLabel.alpha = 0.5f;
     
     self.playPauseButton.enabled = false;
     [self.playPauseButton addTarget:self action:@selector(playPauseButtonDidPress:) forControlEvents:UIControlEventTouchUpInside];
@@ -55,8 +62,8 @@
 -(void)viewDidAppear:(BOOL)animated {
     float constant = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ? self.view.frame.size.width/3 : self.view.frame.size.width/5;
     
-    if ([self.titleForStory isEqualToString:@"DEVELOPMENT + ME"]) {
-        [UIView animateWithDuration:0.5
+    if ([self.titleForStory isEqualToString:@"INTRO"]) { // TODO: ACA PONER EL 1er hijo!
+        [UIView animateWithDuration:1
                          animations:^{
                              if (self.leadingSpaceTitle.constant != constant) {
                                  self.leadingSpaceTitle.constant = constant;
@@ -70,10 +77,21 @@
     }
 }
 
-- (void)viewDidLayoutSubviews
+-(void)viewDidLayoutSubviews
 {
     [self.playPauseButton sizeToFit];
+}
+
+-(void)configureUI {
+    // title
     self.titleLabel.text = self.titleForStory;
+    
+    // setup story text
+    self.storyTextField.text = self.story;
+    CGFloat textSize = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) ? 24 : 16;
+    UIFont * font = [UIFont fontWithName:@"HelveticaNeue-Regular" size:textSize];
+    self.storyTextField.font = font;
+    self.storyTextField.textColor = [UIColor whiteColor];
 }
 
 #pragma mark - Setters
@@ -84,13 +102,14 @@
 }
 
 -(void)fetchTrack {
-    [[HelenHTTPSessionManager sharedClient] getTrackWithURL:@"http://api.soundcloud.com/resolve.json?url=https://soundcloud.com/helen-olhausen/me-haces-bien-jorge-drexler-by-helen&client_id=18a54722bf90fb2d9723570ccefa02b3"
-        success:^(NSURLSessionDataTask *operation, id responseObject) {
+    AFHTTPSessionManager * manager = [[AFHTTPSessionManager alloc] init];
+    [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+    [manager GET:self.trackURL parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             self.track = (NSDictionary *)responseObject;
             self.songNameLabel.text = [self.track objectForKey:@"title"];
     }
-         failure:^(NSURLSessionDataTask *operation, NSError *error) {
-             [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error loading the track, make sure to connect to internet"
+         failure:^(NSURLSessionDataTask *task, NSError *error) {
+             [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error loading the track, be sure to be connected to the internet"
                                          message:[error localizedDescription]
                                         delegate:nil
                                cancelButtonTitle:@"Ok"
@@ -103,26 +122,27 @@
     return [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0];
 }
 
+-(void)configureWaveformView {
+    self.waveFormImageView.image = [self.waveFormImageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.waveFormImageView setTintColor:[AboutMe colorWithHex:0xFB4534]];
+    self.waveFormImageView.backgroundColor = [UIColor redColor];
+    self.waveFormImageView.clipsToBounds = YES;
+    self.waveFormImageView.contentMode = UIViewContentModeTop;
+}
+
 -(void)fetchWaveform {
-//    NSString * waveURL = [self.track objectForKey:@"waveform_url"];
     AFHTTPSessionManager * manager = [[AFHTTPSessionManager alloc] init];
     [manager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
-    [manager GET:@"https://w1.sndcdn.com/yU8UeluAEzw9_m.png" parameters:nil success:^(NSURLSessionDataTask *operation, id responseObject) {
-        self.waveFormImageView.image = [UIImage imageWithData:(NSData *)responseObject];
-        self.waveFormImageView.image = [self.waveFormImageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        [self.waveFormImageView setTintColor:[AboutMe colorWithHex:0xFB4534]];
-        
-        self.waveFormImageView.backgroundColor = [UIColor redColor];
-        self.waveFormImageView.clipsToBounds = YES;
-        self.waveFormImageView.contentMode = UIViewContentModeTop;
+    [manager GET:WAVEFORM
+      parameters:nil
+         success:^(NSURLSessionDataTask *operation, id responseObject) {
+            self.waveFormImageView.image = [UIImage imageWithData:(NSData *)responseObject];
+            [self configureWaveformView];
     } failure:nil];
-
 }
 
 -(void)fetchStream {
-//    NSString *stream = [self.track objectForKey:@"stream_url"];
-    NSString *stream = @"https://api.soundcloud.com/tracks/150667693/stream";
-    NSString *streamURL = [NSString stringWithFormat:@"%@?%@", stream, CLIENT_ID_PARAM];
+    NSString *streamURL = [NSString stringWithFormat:@"%@?%@", self.streamURL, CLIENT_ID_PARAM];
     AFHTTPSessionManager * manager = [[AFHTTPSessionManager alloc] init];
     [manager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
     [manager GET:streamURL parameters:nil
@@ -131,33 +151,16 @@
                                                   
                                                   // setup song view once I have the stream
                                                   self.playPauseButton.alpha = 1.0f;
+                                                  self.songNameLabel.alpha = 1.0f;
                                                   self.playPauseButton.enabled = YES;
-                                                  self.songNameLabel.hidden = NO;
-                                                  
                                               }
                                               failure:^(NSURLSessionDataTask *operation, NSError *error) {
-//                                                  [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error playing the track"
-//                                                                              message:[error localizedDescription]
-//                                                                             delegate:nil
-//                                                                    cancelButtonTitle:@"Ok"
-//                                                                    otherButtonTitles:nil] show];
+                                                  [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error loading the track, be sure to be connected to the internet"
+                                                                              message:[error localizedDescription]
+                                                                             delegate:nil
+                                                                    cancelButtonTitle:@"Ok"
+                                                                    otherButtonTitles:nil] show];
                                               }];
-}
-
--(IBAction)playPause:(UIButton *)sender {
-    if (!self.trackStream) {
-        [self fetchStream];
-    } else {
-        NSError *playerError;
-        self.player = [[AVAudioPlayer alloc] initWithData:self.trackStream error:&playerError];
-        [self.player prepareToPlay];
-        [self.player play];
-    }
-}
-
-- (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
-//    return self.titleForStory;
-    return @"";
 }
 
 - (void)playPauseButtonDidPress:(RSPlayPauseButton *)playPauseButton {
@@ -171,6 +174,10 @@
         [self.player stop];
     }
     [playPauseButton setPaused:!playPauseButton.isPaused animated:YES];
+}
+
+- (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
+    return @"";
 }
 
 @end
