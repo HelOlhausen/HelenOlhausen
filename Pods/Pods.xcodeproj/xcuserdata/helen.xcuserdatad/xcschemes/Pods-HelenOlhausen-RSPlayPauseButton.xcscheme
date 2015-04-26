@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7A0EE87AC9DDAA6445A38523"
-               BuildableName = "libPods-HelenOlhausen.a"
-               BlueprintName = "Pods-HelenOlhausen"
+               BlueprintIdentifier = "FE0EDE4B78328587E51601F2"
+               BuildableName = "libPods-HelenOlhausen-RSPlayPauseButton.a"
+               BlueprintName = "Pods-HelenOlhausen-RSPlayPauseButton"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

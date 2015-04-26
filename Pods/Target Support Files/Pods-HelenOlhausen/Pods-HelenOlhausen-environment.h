@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 3
 
+// RSPlayPauseButton
+#define COCOAPODS_POD_AVAILABLE_RSPlayPauseButton
+#define COCOAPODS_VERSION_MAJOR_RSPlayPauseButton 1
+#define COCOAPODS_VERSION_MINOR_RSPlayPauseButton 0
+#define COCOAPODS_VERSION_PATCH_RSPlayPauseButton 1
+
 // XLPagerTabStrip
 #define COCOAPODS_POD_AVAILABLE_XLPagerTabStrip
 #define COCOAPODS_VERSION_MAJOR_XLPagerTabStrip 1

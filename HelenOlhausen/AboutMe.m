@@ -9,20 +9,41 @@
 #import "AboutMe.h"
 #import "HelenHTTPSessionManager.h"
 #import "Constants.h"
+#import "RSPlayPauseButton.h"
 
 @interface AboutMe()
 @property (weak, nonatomic) IBOutlet UIImageView *waveFormImageView;
+@property (nonatomic,strong) RSPlayPauseButton *playPauseButton;
 
 @property (strong, nonatomic) NSDictionary * track;
 @property (strong, nonatomic) NSData * trackStream;
+@property (weak, nonatomic) IBOutlet UIView *playPauseView;
 @end
 
 @implementation AboutMe
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    [self fetchTrack];
+//    [self fetchTrack];
+    [self fetchStream];
     [self fetchWaveform];
+    self.playPauseButton = [[RSPlayPauseButton alloc] init];
+    self.playPauseButton.tintColor = [UIColor whiteColor];
+    self.playPauseButton.alpha = 0.5f;
+    self.playPauseButton.enabled = false;
+    [self.playPauseButton addTarget:self action:@selector(playPauseButtonDidPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.playPauseButton];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.player stop];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [self.playPauseButton sizeToFit];
+    self.playPauseButton.center = self.view.center;
 }
 
 -(void)fetchTrack {
@@ -62,17 +83,17 @@
 }
 
 -(void)fetchStream {
-    NSString *stream = [self.track objectForKey:@"stream_url"];
+//    NSString *stream = [self.track objectForKey:@"stream_url"];
+    NSString *stream = @"https://api.soundcloud.com/tracks/150667693/stream";
     NSString *streamURL = [NSString stringWithFormat:@"%@?%@", stream, CLIENT_ID_PARAM];
     AFHTTPSessionManager * manager = [[AFHTTPSessionManager alloc] init];
     [manager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
     [manager GET:streamURL parameters:nil
                                               success:^(NSURLSessionDataTask *operation, id responseObject) {
                                                   self.trackStream = (NSData *)responseObject;
-                                                  NSError *playerError;
-                                                  self.player = [[AVAudioPlayer alloc] initWithData:self.trackStream error:&playerError];
-                                                  [self.player prepareToPlay];
-                                                  [self.player play];
+                                                  self.playPauseButton.alpha = 1.0f;
+                                                  self.playPauseButton.enabled = true;
+                                                  
                                               }
                                               failure:^(NSURLSessionDataTask *operation, NSError *error) {
 //                                                  [[[UIAlertView alloc] initWithTitle:@"Ops! There was an error playing the track"
@@ -94,15 +115,26 @@
     }
 }
 
-
--(void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self.player stop];
-}
-
-
 - (NSString *)titleForPagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController {
     return @"About me";
+}
+
+- (void)playPauseButtonDidPress:(RSPlayPauseButton *)playPauseButton {
+    
+//    
+//    if (!self.trackStream) {
+//        [self fetchStream];
+//    }
+    NSError *playerError;
+    self.player = [[AVAudioPlayer alloc] initWithData:self.trackStream error:&playerError];
+    
+    if (playPauseButton.isPaused) {
+        [playPauseButton setPaused:!playPauseButton.isPaused animated:YES];
+        [self.player prepareToPlay];
+        [self.player play];
+    } else {
+        [self.player stop];
+    }
 }
 
 @end

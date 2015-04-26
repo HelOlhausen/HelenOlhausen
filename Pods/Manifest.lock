@@ -20,14 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.5.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - RSPlayPauseButton (1.0.1)
   - XLPagerTabStrip (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.3)
+  - RSPlayPauseButton (~> 1.0)
   - XLPagerTabStrip (~> 1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  RSPlayPauseButton: 9def027a1259ded3a6ecfeb0e57df1775ff22fb0
   XLPagerTabStrip: 4260aebbe0af9289de815a0886369ce1edb61830
 
 COCOAPODS: 0.36.4

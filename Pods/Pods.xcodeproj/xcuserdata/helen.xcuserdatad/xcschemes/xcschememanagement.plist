@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-HelenOlhausen-RSPlayPauseButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HelenOlhausen-XLPagerTabStrip.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3FD72FA4B0708FDA8F0B0BF6</key>
+		<key>3FA8704961FB1E160BF4D307</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A0500D06E0BE8A977F3063BB</key>
+		<key>7A0EE87AC9DDAA6445A38523</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C211D484455D5159CE521F74</key>
+		<key>842EAC1BEBEC0370E72A7510</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE0EDE4B78328587E51601F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
